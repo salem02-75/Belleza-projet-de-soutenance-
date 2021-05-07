@@ -1,22 +1,32 @@
-<?php 
+<?php
+$title_belleza = 'Belleza';
+?>
+<?php
 include 'parts/header.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS Bootstrap  version 4.6 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 
-    <!-- mes styles CSS -->
-    <link rel="stylesheet" href="css/style.css">
+<main>
+    <!-- la banniere  a changer en image -->
+    <section class="banniere">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Lorem ipsum dolor sit amet consectetur, adipis</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vel quod, magnam tenetur
+                        neque
+                        necessitatibus itaque laboriosam harum facilis officiis sunt recusandae incidunt omnis
+                        facere soluta aspernatur quia ut ipsam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-    <title>Belleza</title>
-</head>
+
+
+
+<?php
+include 'parts/footer.php';
+?>
