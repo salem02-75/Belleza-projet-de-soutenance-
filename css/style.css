@@ -87,7 +87,7 @@ header {
 /* POLICE */
 
 p {
-    font-family: belleza, sans-serif;
+    font-family: 'belleza', sans-serif;
 }
 
 h1,
@@ -95,7 +95,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: ;
+    font-family:'Didact Gothic', sans-serif; ;
 }
 
 
