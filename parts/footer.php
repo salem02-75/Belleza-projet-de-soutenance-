@@ -1,4 +1,27 @@
 
+<!-- coder ici le code footer -->
+<div class="footer">
+    <div class="container  bg-dark ">
+
+         <div class="row ">
+            <div class="col-xl-4 col-md-4 col-sm-12  d-flex justify-content-center align-items-center">
+                <a href="">Nous-contacter</a>
+            </div>
+
+            <div class="col-xl-4 col-md-4 col-sm-12  d-flex justify-content-center align-items-center">
+            <p>reseaux s</p>
+            </div>
+
+            <div class="col-xl-4 col-md-4  col-sm-12 d-flex justify-content-center align-items-center ">
+                <a href="">déposer une annonce</a>
+            </div>
+        </div>
+        
+</div>
+
+
+</div>
+
 
 
         <!-- JS etc. de Boostrap -->
