@@ -26,9 +26,10 @@
             <nav class="navbar  navbar-expand-lg navbar-light">
 
                 <!-- logo -->
-                <div class="logo">
-                    <img src="images/Logomarque.svg" class="logo-image" alt="logo de Belleza">
-                </div>
+                <a href="/index.php" class="logo">
+                   <img src="images/Logomarque.svg" class="logo-image" alt="logo de Belleza"> 
+                </a>
+                
 
                 <!-- ml-auto : margin left automatique mettra le bouton à droite -->
                 <!-- aria-controls : pour l'accessibilité //  aria-expanded="false" : on démarre avec le menu qui n'est pas étendu donc on démarre à false // navbar-toggler-icon le .svg du burger-->
