@@ -76,7 +76,8 @@ header {
 
 /* section */
 
-.banniere h2 {}
+
+/* .banniere h2 {} */
 
 .banniere p {
     padding: 10px;
@@ -95,7 +96,8 @@ h2,
 h3,
 h4,
 h5 {
-    font-family:'Didact Gothic', sans-serif; ;
+    font-family: 'Didact Gothic', sans-serif;
+    ;
 }
 
 
