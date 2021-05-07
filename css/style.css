@@ -1,0 +1,65 @@
+/* Styles pour Belleza S.S*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* taille de logo dans le header navbar  */
+.logo-image {
+    width: 50px;
+    height: 50px;
+
+}
+
+
+/* ========================================= 
+            <-- header -->
+ ========================================= */
+
+header {
+    /* position: absolute; */
+    width: 100%;
+}
+
+/*  teste de bg color de la nav */
+.navbar {
+    background-color: orange;
+    /* position: absolute; */
+    z-index: 2;
+    /* width: 100%; */
+}
+
+/* les a dans la navbar */
+.nav-link:hover {
+    background-color: black;
+    color: white;
+}
+
+/* ========================================= 
+            <-- bannière -->
+ ========================================= */
+
+.banniere {
+    position: relative;
+    /* le bcg  changer par une image */
+    background-color: aqua;
+    min-height: 60vh;
+    width: 100%;
+    background-position: center;
+    padding: 150px 0 150px;
+    /* 
+    background-size: cover;
+    background-position: center;
+     */
+}
+
+/* section */
+.banniere h2{
+
+}
+.banniere p{
+    padding: 10px;
+    font-size: 15px;
+    
+
+}

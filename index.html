@@ -18,52 +18,65 @@
 </head>
 
 <body>
-    <header class="container d-flex">
+    <header>
         <!-- ========================================= -->
         <!-- Navbar start -->
         <!-- ========================================= -->
+        <div class="container">
+            <nav class="navbar  navbar-expand-lg navbar-light">
 
-        <!-- le P a changer par le log plustard -->
-        <div>
-           
+                <!-- logo -->
+                <img src="images/Logomarque.svg" class="logo-image" alt="logo de Belleza">
+
+                <!-- ml-auto : margin left automatique mettra le bouton à droite -->
+                <!-- aria-controls : pour l'accessibilité //  aria-expanded="false" : on démarre avec le menu qui n'est pas étendu donc on démarre à false // navbar-toggler-icon le .svg du burger-->
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- collapse navbar-collapse : pour le masquer ou pas // id="navbarToggler" qui est ciblé plus haut ds data-target-->
+                <div class="collapse navbar-collapse " id="navbarToggler">
+                    <!-- d-flex : tout est flex dans la ul // justify-content-center align-items-center centré horizontalement et verticalement -->
+                    <ul class="navbar-nav  d-flex justify-content-center align-items-center ml-auto">
+                        <li class="nav-item">
+                            <a href="#accueil" class="nav-link active  bg-dark text-white font-weight-bold">Coiffure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link text-white font-weight-bold">Esthétique</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#apropos" class="nav-link text-white font-weight-bold">Massage</a>
+                        </li>
+                    </ul>
+
+                    <!-- espace de connecxion -->
+                    <ul class="navbar-nav  d-flex justify-content-center align-items-center">
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link text-white font-weight-bold">Pro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link text-white font-weight-bold">Conexion</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- la banniere  a changer en image -->
+            <section class="banniere">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2>Lorem ipsum dolor sit amet consectetur, adipis</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vel quod, magnam tenetur
+                                neque
+                                necessitatibus itaque laboriosam harum facilis officiis sunt recusandae incidunt omnis
+                                facere soluta aspernatur quia ut ipsam.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-       
-
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning">
-            <p class="text-dark">Belleza</p>
-            <!-- ml-auto : margin left automatique mettra le bouton à droite -->
-            <!-- aria-controls : pour l'accessibilité //  aria-expanded="false" : on démarre avec le menu qui n'est pas étendu donc on démarre à false // navbar-toggler-icon le .svg du burger-->
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler"
-                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- collapse navbar-collapse : pour le masquer ou pas // id="navbarToggler" qui est ciblé plus haut ds data-target-->
-            <div class="collapse navbar-collapse " id="navbarToggler">
-                <!-- d-flex : tout est flex dans la ul // justify-content-center align-items-center centré horizontalement et verticalement -->
-                <ul class="navbar-nav  d-flex justify-content-center align-items-center ml-auto">
-                    <li class="nav-item">
-                        <a href="#accueil" class="nav-link active text-dark font-weight-bold">Coiffure</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link text-dark font-weight-bold">Esthétique</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#apropos" class="nav-link text-dark font-weight-bold">Massage</a>
-                    </li>
-                </ul>
-
-                <!-- espace de connecxion -->
-                <ul class="navbar-nav  d-flex justify-content-center align-items-center">
-                    <li class="nav-item">
-                        <a href="#services" class="nav-link text-dark font-weight-bold">Pro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link text-dark font-weight-bold">Conexion</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
 
