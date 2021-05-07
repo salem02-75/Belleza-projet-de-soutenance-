@@ -1,10 +1,18 @@
+/* IMPORTANT */
+
+
+/* BOUTON BELLEZA INTERACTIVE  */
+
+
+/* CLASS : .button_belleza */
+
+
 /* Styles pour Belleza S.S*/
+
 * {
     margin: 0;
     padding: 0;
 }
-
-
 
 
 /* ========================================= 
@@ -16,7 +24,9 @@ header {
     width: 100%;
 }
 
+
 /*  teste de bg color de la nav */
+
 .navbar {
     background-color: orange;
     /* position: absolute; */
@@ -24,20 +34,26 @@ header {
     /* width: 100%; */
 }
 
+
 /* les a dans la navbar */
+
 .nav-link:hover {
     background-color: black;
     color: white;
 }
 
+
 /* ========================================= 
             <-- bannière -->
  ========================================= */
- 
- /* taille de logo dans le header navbar  */
- .logo{
+
+
+/* taille de logo dans le header navbar  */
+
+.logo {
     height: 50px;
 }
+
 .logo-image {
     position: relative;
     top: -59px;
@@ -49,24 +65,55 @@ header {
     /* le bcg  changer par une image */
     /* background-color: aqua; */
     background-image: url(/images/img-banniere.jpg);
-
     min-height: 60vh;
     width: 100%;
     background-position: center;
     padding: 150px 0 150px;
-    
     background-size: cover;
     background-position: center;
-    
 }
+
 
 /* section */
-.banniere h2{
 
-}
-.banniere p{
+.banniere h2 {}
+
+.banniere p {
     padding: 10px;
     font-size: 15px;
+}
 
 
+/* POLICE */
+
+p {
+    font-family: belleza, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: ;
+}
+
+
+/* ------  BOUTON A BELLEZA  ------ */
+
+.button_belleza {
+    font-style: normal;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #555555;
+    color: #555555;
+    padding: 8px 28px;
+    border-radius: 23px;
+    margin: 30px 0 30px 0;
+}
+
+.button_belleza:hover {
+    color: #00c2cb;
+    border: 1px solid #00c2cb;
+    /* avec la position relative ca top descend de 2px*/
 }
