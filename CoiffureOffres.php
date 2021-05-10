@@ -10,9 +10,9 @@ include 'parts/header.php';
     <!-- Carte Offre -->
     <div class="card mb-3 mb-5" style="max-width: 90vh;">
       <div class="row g-0">
-        <div class="col-md-4 overflow-hidden">
+        <div class="col-md-4 overflow-hidden taille_img_service_offres">
           <!-- IMG -->
-            <img src="https://picsum.photos/330/170" alt="ALEATOIR">
+            <img src="https://picsum.photos/330/370" alt="ALEATOIR">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -26,9 +26,9 @@ include 'parts/header.php';
     <!-- Fin carte Offre -->
     <div class="card mb-3 mb-5" style="max-width: 90vh;">
       <div class="row g-0">
-        <div class="col-md-4 overflow-hidden">
+        <div class="col-md-4 taille_img_service_offres">
           <!-- IMG -->
-            <img src="https://picsum.photos/330/170" alt="">
+            <img src="https://picsum.photos/430/270" alt="">
         </div>
         <div class="col-md-8">
           <div class="card-body">
