@@ -55,13 +55,13 @@
                     <!-- d-flex : tout est flex dans la ul // justify-content-center align-items-center centré horizontalement et verticalement -->
                     <ul class="navbar-nav  d-flex justify-content-center align-items-center ml-auto">
                         <li class="nav-item">
-                            <a href="coiffure.php" class="nav-link active  bg-dark text-white font-weight-bold">Coiffure</a>
+                            <a href="/coiffure.php" class="nav-link active  bg-dark text-white font-weight-bold">Coiffure</a>
                         </li>
                         <li class="nav-item">
-                            <a href="esthetique.php" class="nav-link text-white font-weight-bold">Esthétique</a>
+                            <a href="/esthetique.php" class="nav-link text-white font-weight-bold">Esthétique</a>
                         </li>
                         <li class="nav-item">
-                            <a href="massage.php" class="nav-link text-white font-weight-bold">Massage</a>
+                            <a href="/massage.php" class="nav-link text-white font-weight-bold">Massage</a>
                         </li>
                     </ul>
 
