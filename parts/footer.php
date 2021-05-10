@@ -12,8 +12,8 @@
             <p>reseaux s</p>
             </div>
 
-            <div class="col-xl-4 col-md-4  col-sm-12 d-flex justify-content-center align-items-center ">
-                <a href="">déposer une annonce</a>
+            <div class="col-xl-4 col-md-4 col-sm-12 d-flex justify-content-center align-items-center ">
+                <a href="#">déposer une annonce</a>
             </div>
         </div>
         
