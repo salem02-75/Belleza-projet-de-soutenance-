@@ -15,6 +15,14 @@
 }
 
 
+/* PROVISOIR POUR COIFFURE */
+
+.taille_img {
+    width: 400px;
+    height: 400px;
+}
+
+
 /* ========================================= 
             <-- header -->
  ========================================= */
@@ -118,4 +126,27 @@ h5 {
     color: #00c2cb;
     border: 1px solid #00c2cb;
     /* avec la position relative ca top descend de 2px*/
+}
+
+
+/* Service offre taille de l'image  */
+
+.taille_img_service_offres {
+    width: 320px;
+    height: 170px;
+    overflow: hidden;
+}
+
+
+/* ========================================= 
+            <-- footer -->
+ ========================================= */
+.hr-top{
+    width: 100%;
+    
+    border-top: 2px solid white;
+}
+.hr-right{
+    height: 100%;
+  border-right: 2px solid wheat;  
 }

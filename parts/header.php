@@ -10,24 +10,28 @@
 
     <!-- link font belleza -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
- <!--link font Dicact Gothic  -->
- <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+    <!--link font Dicact Gothic  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
  
     <!-- CSS Bootstrap  version 4.6 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+    <!-- CSS font-Awesome version 5.15.3 -->
+    <!-- Lien : https://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- mes styles CSS -->
     <link rel="stylesheet" href="style/style.css">
 
      <!-- icons (éseaux sociaux)-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-     
-    <!-- css Footer -->
-    <link rel="stylesheet" href="style/footer.css">
+    
+
+    <!-- icons (éseaux sociaux)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <title> <?php $title_belleza ?> </title>
     </head>
@@ -58,13 +62,13 @@
                     <!-- d-flex : tout est flex dans la ul // justify-content-center align-items-center centré horizontalement et verticalement -->
                     <ul class="navbar-nav  d-flex justify-content-center align-items-center ml-auto">
                         <li class="nav-item">
-                            <a href="coiffure.php" class="nav-link active  bg-dark text-white font-weight-bold">Coiffure</a>
+                            <a href="/coiffure.php" class="nav-link active  bg-dark text-white font-weight-bold">Coiffure</a>
                         </li>
                         <li class="nav-item">
-                            <a href="esthetique.php" class="nav-link text-white font-weight-bold">Esthétique</a>
+                            <a href="/esthetique.php" class="nav-link text-white font-weight-bold">Esthétique</a>
                         </li>
                         <li class="nav-item">
-                            <a href="massage.php" class="nav-link text-white font-weight-bold">Massage</a>
+                            <a href="/massage.php" class="nav-link text-white font-weight-bold">Massage</a>
                         </li>
                     </ul>
 
