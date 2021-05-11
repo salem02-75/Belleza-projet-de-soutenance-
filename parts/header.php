@@ -21,7 +21,13 @@
 
 
     <!-- mes styles CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style/style.css">
+
+     <!-- icons (éseaux sociaux)-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     
+    <!-- css Footer -->
+    <link rel="stylesheet" href="style/footer.css">
 
     <title> <?php $title_belleza ?> </title>
     </head>
