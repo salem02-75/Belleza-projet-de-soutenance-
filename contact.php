@@ -1,57 +1,54 @@
 <?php
 include 'parts/header.php';
 ?>
+<php
 
-<main>
-    <h1>Formulaire de contact</h1>
+$VotreAdresseMail="votreemail@votresite.tld";
+if(isset($_POST['envoyer'])) { 
+    if(empty($_POST['mail'])) {
+        echo "Le champ mail est vide";
+    } else {
+       
+        if(!preg_match("#^[a-z0-9_-]+((\.[a-z0-9_-]+){1,})?@[a-z0-9_-]+((\.[a-z0-9_-]+){1,})?\.[a-z]{2,}$#i",$_POST['mail'])){
+            echo " L adresse mail entrée est incorrecte";
+        }else{
+            if(empty($_POST['sujet'])) {
+                echo "Le champ sujet est vide";
+            }else{
+                if(empty($_POST['message'])) {
+                    echo "Le champ message est vide";
+                }else{
+                    $Entetes = "MIME-Version: 1.0\r\n";
+                    $Entetes .= "Content-type: text/html; charset=UTF-8\r\n";
+                    $Entetes .= "From: Nom de votre site <".$_POST['mail'].">\r\n";
+                    $Entetes .= "Reply-To: Nom de votre site <".$_POST['mail'].">\r\n";
+                    //on prépare les champs:
+                    $Mail=$_POST['mail']; 
+                    $Sujet='=?UTF-8?B?'.base64_encode($_POST['sujet']).'?=';//Cet encodage (base64_encode) est fait pour permettre aux informations binaires d'être manipulées par les systèmes qui ne gèrent pas correctement les 8 bits (=?UTF-8?B? est une norme afin de transmettre correctement les caractères de la chaine)
+                    $Message=htmlentities($_POST['message'],ENT_QUOTES,"UTF-8");//htmlentities() converti tous les accents en entités HTML, ENT_QUOTES Convertit en + les guillemets doubles et les guillemets simples, en entités HTML
+                    //en fin, on envoi le mail
+                    if(mail($VotreAdresseMail,$Sujet,nl2br($Message),$Entetes)){//la fonction nl2br permet de conserver les sauts de ligne et la fonction base64_encode de conserver les accents dans le titre
+                        echo "Le mail à été envoyé avec succès!";
+                    } else {
+                        echo "Une erreur est survenue, le mail n'a pas été envoyé";
+                    }
+                }
+            }
+        }
+    }
+}
+?>
 
-    <section>
 
-        <section>
-            <div>
-                <img src="" alt="">
-                <h2>nom du proffesionnel</h2>
-            </div>
-            <div>
-                <p>etoiles</p>
-                <p>ville</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, earum unde expedita assumenda harum saepe ex ad. Non voluptate quod error adipisci iure asperiores sapiente?</p>
-
-            <section>
-                <p>tableau dates rdv </p>
-                <button>reserver</button>
-            </section>
-        </section>
-
-        <section>
-            <img src="" alt="">
-        </section>
-
-    </section>
-
-    {# parti deroulante qui saffiche lorsque l'on appuis sur la fleche ou sur envoyer #}
-
-    <section>
-        <button>></button>
-
-        <div>
-            <div>
-                <h3>name </h3>
-                <h3>littlename</h3>
-            </div>
-            <div>
-                mail
-            </div>
-            <div>
-                content
-            </div>
-        </div>
-
-        <button>button</button>
-    </section>
-
-</main>
+<form action="contact.php" method="post">
+    Mail: <input type="text" name="mail" value="" />
+    <br />
+    Sujet: <input type="text" name="sujet" value="" />
+    <br />
+    Message: <textarea name="message" cols="40" rows="20"></textarea>
+    <br />
+    <input type="submit" name="envoyer" value="Envoyer" />
+</form>
 
 
 
