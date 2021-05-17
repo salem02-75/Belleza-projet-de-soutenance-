@@ -17,7 +17,7 @@ include 'parts/header.php';
                 </div>
                 <!-- Bouton -->
                 <div class="d-flex justify-content-end">
-                    <a class="button_belleza justify-content-end" href="CoiffureOffres.php">Consulter</a>
+                    <a class="button_belleza justify-content-end" href="coiffureoffres.php">Consulter</a>
                 </div>
 
 
