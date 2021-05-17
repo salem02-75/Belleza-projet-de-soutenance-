@@ -34,9 +34,11 @@ header {
 
 
 /*  teste de bg color de la nav */
-
+.bg-navbar{
+    background: orange;
+}
 .navbar {
-    background-color: orange;
+    /* background-color: orange; */
     /* position: absolute; */
     z-index: 2;
     /* width: 100%; */

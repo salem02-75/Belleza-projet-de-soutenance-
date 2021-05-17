@@ -34,8 +34,11 @@
         <!-- ========================================= -->
         <!-- Navbar start -->
         <!-- ========================================= -->
-        <div class="container">
-            <nav class="navbar  navbar-expand-lg navbar-light">
+        <div class="bg-navbar">
+            <div class="container">
+
+            
+            <nav class="navbar  navbar-expand-xl navbar-light">
 
                 <!-- logo -->
                 <a href="/index.php" class="logo">
@@ -76,5 +79,6 @@
                     </ul>
                 </div>
             </nav>
+            </div><!-- fin de container-->
         </div>
     </header>
