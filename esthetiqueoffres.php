@@ -1,6 +1,6 @@
 <?php
 include 'parts/header.php';
-include 'fonctions/connectcoiffures.php';
+include 'fonctions/connectesthetiques.php';
 include 'fonctions/tronque.php';
 ?>
 <div class="container">

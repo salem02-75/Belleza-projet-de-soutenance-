@@ -6,3 +6,8 @@
 # les police :
 # font-family: 'Belleza', sans-serif;
 # font-family: 'Didact Gothic', sans-serif;
+
+
+# FUTUR CORRECTIF
+# mobile design sur les page esthetiqueoffres, massageoffres, coiffureoffres
+# correctif de la taille d'image

@@ -1,79 +1,150 @@
+    
     <!-- ========================================= -->
-    <!-- footer start  -->
+    <!-- Footer start -->
     <!-- ========================================= -->
-    <div class="footer">
-        <img class="logo-bg" src="/img/logo.svg" alt="">
-        <!-- bg-dark -->
-        <div class="container bloc-footer bg-dark">
-            <div class="row">
-                <!------ col 1 paje contacte ------->
-                <div class="col-xl-4 col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
-                    <a href="#" class="text-light">Nous-contacter</a>
-                    <hr class="hr-right">
-                </div>
-                <!------ col 2  Réseaux sociaux------->
-                <div class="col-xl-4 col-md-4 col-sm-12  text-light d-flex flex-column justify-content-center align-items-center">
-                    <!-- <h3>Suivez-nous</h3> -->
+    <div class="footer bg-gry mt-5">
+
+        <div class="container ">
+            <div class="row pt-3 ">
+
+                <!------ col-1 paje contacte ------->
+                <div class="col-lg-4 col-md-4 col-sm-12 d-md-flex d-lg-flex justify-content-center align-items-center ">
+                    <a href="#" class="d-md-flex d-lg-flex d-none">Nous-contacter</a>
+                </div><!-- col-1 -->
+
+                <!------ col-2  Réseaux sociaux------->
+                <div class="col-lg-4 col-md-4 col-sm-12 justify-content-center align-items-center ">
+
                     <!-------------------------------------------------------------------------------------------------------------->
-                    <!-- un h2 + P sont  disply -none en formaat  xl et md -->
+                    <!-- un h2 + P sont  disply -none en formaat  lg et md -->
+
+                    <!-- <h3>Suivez-nous</h3> -->
                     <!-- <div>
                         <h2>Toujours au contact avec la beauté</h2>
                         <p>En nous suivant sur Instagram, Facebook ou twitteI</p>
                     </div> -->
                     <!-------------------------------------------------------------------------------------------------------------->
+
                     <!-- include  les réseaux sociaux  -->
-                    <div class="container">
-                        <div class="bloc footer-medias">
-                            <div class="liste-media  d-flex justify-content-around align-items-center">
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </div>
+
+                    <div class="footer-medias ">
+                        <div class="liste-medias d-flex justify-content-around ">
+                            <!-- <div  class=" "> -->
+                            <!-- <span class=" d-flex border-right "></span> -->
+                            <!-- <div class=" d-flex  "> -->
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fab  fa-instagram "></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-twitter "></i>
+                            </a>
+                            <!-- </div> -->
+                            <!-- <span class=" border-left "></span> -->
+                            <!-- </div> -->
+
+                        </div><!-- medias-->
+
+                    </div><!-- footer-media-->
+
+                </div><!-- col-2 Réseaux sociaux -->
+
+                <!----- col-3 btn espace pro-------->
+                <div class="col-lg-4 col-md-4  col-sm-12 d-flex justify-content-center align-items-center ">
+                    <!-- metre le #lien  de la page pro -->
+                    <button class="btn btn-outline d-none d-md-flex d-lg-flex"><a href="#">Déposer
+                            une
+                            annonce</a></button>
+                </div><!-- col-3 btn espace pro -->
+
+            </div><!-- fin de row-->
+
+        </div><!-- fin de container contact-->
+
+        <!-- hr ligne -->
+        <hr class="col-12-lg">
+
+
+        <!--------------------------- 2eme patie du footer avec un bcg image en z-index 2 --------------------------->
+        <div id="menu" class="container">
+            <div class="row ml-2 ml-lg-0 ml-md-0">
+
+                <!------ col-1 Menu------->
+                <div
+                    class="col-lg-4 col-md-4  col-sm-12  d-flex flex-column justify-content-lg-center align-items-lg-center justify-content-md-center align-items-md-center py-4">
+                    <div class="d-flex">
+                        <span class="d-sm-none d-md-none border-left my-3 pr-3"></span>
+                        <div class="d-flex flex-column">
+                            <!-- rajouter les liens # -->
+                            <a href="coiffure-php" class="py-2 ">Coiffure</a>
+                            <a href="esthétique.php" class="py-2">Esthétique</a>
+                            <a href="massage.php" class="py-2">Massage</a>
                         </div>
                     </div>
-                    <hr class="hr-right">
-                </div>
-                <!----- col 3 btn espace pro-------->
-                <div class="col-xl-4 col-md-4  col-sm-12 d-flex justify-content-center align-items-center ">
-                    <!-- metre le #lien  de la page pro -->
-                    <button class="btn btn-outline-success"><a href="#" class="text-light">Déposer une
-                            annonce</a></button>
-                    <!-- <div class="ligne"></div> -->
-                </div>
-            </div>
-            <hr class="hr-top">
-            <!--------------------------- 2eme patie du footer avec un bcg image en z-index 2 --------------------------->
-            <div class="container  py-xl-5 py-md-5">
-                <div class="row">
-                    <!------ col 1 Menu------->
-                    <div class="col-xl-4 col-md-4  col-sm-12  d-flex flex-column justify-content-center align-items-center">
-                        <!-- rajouter les liens # -->
-                        <a href="" class="text-light pb-xl-3">Coiffure</a>
-                        <a href="" class="text-light pb-xl-3">Esthétique</a>
-                        <a href="" class="text-light pb-xl-3">Massage</a>
+
+                </div><!-- col-1 Menu-->
+
+                <!------ col-3  AFQ/Avis-Mention légale------->
+                <div
+                    class="col-lg-4 col-md-4  col-sm-12 d-flex flex-column justify-content-lg-center align-items-lg-center justify-content-md-center align-items-md-center py-4 ">
+                    <div class="d-flex  ">
+                        <span class="d-sm-none d-md-none border-left my-3 pr-3"></span>
+                        <div class="d-flex flex-column">
+                            <!-- rajouter les liens # -->
+                            <a href="" class="py-2">Mention légal</a>
+                            <a href="" class="py-2">FAQ/Aide</a>
+                            <a href="" class="py-2">Les avis</a>
+                        </div>
+
                     </div>
-                    <!------ col 2  AFQ/Avis-Mention légale------->
-                    <div class="col-xl-4 col-md-4  col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                        <!-- rajouter les liens # -->
-                        <a href="" class="text-light pb-xl-3">Mention légal</a>
-                        <a href="" class="text-light pb-xl-3">FAQ/Aide</a>
-                        <a href="" class="text-light pb-xl-3">Les avis</a>
+                </div><!-- col-3-->
+
+                <!------ col-2 Newsletter ------->
+                <div
+                    class="col-lg-4 col-md-4  d-md-flex  d-lg-flex justify-content-lg-center justify-content-md-center  py-md-4 py-lg-4">
+                    <a href="newsletter.php" class="newsletter py-2 ">Newsletter</a>
+                </div><!-- col-2 Newsletter -->
+
+                <!------ col-4  Annonce/Newsletter/contact ------->
+                <div class="col-lg-4 col-md-4  col-sm-12 d-flex flex-sm-column justify-content-lg-center align-items-lg-center justify-content-md-center align-items-md-center py-4 ">
+                    <div class="d-flex">
+                        <!-- ligne -left -->
+                        <span class="d-sm-none d-md-none border-left my-3 pr-3"></span>
+                        <div class="d-flex flex-column">
+                            <!-- rajouter les liens # -->
+                            <a href="" class="d-md-none d-lg-none py-2">Déposer un annonce</a>
+                            <a href="" class="d-lg-none d-md-none py-2">Newsletter</a>
+                            <a href="" class="d-md-none d-lg-none py-2">Nous-contacter</a>
+                        </div>
+
                     </div>
-                    <!------ col 3 Newsletter ------->
-                    <div class="col-xl-4 col-md-4  col-sm-12 d-flex  justify-content-center ">
-                        <!-- mettre le bon le #lien vers la newletter -->
-                        <a href="nesletter" class="text-light">Newsletter</a>
-                    </div>
-                </div>
-            </div>
+                </div><!-- col-4 Annonce/Newsletter/contact-->
+
+            </div><!-- row -->
+
+        </div><!-- container 2 -->
+
+
+
+    </div><!-- footer -->
+
+    <!-- &copy -->
+    <div class="container">
+        <div class="copy col-lg-12 col-md-12  col-sm-12 d-flex  justify-content-center ">
+            &copy;soutenance 2021 Collombus,By Guillaume, Salima, Aida
+            
         </div>
     </div>
+
+   
+    <!-- ========================================= -->
+    <!-- Footer end -->
+    <!-- ========================================= -->
+
 
 
     <!-- JS etc. de Boostrap -->
