@@ -5,7 +5,8 @@ include 'parts/header.php';
   <div class="row d-flex justify-content-center mt-5">
 
 
-{# template pour une future boucle php : #}
+<!--template pour une future boucle php -->
+
     <!-- Carte Offre -->
     <div class="card mb-3 mb-5" style="max-width: 135vh;">
       <div class="row g-0">
@@ -23,7 +24,7 @@ include 'parts/header.php';
           </div>
         </div>
 
-      {# Ici besoin d'un margin right #}
+        <!-- Ici besoin d'un margin right -->
         <div class="col-2 d-flex align-items-center ">
           <div>
             <a class="button_belleza" href="CoiffureOffres.php">Consulter</a>
