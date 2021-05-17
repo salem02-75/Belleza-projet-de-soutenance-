@@ -46,9 +46,9 @@ if(isset($_POST['envoyer'])) {
 <head>
 
 
-<main>
+<main class="fond">
 
-<form action="contact.php" method="post">
+<form class="roll-out" action="contact.php" method="post">
     Mail: <input type="text" name="mail" value="" />
     <br />
     Sujet: <input type="text" name="sujet" value="" />
@@ -71,3 +71,16 @@ if(isset($_POST['envoyer'])) {
 <?php
 include 'parts/footer.php';
 ?>
+
+<style>
+
+.fond{
+    background-color: orange ;
+    display: flex;
+    justify-content: center;
+    margin: 50px 80px auto;
+    padding: 50px;
+    text-align: center;
+}
+
+</style>
