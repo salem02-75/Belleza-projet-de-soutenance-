@@ -34,7 +34,7 @@ include 'parts/header.php';
                 <div class="col col-12 col-md-6 col-lg-4 ">
                     <div class="card mb-4">
                         <a href="#coiffure.php">
-                            <img src="img/coiffure.jpg" alt="image de coiffure, coupe de cheveux"
+                            <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux"
                                 class="card-img-top imgService">
                         </a>
 
@@ -52,7 +52,7 @@ include 'parts/header.php';
                 <div class="col col-12 col-md-6 col-lg-4 ">
                     <div class="card mb-4">
                         <a href="#coiffure.php">
-                            <img src="img/esthétique.jpg" alt="image de Esthétique, Maquillage,soin"
+                            <img src="images/esthétique.jpg" alt="image de Esthétique, Maquillage,soin"
                                 class="card-img-top imgService">
                         </a>
 
@@ -70,7 +70,7 @@ include 'parts/header.php';
                 <div class="col col-12 col-md-6 col-lg-4 ">
                     <div class="card mb-4">
                         <a href="#coiffure.php">
-                            <img src="img/massage.jpg" alt="image de massage" class="card-img-top imgService">
+                            <img src="images/massage.jpg" alt="image de massage" class="card-img-top imgService">
                         </a>
 
                         <div class="card-body">
