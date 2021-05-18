@@ -25,8 +25,8 @@ include 'parts/header.php';
             </div>
             <!-- Image -->
             <div class="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mt-5">
-                <div class="bg-secondary taille_img">
-
+                <div class="taille_img overflow-hidden">
+                <img src="images/esthétique.jpg" alt="">
                 </div>
 
 

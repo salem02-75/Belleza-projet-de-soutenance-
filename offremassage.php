@@ -7,7 +7,7 @@ include 'fonctions/tronque.php';
 
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col-6">
             <div class="card-body">
                 <h2 class="card-title"><?php echo $res[0]["nom_societe"] ?></h2>
                 <p class="card-text">
@@ -18,7 +18,7 @@ include 'fonctions/tronque.php';
                 <p class="card-text"><?php echo $res[0]["description"] ?></p>
             </div>
         </div>
-        <div class="col">
+        <div class="col-6 overflow-hidden">
             <img src="<?php echo $res[0]["photo"] ?>" class="card-img-top" alt="...">
         </div>
 

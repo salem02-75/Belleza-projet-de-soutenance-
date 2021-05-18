@@ -18,7 +18,7 @@ include 'fonctions/tronque.php';
                 <p class="card-text"><?php echo $res[0]["description"] ?></p>
             </div>
         </div>
-        <div class="col">
+        <div class="col overflow-hidden">
             <img src="<?php echo $res[0]["photo"] ?>" class="card-img-top" alt="...">
         </div>
 
