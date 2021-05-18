@@ -80,8 +80,8 @@
                         <span class="d-sm-none d-md-none border-left my-3 pr-3"></span>
                         <div class="d-flex flex-column">
                             <!-- rajouter les liens # -->
-                            <a href="coiffure-php" class="py-2 ">Coiffure</a>
-                            <a href="esthétique.php" class="py-2">Esthétique</a>
+                            <a href="coiffure.php" class="py-2 ">Coiffure</a>
+                            <a href="esthetique.php" class="py-2">Esthétique</a>
                             <a href="massage.php" class="py-2">Massage</a>
                         </div>
                     </div>

@@ -12,10 +12,19 @@
 
 /* les fonts familly */
 
+
 /*  font-family: 'Belleza', sans-serif;*/
+
+
 /*  belleza  => text  */
+
+
 /* font-family: 'Didact Gothic', sans-serif;*/
+
+
 /*  Gothic  => titre */
+
+
 /*  Arial  => boutons */
 
 * {
@@ -25,8 +34,12 @@
     /*14 px*/
 }
 
+
 /* POLICE */
+
+
 /* Font family*/
+
 p {
     font-family: 'belleza', sans-serif;
 }
@@ -37,10 +50,11 @@ h3,
 h4,
 h5 {
     font-family: 'Didact Gothic', sans-serif;
-
 }
 
+
 /*fpnt-siz*/
+
 h1 {
     font-size: 2rem;
 }
@@ -72,6 +86,7 @@ h3 {
 
 
 /*bg Navbar */
+
 .bg-navbar {
     background: #00c2cb;
 }
@@ -107,7 +122,7 @@ h3 {
     width: 146px;
 }
 
-.banniere .container{
+.banniere .container {
     position: relative;
     min-height: 60vh;
     width: 100%;
@@ -122,10 +137,11 @@ h3 {
     font-size: 15px;
 }
 
-.banniere img{
+.banniere img {
     /* width: 50%; */
     width: 100%
 }
+
 
 /* ------  BOUTON A BELLEZA  ------ */
 
@@ -155,29 +171,34 @@ h3 {
     overflow: hidden;
 }
 
+
 /* =======================================
         <-- LE BODY-->
 =========================================*/
+
 
 /* =======================================
         <-- SERVICE -->
 =========================================*/
 
-#service h3, .service-title, .avis-title, .avis-title span{
+#service h3,
+.service-title,
+.avis-title,
+.avis-title span {
     font-size: 2.25rem;
 }
 
-#service .card-body  h3 a{
-color:#dc3545 ;
-font-size: 1,75rem;
+#service .card-body h3 a {
+    color: #dc3545;
+    font-size: 1, 75rem;
 }
 
 #service .card-body {
     height: 225px;
 }
 
-#service .card-body p{
-    font-family: 'belleza',sans-serif;
+#service .card-body p {
+    font-family: 'belleza', sans-serif;
 }
 
 
@@ -185,9 +206,11 @@ font-size: 1,75rem;
         <-- SERVICE FIN -->
 =========================================*/
 
+
 /* =======================================
         <-- Les AVIS -->
 =========================================*/
+
 .carousel-indicators {
     left: 0;
     top: auto;
@@ -211,25 +234,33 @@ font-size: 1,75rem;
     background-color: aliceblue;
     border-radius: 18px;
 }
+
+
 /* =======================================
         <-- Les AVIS FIN -->
 =========================================*/
 
+
 /* ========================================= 
             <-- ENGAGEMENTS -->
  ========================================= */
-.img-icon{
+
+.img-icon {
     width: 70px;
     height: 80px;
-    margin-left: 28px;
+    display: flex;
+    margin: auto;
 }
-#engagement  h3{
-    color:#00c2cb;
+
+#engagement h3 {
+    color: #00c2cb;
 }
+
 
 /* =======================================
         <-- Footer -->
 =========================================*/
+
 .footer a {
     font-size: 1.2rem;
     font-family: 'Didact Gothic', sans-serif;
@@ -240,17 +271,23 @@ font-size: 1,75rem;
     background-color: #494f56;
 }
 
+
 /* la bordure de  btn-footer */
+
 .btn-outline {
     border: 1px solid #6ce5e8;
 }
 
+
 /* le hover de btn-footer "Déposer une annonce"  */
+
 .btn-outline:hover {
     background-color: #6ce5e8;
 }
 
+
 /* btn a:hover */
+
 .btn-outline a:hover {
     color: #494f56;
 }
@@ -266,10 +303,11 @@ font-size: 1,75rem;
 .footer a {
     text-decoration: none;
     color: #f1f1f1;
-
 }
 
+
 /* all a : hover ,not les a de contacte */
+
 .footer :hover {
     color: #6ce5e8;
 }
@@ -285,16 +323,21 @@ hr {
 
 
 /* color &  le hover des icons réseaux */
+
 .liste-medias a {
     font-size: 30px;
 }
 
+
 /* facebook */
+
 .liste-medias a:nth-child(1) i {
     color: #1DA0F0;
 }
 
+
 /* hover */
+
 .liste-medias a:nth-child(1) i:hover {
     color: #f1f1f1;
     transition: transforme ease-in-out 0.2s;
@@ -302,6 +345,7 @@ hr {
 
 
 /* instagram */
+
 .liste-medias a:nth-child(2) i {
     color: transparent;
     background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
@@ -309,7 +353,9 @@ hr {
     font-weight: 600;
 }
 
+
 /* hover */
+
 .liste-medias a:nth-child(2) i:hover {
     color: #Ffffff;
     transition: transforme ease-in-out 0.2s;
@@ -317,15 +363,19 @@ hr {
 
 
 /* twitter */
+
 .liste-medias a:nth-child(3) i {
     color: #1DA0F0;
 }
 
+
 /* hover */
+
 .liste-medias a:nth-child(3) i:hover {
     color: #Ffffff;
     transition: transforme ease-in-out 0.2s;
 }
+
 
 /* =======================================
         <-- footer fin -->
@@ -337,39 +387,37 @@ hr {
     background-color: #24262942;
 }    */
 
+
 /* =======================================
         <-- Responsive -->
 =========================================*/
 
+
 /* a partir de 767px Medium md Tablette */
+
+
 /* max = ou > que 767px */
+
 @media (min-width: 767px) {
     .footer hr {
         display: flex;
     }
-
-
     /* btn déposer une annonce */
     .footer .btn {
         display: flex;
-
     }
-
     .footer .btn:hover {
         color: gray;
     }
-
     /* les réseaux sociaux */
     .footer-medias .liste-medias a i {
         color: #f1f1f1f1;
     }
-
     /* Facebook : hover */
     .liste-medias a:nth-child(1) i:hover {
         color: #1DA0F0;
         transition: transforme ease-in-out 0.2s;
     }
-
     /* instagram : hover*/
     .liste-medias a:nth-child(2) i:hover {
         color: transparent;
@@ -377,42 +425,36 @@ hr {
         -webkit-background-clip: text;
         font-weight: 600;
     }
-
     /* twitter : hover */
     .liste-medias a:nth-child(3) i:hover {
         color: #1DA0F0;
     }
-
 }
 
+
 /* en dessou de 525px small sm Mobile */
+
 @media (max-width: 425px) {
     .liste-medias {
         margin: 20px 15px 0 15px;
     }
-
     /* les span  */
     /* .border-left .border-right{
             display: none;
     } */
-
     .newsletter {
         display: none;
     }
-
     .carousel-indicators li:nth-child(2) {
         display: none;
     }
-
     .carousel-indicators li:nth-child(3) {
         display: none;
     }
-
 }
+
 @media (max-width: 767px) {
     .newsletter {
         display: none;
     }
-  
 }
-

@@ -36,14 +36,12 @@ include 'parts/header.php';
             <!-- col-1 -->
             <div class=" col-9 col-md-6 col-lg-4  mb-sm-4">
                 <div class="card mb-4">
-                    <a href="#coiffure.php">
-                        <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux"
-                            class="card-img-top imgService">
+                    <a href="coiffure.php">
+                        <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux" class="card-img-top imgService">
                     </a>
 
                     <div class="card-body ">
-                        <h3 class="card-title-service text-center "><a href="coiffure.php"
-                                class="text-decoration-none">Coiffure</a></h3>
+                        <h3 class="card-title-service text-center "><a href="coiffure.php" class="text-decoration-none">Coiffure</a></h3>
                         <p class="text-center text-secondary ">à Domicile</p>
                         <p class="card-text-service text-secondary">Coupe de cheveux pour femme, homme, enfant.Broshing,
                             Mèches et Coloration, Soin de cheveux,,,
@@ -57,14 +55,12 @@ include 'parts/header.php';
             <!-- col-12 -->
             <div class=" col-9 col-md-6 col-lg-4  mb-sm-4 ">
                 <div class="card mb-4">
-                    <a href="#esthétique.php">
-                        <img src="images/esthétique.jpg" alt="image de Esthétique, Maquillage,soin"
-                            class="card-img-top imgService">
+                    <a href="esthetique.php">
+                        <img src="images/esthétique.jpg" alt="image de Esthétique, Maquillage,soin" class="card-img-top imgService">
                     </a>
 
                     <div class="card-body">
-                        <h3 class="card-title text-center"><a href="#Esthétique.php"
-                                class="text-decoration-none">Esthétique</a></h3>
+                        <h3 class="card-title text-center"><a href="#Esthétique.php" class="text-decoration-none">Esthétique</a></h3>
                         <p class="text-center text-secondary ">à Domicile</p>
                         <p class="card-text-service text-secondary">Epilation du corps, Epilation homme, femme,
                             Maquillage, Soin du corps, Beauté des pieds et de mains,,,
@@ -78,7 +74,7 @@ include 'parts/header.php';
             <!-- col-3 -->
             <div class=" col-9 col-md-6 col-lg-4  mb-sm-4 ">
                 <div class="card mb-4 ">
-                    <a href="#massage.php">
+                    <a href="massage.php">
                         <img src="images/massage.jpg" alt="image de massage" class="card-img-top imgService">
                     </a>
 
