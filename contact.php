@@ -13,6 +13,7 @@ include 'parts/header.php';
         <title>contact</title>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="/resources/demos/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script>
@@ -47,45 +48,134 @@ include 'parts/header.php';
                             <div class="description">
                                 <p>
                                     The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-                                     below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus 
-                                     Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
-                                      accompanied by English versions from the 1914 translation by H. Rackham.
+                                    below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus
+                                    Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+                                    accompanied by English versions from the 1914 translation by H. Rackham.
                                 </p>
                             </div>
                             <!-- planning dates dispo horraires etc -->
                             <div>
                                 <div>
-                                
+
                                 </div>
                                 <button>option deux</button>
                             </div>
                         </div>
                         <!-- images de la prestation demander  -->
-                        <div>
-                            <img class="pc
-                            " src="images/img_coiffure.jpeg" alt="">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <img src="images/massage.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Prestation</h5>
+                                        <p>Massage à l'ayurveda aux huils de fleurs d'oranger et de sakura</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="images/pp-profil.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Lieu</h5>
+                                        <p>Lieu zen avec un esprit floral</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/esthétique.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Pratitien</h5>
+                                        <p>Marie diplomé depuis 3ans</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-
                     </div>
                     <!-- block contact avec contact deroulant  -->
                     <div class="contact">
-                        <button class="swip"> &#8593;</button>
+                     
+                        <button  type="button" class="btn btn-outline-secondary">&#8593;</button>
 
                         <div class="contact-child">
 
                             <a href="">
+                                <form>
+
+                                    <label>Sexe</label>
+
+                                    <!-- Radiobutton -->
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="radio1">
+                                        <label class="custom-control-label" for="radio1">homme</label>
+                                    </div>
+
+                                    <!-- Radiobutton -->
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="radio1">
+                                        <label class="custom-control-label" for="radio1">femme</label>
+                                    </div>
+
+
+                                </form>
 
                                 <form action="contact.php" method="post">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="mail">Prenom</label>
+                                                <input id="mail" class="form-control" type="text" name="" placeholder="Entrer votreprenom">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="numéro">Nom</label>
+                                                <input id="numéro" class="form-control" type="text" name="" placeholder="Entrer votre nom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="mail">Mail</label>
+                                                <input id="mail" class="form-control" type="text" name="" placeholder="Entrer votre mail">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="numéro">Numéro</label>
+                                                <input id="numéro" class="form-control" type="text" name="" placeholder="Entrer votre numéro">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="adresse">Adresse</label>
+                                                <input id="adresse" class="form-control" type="text" name="" placeholder="Entrer votre adresse">
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    Mail: <input type="text" name="mail" value="" />
-                                    <br />
-                                    Sujet: <input type="text" name="sujet" value="" />
-                                    <br />
-                                    Message: <textarea name="message" cols="40" rows="20"></textarea>
-                                    <br />
-                                    <input type="submit" name="envoyer" value="Envoyer" />
+                                    <button class="btn btn-primary">Envoyer</button>
+                                </form>
 
 
+                                </form>
+                                <form>
+                                    <button class="btn btn-danger">je souhaite etre recontacter par telephone
+                                    </button>
+                                    <button class="btn btn-warning">je souhaite etre recontacter par mail
+                                    </button>
+                                    <button class="btn btn-success">envoyer validation de rdv par mail
+                                    </button>
+                                    <button class="btn btn-primary">envoyer validation de rdv par sms
+                                    </button>
                                 </form>
                             </a>
 
@@ -95,6 +185,15 @@ include 'parts/header.php';
 
 
             </main>
+
+
+
+
+
+
+
+
+
         </head>
 
     </html>
@@ -135,10 +234,6 @@ include 'parts/header.php';
             text-align: left;
         }
 
-        .description {
-            /* background-color:#6ce5e8 ; */
-        }
-
         .pp {
             width: 50px;
             border-radius: 25px;
@@ -158,24 +253,11 @@ include 'parts/header.php';
             text-align: center;
             margin: 50px;
             background-color: #00000021;
-            
+
 
         }
 
-        .swip {
-            background-color: #e86f6c;
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 20px;
-            margin-top: 10px;
-            font-size: 30px;
-            /* height: 25px; */
-        }
 
-        .swip:hover {
-            background-color: #eb9a95;
-        }
 
         .contact {
             position: relative;
@@ -187,16 +269,10 @@ include 'parts/header.php';
             display: none;
             background-color: rgba(255, 255, 255, .4);
             min-width: 50px;
-           
+
         }
 
-        .contact-child a {
-            color: black;
-            padding: 20px;
-            text-decoration: none;
-            display: block;
-            margin: 10px;
-        }
+
 
         .contact:hover .contact-child {
             display: block;
