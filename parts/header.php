@@ -26,7 +26,7 @@
     <!-- mes styles CSS -->
     <link rel="stylesheet" href="style/style.css">
 
-    <title> <?php $title_belleza ?> </title>
+    <title>title a changer</title>
     </head>
 
 <body>
