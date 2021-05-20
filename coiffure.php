@@ -1,5 +1,8 @@
 <?php
-include 'parts/header.php';
+
+$page = 'Belleza Coiffure';
+include 'parts/header.php'
+
 ?>
 
 <main class="mb-5">

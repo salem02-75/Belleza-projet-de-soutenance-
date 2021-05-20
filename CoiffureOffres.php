@@ -1,11 +1,12 @@
 <?php
+$page = 'Belleza Offres coiffures';
 include 'parts/header.php';
 include 'fonctions/connectcoiffures.php';
-include 'fonctions/connectiontest.php';
 include 'fonctions/tronque.php';
 ?>
 <?php
-// var_dump($DB->query('SELECT * FROM coiffures'));
+
+
 ?>
 <div class="container">
   <div class="row d-flex justify-content-center mt-5">

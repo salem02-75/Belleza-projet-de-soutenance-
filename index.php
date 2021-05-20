@@ -1,7 +1,5 @@
 <?php
-$title_belleza = 'Belleza';
-?>
-<?php
+$page = 'Belleza Page d"accueil';
 include 'parts/header.php';
 ?>
 

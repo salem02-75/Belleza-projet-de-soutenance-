@@ -1,4 +1,5 @@
 <?php
+$page = 'Belleza Esthétique Offres';
 include 'parts/header.php';
 include 'fonctions/connectesthetiques.php';
 include 'fonctions/tronque.php';

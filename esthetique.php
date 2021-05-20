@@ -1,4 +1,8 @@
+
 <?php
+
+
+$page = 'Belleza Esthétique';
 include 'parts/header.php';
 ?>
 

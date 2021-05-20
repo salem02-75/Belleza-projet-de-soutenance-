@@ -1,6 +1,9 @@
 <?php
-include 'parts/header.php';
 include 'fonctions/connectoffremassage.php';
+$page = 'Belleza Massage'.' ' . $res[0]["nom_societe"];
+
+include 'parts/header.php';
+
 include 'fonctions/tronque.php';
 ?>
 

@@ -1,4 +1,4 @@
 # Creer un nouveau user
 # id: admin
 # mdp :0000
-# Importer ensuite la Base de donnée
+# Importer ensuite la Base de donnée dans la db admin

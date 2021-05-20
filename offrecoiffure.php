@@ -1,6 +1,8 @@
 <?php
-include 'parts/header.php';
 include 'fonctions/connectoffrecoiffure.php';
+$page = 'Belleza coiffure'.' ' . $res[0]["nom_societe"];
+include 'parts/header.php';
+
 include 'fonctions/tronque.php';
 ?>
 

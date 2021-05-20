@@ -1,4 +1,5 @@
 <?php
+$page = 'Belleza Offres Massages';
 include 'parts/header.php';
 include 'fonctions/connectmassages.php';
 include 'fonctions/tronque.php';

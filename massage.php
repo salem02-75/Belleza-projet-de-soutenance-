@@ -1,4 +1,5 @@
 <?php
+$page = 'Belleza Massage';
 include 'parts/header.php';
 ?>
 
