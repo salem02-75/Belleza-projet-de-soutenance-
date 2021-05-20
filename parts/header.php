@@ -26,7 +26,7 @@
     <!-- mes styles CSS -->
     <link rel="stylesheet" href="style/style.css">
 
-    <title>title a changer</title>
+    <title>Belleza</title>
     </head>
 
 <body>

@@ -310,33 +310,33 @@ include 'parts/header.php';
     <div id="engagement">
         <h3 class="text-center my-5">Nos Engagements</h3>
         <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-2 col-md-4 col-4  border border-danger rounded mx-4 my-4">
-                    <img class="img-icon text-center pb-2  " src="images/couplee.png" alt="image de couple">
+            <div class="row ">
+                <div class="col-lg-2 col-md-4 col-4  border border-danger rounded mr-5 my-4">
+                    <img class="img-icon text-center py-3  " src="images/couplee.png" alt="image de couple">
                     <div>
                         <h3 class="py-2 text-center text-uppercase">Satisfaction</h3>
                         <p class="py-3 text-center font-weight-bold">Nos experts seront à la hauteur de vos exigances </p>
                     </div><!-- col-->
                 </div><!-- col-->
 
-                <div class="col-lg-2 col-md-4 col-4  border border-danger rounded mx-4 my-4">
-                    <img class="img-icon text-center pb-2 " src="images/love.png" alt="love">
+                <div class="col-lg-2 col-md-4 col-4  border border-danger rounded mr-5 my-4">
+                    <img class="img-icon text-center py-3 " src="images/love.png" alt="love">
                     <div>
                         <h3 class="py-2 text-center text-uppercase">écoute</h3>
                         <p class="py-3  text-center font-weight-bold">Nos professionnels seront vos amis </p>
                     </div><!-- col-->
                 </div><!-- col-->
 
-                <div class="col-lg-2 col-md-4 col-4  border border-danger rounded mx-4 my-4">
-                    <img class="img-icon text-center pb-2 " class="text-center" src="images/key.png" alt="cles">
+                <div class="col-lg-2 col-md-4 col-4  border border-danger rounded mr-5 my-4">
+                    <img class="img-icon text-center py-3 " class="text-center" src="images/key.png" alt="cles">
                     <div>
                         <h3 class="py-2 text-center text-uppercase">Discrétion</h3>
                         <p class="py-3  text-center font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisic.corrupti!</p>
                     </div><!-- col-->
                 </div><!-- col-->
 
-                <div class="col-lg-2 col-md-4 col-4  border border-danger rounded mx-4 my-4">
-                    <img class="img-icon text-center pb-2 " src="images/love-2.png" alt="groupe de coeurs">
+                <div class="col-lg-2 col-md-4 col-4  border border-danger rounded mr-5 my-4">
+                    <img class="img-icon text-center py-3 " src="images/love-2.png" alt="groupe de coeurs">
                     <div>
                         <h3 class="py-2 text-center text-uppercase">Fidélité</h3>
                         <p class="py-3  text-center font-weight-bold">nous réalisons fréquemment des enquètes client</p>
