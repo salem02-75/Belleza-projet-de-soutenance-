@@ -5,15 +5,16 @@ $dns = 'mysql:dbname=admin;host=localhost';
 $user = 'admin';
 $password = '0000';
 
-
 try {
   $dbh = new PDO($dns, $user, $password);
 } catch (PDOException $e) {
   echo 'Connexion échouée : ' . $e->getMessage();
 }
 
-$sql = "SELECT * FROM massages WHERE `id`=" . $_GET["id"];
+// $sql = "SELECT * FROM `ma tab` ";
 
+// ici on appele tabdb dans chaque page pour relier à la db désirer
+$sql = $tabdb ;
 
 $request = $dbh->prepare($sql);
 
@@ -22,4 +23,6 @@ if ($request->execute()) {
 } else {
   $res = ["error" => "undon't know error"];
 }
+
 ?>
+

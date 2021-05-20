@@ -1,8 +1,10 @@
 <?php
+// $page est une variable qui represente le titre de la page qui se trouve en parts/header.php
 $page = 'Belleza Offres Massages';
 include 'parts/header.php';
-include 'fonctions/connectmassages.php';
-include 'fonctions/tronque.php';
+$tabdb = "SELECT * FROM `massages` ";
+include 'functions/connect.php';
+include 'functions/tronque.php';
 ?>
 <div class="container">
   <div class="row d-flex justify-content-center mt-5">
