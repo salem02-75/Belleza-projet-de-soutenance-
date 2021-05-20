@@ -1,3 +1,7 @@
+<?php
+include 'parts/header.php';
+?>
+
 <html>
 
 <head>
@@ -10,7 +14,7 @@
     <div id="container">
         <!-- zone de connexion -->
 
-        <form action="verification.php" method="POST">
+        <form action="index.php" method="POST">
             <h1>Connexion</h1>
 
             <label><b>Nom d'utilisateur</b></label>
@@ -94,9 +98,9 @@ session_start();
 if(isset($_POST['username']) && isset($_POST['password']))
 {
     // connexion à la base de données
-    $db_username = 'root';
-    $db_password = 'mot_de_passe_bdd';
-    $db_name     = 'nom_bdd';
+    $db_username = 'admin';
+    $db_password = '0000';
+    $db_name     = 'admin';
     $db_host     = 'localhost';
     $db = mysqli_connect($db_host, $db_username, $db_password,$db_name)
            or die('could not connect to database');
@@ -109,28 +113,28 @@ if(isset($_POST['username']) && isset($_POST['password']))
     if($username !== "" && $password !== "")
     {
         $requete = "SELECT count(*) FROM utilisateur where 
-              nom_utilisateur = '".$username."' and mot_de_passe = '".$password."' ";
+              nom_utilisateur = '".$username."' and mot_de_passe = '".$password." ";
         $exec_requete = mysqli_query($db,$requete);
         $reponse      = mysqli_fetch_array($exec_requete);
         $count = $reponse['count(*)'];
         if($count!=0) // nom d'utilisateur et mot de passe correctes
         {
            $_SESSION['username'] = $username;
-           header('Location: principale.php');
+           header('Location: index.php');
         }
         else
         {
-           header('Location: login.php?erreur=1'); // utilisateur ou mot de passe incorrect
+          echo (" votre mot de  passe est incorect") // utilisateur ou mot de passe incorrect
         }
     }
     else
     {
-       header('Location: login.php?erreur=2'); // utilisateur ou mot de passe vide
+       header('Location: index.php?erreur=2'); // utilisateur ou mot de passe vide
     }
 }
 else
 {
-   header('Location: login.php');
+   header('Location: index.php');
 }
 mysqli_close($db); // fermer la connexion
 ?>
@@ -161,4 +165,26 @@ il crée une session au nom d'utilisateur et se redirige vers la page index.php.
             
         </div>
     </body>
+</html>
+
+<?php
+    include 'parts/footer.php';
+    ?>
+
+
+
+<html>
+
+<head>
+
+
+<body>
+    <p>
+    
+    LE MOT DE PASSE OU L IDENTIFIANT N'EST PAS CORRECT 
+    
+    </p>
+</body>
+</head>
+
 </html>
