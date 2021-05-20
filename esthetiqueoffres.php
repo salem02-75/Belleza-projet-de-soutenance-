@@ -10,6 +10,51 @@ include 'functions/tronque.php';
 <div class="container">
   <div class="row d-flex justify-content-center mt-5">
 
+    <!-- filtre/recherche -->
+    <form>
+      <div class="form-row align-items-center d-sm-felx justify-content-end mr-2">
+        <div class="col-auto my-3">
+          <label class="ml-sm-auto sr-only" for="inlineFormCustomSelect">Preference</label>
+          <!-- choix de la ville -->
+          <label for="validationServer04">ville</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <!-- <option selected>Ville</option> -->
+            <option value="1">Paris</option>
+            <option value="2">Lyon</option>
+            <option value="3">Lile</option>
+            <option value="4">Marseille</option>
+          </select>
+        </div>
+
+        <!-- choix du sex du pro -->
+        <div class="col-auto my-3">
+          <label for="validationServer04">Genre</label>
+          <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option value="1">Homme</option>
+            <option value="2">Femme</option>
+            <option value="3">Pas de préférence</option>
+          </select>
+        </div>
+
+        <!-- disponibilité  -->
+        <div class="col-auto my-3">
+          <label for="validationServer04">Disponibilité</label>
+          <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option value="1">Semaine</option>
+            <option value="2">Week-end</option>
+            <option value="3">Tout</option>
+          </select>
+        </div>
+
+        <div class="col-auto mt-4">
+          <button type="" class="btn btn-primary ">Filtrer</button>
+        </div>
+      </div>
+    </form>
+    <!-- fin de filtre -->
+
     <?php for ($i = 0; $i < count($res); $i++) : ?>
       <!--template pour une future boucle php -->
 
