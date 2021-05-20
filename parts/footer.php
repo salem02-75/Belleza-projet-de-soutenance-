@@ -95,7 +95,7 @@
                         <span class="d-sm-none d-md-none border-left my-3 pr-3"></span>
                         <div class="d-flex flex-column">
                             <!-- rajouter les liens # -->
-                            <a href="" class="py-2">Mention légal</a>
+                            <a href="html-annexe/mention_legal.php" class="py-2">Mention légal</a>
                             <a href="" class="py-2">FAQ/Aide</a>
                             <a href="" class="py-2">Les avis</a>
                         </div>
@@ -117,7 +117,7 @@
                         <div class="d-flex flex-column">
                             <!-- rajouter les liens # -->
                             <a href="" class="d-md-none d-lg-none py-2">Déposer un annonce</a>
-                            <a href="" class="d-lg-none d-md-none py-2">Newsletter</a>
+                            <a href="html-annexe/newsletter.php" class="d-lg-none d-md-none py-2">Newsletter</a>
                             <a href="" class="d-md-none d-lg-none py-2">Nous-contacter</a>
                         </div>
 
