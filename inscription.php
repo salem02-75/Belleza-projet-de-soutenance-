@@ -95,8 +95,8 @@ if(isset($_POST['username']) && isset($_POST['password']))
 {
     // connexion à la base de données
     $db_username = 'root';
-    $db_password = '1234';
-    $db_name     = 'aida';
+    $db_password = 'mot_de_passe_bdd';
+    $db_name     = 'nom_bdd';
     $db_host     = 'localhost';
     $db = mysqli_connect($db_host, $db_username, $db_password,$db_name)
            or die('could not connect to database');
@@ -109,7 +109,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
     if($username !== "" && $password !== "")
     {
         $requete = "SELECT count(*) FROM utilisateur where 
-              nom_utilisateur = '".$username."' and mot_de_passe = '".$password." ";
+              nom_utilisateur = '".$username."' and mot_de_passe = '".$password."' ";
         $exec_requete = mysqli_query($db,$requete);
         $reponse      = mysqli_fetch_array($exec_requete);
         $count = $reponse['count(*)'];
@@ -134,3 +134,31 @@ else
 }
 mysqli_close($db); // fermer la connexion
 ?>
+
+
+
+<!-- Dernière étape, le serveur vérifie si les informations fournies sont correctes, et si c'est le cas, 
+il crée une session au nom d'utilisateur et se redirige vers la page principale.php.  -->
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    </head>
+    <body style='background:#fff;'>
+        <div id="content">
+            <!-- tester si l'utilisateur est connecté -->
+            <?php
+                session_start();
+                if($_SESSION['username'] !== ""){
+                    $user = $_SESSION['username'];
+                    // afficher un message
+                    echo "Bonjour $user, vous êtes connecté";
+                }
+            ?>
+            
+        </div>
+    </body>
+</html>
