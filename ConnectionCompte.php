@@ -138,7 +138,7 @@ mysqli_close($db); // fermer la connexion
 
 
 <!-- Dernière étape, le serveur vérifie si les informations fournies sont correctes, et si c'est le cas, 
-il crée une session au nom d'utilisateur et se redirige vers la page principale.php.  -->
+il crée une session au nom d'utilisateur et se redirige vers la page index.php.  -->
 
 
 <html>
