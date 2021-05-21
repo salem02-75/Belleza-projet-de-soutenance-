@@ -1,12 +1,13 @@
 <?php
+// $page est une variable qui represente le titre de la page qui se trouve en parts/header.php
+$page = 'Belleza Massage';
 include 'parts/header.php';
 ?>
-
 
 <main class="mb-5">
     <div class="container">
         <div class="row">
-        <!-- Titre / Presentation / Buttom -->
+            <!-- Titre / Presentation / Buttom -->
             <div class="col-xl-6 col-md-6 col-sm-12">
                 <!-- Titre -->
                 <div class="mb-5 mt-5">
@@ -20,29 +21,16 @@ include 'parts/header.php';
                 <div class="d-flex justify-content-end">
                     <a class="button_belleza justify-content-end" href="massageoffres.php">Consulter</a>
                 </div>
-
-
             </div>
             <!-- Image -->
             <div class="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mt-5">
                 <div class="taille_img overflow-hidden">
                     <img src="/images/massage.jpg" alt="">
-
                 </div>
-
-
-
             </div>
         </div>
-        
-
-
-
     </div>
-
-
 </main>
-
 
 <?php
 include 'parts/footer.php';

@@ -1,7 +1,6 @@
 <?php
-$title_belleza = 'Belleza';
-?>
-<?php
+// $page est une variable qui represente le titre de la page qui se trouve en parts/header.php
+$page = 'Belleza Page d"accueil';
 include 'parts/header.php';
 ?>
 
