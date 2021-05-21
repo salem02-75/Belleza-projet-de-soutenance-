@@ -1,7 +1,5 @@
 <?php
-
 include 'functions/connect.php';
-
 // lance la fonction de connection a la db
 $dbh = db_connect();
 // $sql est la direction de la tab dans la base de donné qui agis sur functions/connect.php

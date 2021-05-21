@@ -95,9 +95,9 @@
                         <span class="d-sm-none d-md-none border-left my-3 pr-3"></span>
                         <div class="d-flex flex-column">
                             <!-- rajouter les liens # -->
-                            <a href="html-annexe/mention_legal.php" class="py-2">Mention légal</a>
+                            <a href="mention_legal.php" class="py-2">Mention légal</a>
                             <a href="" class="py-2">FAQ/Aide</a>
-                            <a href="" class="py-2">Les avis</a>
+                            <a href="avis2.php" class="py-2">Les avis</a>
                         </div>
 
                     </div>
