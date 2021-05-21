@@ -1,10 +1,13 @@
 <?php
 // $page est une variable qui represente le titre de la page qui se trouve en parts/header.php
-$page = 'Belleza Esthétique Offres';
+$page = 'Belleza Offres Esthétique';
 include 'parts/header.php';
-// $tabdb est la direction de la tab dans la base de donné qui agis sur functions/connect.php
-$tabdb = "SELECT * FROM `esthetiques` ";
 include 'functions/connect.php';
+// lance la fonction de connection a la db
+$dbh = db_connect();
+// $sql est la direction de la tab dans la base de donné qui agis sur functions/connect.php
+$sql = "SELECT * FROM `esthetiques` ";
+$res = request_sql($dbh, $sql);
 include 'functions/tronque.php';
 ?>
 
