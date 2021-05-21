@@ -97,7 +97,7 @@ include 'parts/header.php';
     <!-- ========================================= -->
     <!-- avis -->
     <!-- ========================================= -->
-    <div id="avis" class="pb-5">
+    <div id="avis" class="pb-5 my-100">
         <h2 class="avis-title d-flex justify-content-center mt-5">Les avis de nos <span class="text-danger ml-2">
                 fidèles</span></h2>
         <div class="container my-5 ">
@@ -306,45 +306,46 @@ include 'parts/header.php';
     <!-- ========================================= -->
     <!-- ENGZGEMENTS -->
     <!-- ========================================= -->
-    <div id="engagement">
-        <h3 class="text-center my-5">Nos Engagements</h3>
+    <div id="engagement my-150">
+        <h2 class="text-center my-5">Nos Engagements</h2>
         <div class="container">
-            <div class="row ">
-                <div class="col-lg-2 col-md-4 col-4  border border-danger rounded mr-5 my-4">
-                    <img class="img-icon text-center py-3  " src="images/couplee.png" alt="image de couple">
+            <div class="row justify-content-center">
+                <div class="box-col col-9 col-md-5 col-lg-2 bg-light  border-0 rounded  mx-3 my-4">
+                    <img class="img-icon text-center my-3  " src="images/couplee.png" alt="image de couple">
                     <div>
-                        <h3 class="py-2 text-center text-uppercase">Satisfaction</h3>
-                        <p class="py-3 text-center font-weight-bold">Nos experts seront à la hauteur de vos exigances </p>
+                        <h3 class=" text-center py-3 text-uppercase">Satisfaction</h3>
+                        <p class="text-center  pb-3  font-weight-bold">Nos experts seront à la hauteur de vos exigances </p>
                     </div><!-- col-->
                 </div><!-- col-->
 
-                <div class="col-lg-2 col-md-4 col-4  border border-danger rounded mr-5 my-4">
-                    <img class="img-icon text-center py-3 " src="images/love.png" alt="love">
+                <div class="box-col col-9 col-md-5 col-lg-2 bg-light  border-0rounded    mx-3 my-4">
+                    <img class="img-icon text-center my-3 " src="images/love.png" alt="love">
                     <div>
-                        <h3 class="py-2 text-center text-uppercase">écoute</h3>
-                        <p class="py-3  text-center font-weight-bold">Nos professionnels seront vos amis </p>
+                        <h3 class=" text-center py-3 text-uppercase">écoute</h3>
+                        <p class=" text-center pb-3   font-weight-bold">Nos professionnels seront vos amis </p>
                     </div><!-- col-->
                 </div><!-- col-->
 
-                <div class="col-lg-2 col-md-4 col-4  border border-danger rounded mr-5 my-4">
-                    <img class="img-icon text-center py-3 " class="text-center" src="images/key.png" alt="cles">
+                <div class="box-col col-9 col-md-5 col-lg-2 bg-light  border-0rounded    mx-3 my-4">
+                    <img class="img-icon text-center my-3 " class="text-center" src="images/key.png" alt="cles">
                     <div>
-                        <h3 class="py-2 text-center text-uppercase">Discrétion</h3>
-                        <p class="py-3  text-center font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisic.corrupti!</p>
+                        <h3 class=" text-center py-3 text-uppercase">Discrétion</h3>
+                        <p class=" text-center pb-3   font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisic.corrupti!</p>
                     </div><!-- col-->
                 </div><!-- col-->
 
-                <div class="col-lg-2 col-md-4 col-4  border border-danger rounded mr-5 my-4">
-                    <img class="img-icon text-center py-3 " src="images/love-2.png" alt="groupe de coeurs">
+                <div class="box-col col-9 col-md-5 col-lg-2 bg-light  border-0rounded   mx-3 my-4">
+                    <img class="img-icon text-center my-3 " src="images/love-2.png" alt="groupe de coeurs">
                     <div>
-                        <h3 class="py-2 text-center text-uppercase">Fidélité</h3>
-                        <p class="py-3  text-center font-weight-bold">nous réalisons fréquemment des enquètes client</p>
+                        <h3 class=" text-center py-3 text-uppercase">Fidélité</h3>
+                        <p class=" text-center pb-3   font-weight-bold">nous réalisons fréquemment des enquètes client</p>
                     </div><!-- col-->
                 </div><!-- col-->
 
             </div><!-- row-->
         </div><!-- container-->
     </div>
+    
     <!-- ========================================= -->
     <!-- ENGAGEMENT FIN -->
     <!-- ========================================= -->
@@ -353,7 +354,7 @@ include 'parts/header.php';
     <!-- Newsletter -->
     <!-- ========================================= -->
 
-    <div id="newsletter" class="container text-white text-center my-5">
+    <div id="newsletter" class="container text-white text-center my-150">
 
         <form action="Newsletter">
             <h1>S'abonner à la newsletter</h1>
