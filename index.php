@@ -349,6 +349,31 @@ include 'parts/header.php';
     <!-- ENGAGEMENT FIN -->
     <!-- ========================================= -->
 
+    <!-- ========================================= -->
+    <!-- Newsletter -->
+    <!-- ========================================= -->
+
+    <div id="newsletter" class="container text-white text-center my-5">
+
+        <form action="Newsletter">
+            <h1>S'abonner à la newsletter</h1>
+            <p class="text-secondary py-1">Restons toujours en contacte avec votre beauté </p>
+            <div class="email-body d-flex justify-content-center mt-3">
+                <i class="fas rounded-left fa-envelope"></i>
+                <input type="email" name="email" value="" placeholder="Entrez votre eamil" class="input-email border-0 ">
+                <button type="button" name="button" class="btn btn-email rounded rounded-right text-white text-uppercase border-0 ">Envoyer</button>
+                <!-- <div class="from-group">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div> -->
+            </div>
+        </form><!-- from-->
+      
+    </div><!-- container- newsletter fin-->
+
+    <!-- ========================================= -->
+    <!-- Newsletter FIN -->
+    <!-- ========================================= -->
+
 </main>
 
 

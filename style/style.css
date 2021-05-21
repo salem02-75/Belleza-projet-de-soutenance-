@@ -255,7 +255,61 @@ h3 {
 #engagement h3 {
     color: #00c2cb;
 }
+/* =======================================
+        <-- Engagement FIN -->
+=========================================*/
 
+
+/* =======================================
+        <-- Newsletter -->
+=========================================*/
+
+
+#newsletter {
+    background-color: #E56969;
+    padding: 100px 40px;
+}
+
+#newsletter p {
+    font-size: 18px;
+}
+
+#newsletter .email-body {
+    height: 40px;
+
+}
+
+#newsletter .email-body > i {
+    background: #6ce5e8;
+    width: 40px;
+    line-height: 40px;
+    cursor: pointer;
+
+}
+
+.input-email,
+.btn-email {
+    /* outline-0 */
+    outline: none !important;
+    border: none !important ;
+
+}
+
+#newsletter .btn-email {
+    background: #6ce5e8;
+}
+.input-email {
+    width: 0px;
+    /* transition en : focus */
+    transition: 0.5s;
+}
+.email-body:hover>.input-email,.input-email:focus{
+    width: 200px;
+    padding:0 15px;
+}
+/* =======================================
+        <-- Newsletter FIN -->
+=========================================*/
 
 /* =======================================
         <-- Footer -->
@@ -376,17 +430,9 @@ hr {
     transition: transforme ease-in-out 0.2s;
 }
 
-
 /* =======================================
         <-- footer fin -->
 =========================================*/
-
-
-/* .copy{
-    width: 100%;
-    background-color: #24262942;
-}    */
-
 
 /* =======================================
         <-- Responsive -->
@@ -394,8 +440,6 @@ hr {
 
 
 /* a partir de 767px Medium md Tablette */
-
-
 /* max = ou > que 767px */
 
 @media (min-width: 767px) {
@@ -450,6 +494,12 @@ hr {
     }
     .carousel-indicators li:nth-child(3) {
         display: none;
+    }
+    /* newsletter */
+    #newsletter h1{
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 27px;
     }
 }
 
