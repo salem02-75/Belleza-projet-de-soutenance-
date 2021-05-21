@@ -4,8 +4,8 @@ include 'parts/header.php';
 
 <?php
 
-$pdo = null;
-$dsn = 'mysql: host=localhost; dbname=admin';
+$pdo = 'admin';
+$dsn = 'mysql: host=localhost; dbname=profil';
 $dbUser = 'admin';
 $pw = "0000";
 
@@ -23,7 +23,7 @@ $pdo->query("SET NAMES UTF8");
 if(isset($_POST['submit'])){ //si le bouton valider a ete enclancher 
 
     if(isset([$_POST['proffesionel'],$_POST['particuiler']])){
-     if($_POST['proffesionnel'] != "" && $_POST['particulier'] !=""){
+        if(isset($_POST['submit']) && isset($_POST['proffesionel']) && isset($_POST['particuiler'])){{
          $insertion = "INSERT INTO table_profil (proffesionel, particulier) VALUES(".$_POST['proffesionel'].", ".$_POST['particulier'].");";
     }
     
@@ -131,7 +131,6 @@ if(isset($msgError)){
 
 
 </main>
-
 
 
 

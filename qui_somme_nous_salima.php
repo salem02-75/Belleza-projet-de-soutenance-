@@ -35,7 +35,7 @@ include 'parts/header.php';
           <div class="col-12 col-sm-6 col-lg-3">
             <div>
              
-              <div> <a href=""><img src="images/face_co(5).png"  class="img-thumbnail" alt=""></a>
+              <div> <a href="qui_somme_nous_guillaume.php"><img src="images/face_co(5).png"  class="img-thumbnail" alt=""></a>
                 
                 <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
               </div>
@@ -53,7 +53,7 @@ include 'parts/header.php';
           <div class="col-12 col-sm-6 col-lg-3">
             <div>
               
-              <div ><a href=""> <img src="images/face_co(4).png"  class="img-thumbnail " alt=""></a>
+              <div ><a href="qui_somme_nous.php"> <img src="images/face_co(4).png"  class="img-thumbnail " alt=""></a>
                 
                 <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
               </div>
@@ -73,7 +73,7 @@ include 'parts/header.php';
           <div class="col-12 col-sm-6 col-lg-3">
             <div>
               
-              <div> <a href=""><img src="images/face_co(3).png"  class="img-thumbnail" alt=""></a>
+              <div> <a href="qui_somme_nous_aida.php"><img src="images/face_co(3).png"  class="img-thumbnail" alt=""></a>
                 
                 <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
               </div>
@@ -92,7 +92,7 @@ include 'parts/header.php';
           <div class="col-12 col-sm-6 col-lg-3">
             <div>
              
-              <div> <a href=""><img src="images/Capture d’écran (2).png"  class="img-thumbnail" alt=""></a>
+              <div> <a href="qui_somme_nous_belleza.php"><img src="images/Capture d’écran (2).png"  class="img-thumbnail" alt=""></a>
                
               
               <div class="single_advisor_details_info">
@@ -106,7 +106,7 @@ include 'parts/header.php';
 
 
 
-<div class="text-center">
+<div class="text-center  p-3 mb-2 bg-secondary text-white">
 
 <h3> A PROPO DE SALIMA</h3>
 
