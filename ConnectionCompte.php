@@ -24,6 +24,9 @@ include 'parts/header.php';
             <input type="password" placeholder="Entrer le mot de passe" name="password" required>
 
             <input type="submit" id='submit' value='LOGIN'>
+
+        <a href="inscription.php">vous n'etes pas inscrit? inscrivez vous ici</a>
+
             <?php
             if (isset($_GET['erreur'])) {
                 $err = $_GET['erreur'];
@@ -124,7 +127,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
         }
         else
         {
-          echo (" votre mot de  passe est incorect") // utilisateur ou mot de passe incorrect
+          echo (" votre mot de  passe est incorect") ;// utilisateur ou mot de passe incorrect
         }
     }
     else
@@ -132,11 +135,9 @@ if(isset($_POST['username']) && isset($_POST['password']))
        header('Location: index.php?erreur=2'); // utilisateur ou mot de passe vide
     }
 }
-else
-{
-   header('Location: index.php');
-}
-mysqli_close($db); // fermer la connexion
+
+
+
 ?>
 
 
@@ -154,14 +155,7 @@ il crée une session au nom d'utilisateur et se redirige vers la page index.php.
     <body style='background:#fff;'>
         <div id="content">
             <!-- tester si l'utilisateur est connecté -->
-            <?php
-                session_start();
-                if($_SESSION['username'] !== ""){
-                    $user = $_SESSION['username'];
-                    // afficher un message
-                    echo "Bonjour $user, vous êtes connecté";
-                }
-            ?>
+           
             
         </div>
     </body>
@@ -178,13 +172,7 @@ il crée une session au nom d'utilisateur et se redirige vers la page index.php.
 <head>
 
 
-<body>
-    <p>
-    
-    LE MOT DE PASSE OU L IDENTIFIANT N'EST PAS CORRECT 
-    
-    </p>
-</body>
+
 </head>
 
 </html>
