@@ -1,0 +1,56 @@
+@media (max-width: 992px) {
+    .button_service {
+        position: absolute;
+        right: 38px;
+        bottom: -13px;
+    }
+}
+
+@media (max-width: 490px) {
+    .gestion_mobile_service {
+        right: 25px;
+        width: 203%;
+        top: -10px;
+    }
+    .taille_img_service_offres img {
+        width: 115%;
+    }
+    .gestion_mobile_service p {
+        font-size: 12px;
+    }
+    .gestion_mobile_service h5 {
+        font-size: 13px;
+    }
+    .description_responsive_mobile {
+        width: 180%;
+    }
+    .button_service {
+        position: absolute;
+        right: 170%;
+    }
+}
+
+@media (min-width: 420px) {
+    .card_mobile_service {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .card_desktop_service {
+        display: none;
+    }
+    .button_service {
+        position: absolute;
+        right: 170%;
+    }
+    .button_belleza {
+        margin: -12px 0 14px 0;
+    }
+    .mobileDesignText p {
+        font-size: 16px;
+    }
+    .mobileDesignText h5 {
+        margin: -15px 0 6px 0;
+    }
+}

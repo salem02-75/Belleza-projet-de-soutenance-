@@ -1,10 +1,10 @@
 <?php
-include '../parts/header.php';
+include 'header.php';
 ?>
 
 
 
 
 <?php
-include '../parts/footer.php';
+include 'footer.php';
 ?>

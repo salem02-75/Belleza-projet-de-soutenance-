@@ -61,45 +61,73 @@ include 'functions/tronque.php';
     <?php for ($i = 0; $i < count($res); $i++) : ?>
       <!--template pour une future boucle php -->
 
-      <!-- Carte Offre -->
-      <div class="card mb-3 mb-5" style="max-width: 125vh;">
-        <div class="row g-0">
 
-          <div class="col-4 overflow-hidden taille_img_service_offres">
-            <!-- IMG -->
-            <img src="<?php echo $res[$i]["photo"] ?>" alt="ALEATOIR">
-          </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <!-- Carte Offre Desktop-->
+        <div class="card card_desktop_service mb-3" style="max-width: 125vh;">
+          <div class="row g-0">
+            <div class="col-4 overflow-hidden taille_img_service_offres">
 
-          <div class="col-6">
-            <div class="card-body">
-              <!-- NOM -->
-              <h5 class="card-title">
-                <?php echo $res[$i]["nom_societe"] ?>
-              </h5>
-              <!-- DESCRIPTION -->
-              <p class="card-text" maxlength="10">
-                <?php
-                echo tronque(utf8_encode($res[$i]["description"]), 100); ?>
-              </p>
-              <!-- LOCALISATION -->
-              <p class="card-text">
-                <small class="text-muted">
-                  <?php echo $res[$i]["localisation"] ?>
-                </small>
-              </p>
+              <!-- IMG -->
+              <img src="<?php echo $res[$i]["photo"] ?>" alt="ALEATOIR">
             </div>
-          </div>
+            <div class="col-6 gestion_mobile_service">
+              <div class="card-body">
 
-          <!-- Ici besoin d'un margin right -->
-          <div class="col-2 d-flex align-items-center ">
-            <div>
-              <a class="button_belleza" href="offremassage.php?id=<?php echo $res[$i]["id"] ?>">Consulter</a>
+                <!-- NOM -->
+                <h5 class="card-title">
+                  <?php echo $res[$i]["nom_societe"] ?>
+                </h5>
+
+                <!-- DESCRIPTION -->
+                <p class="card-text description_responsive_mobile" maxlength="10">
+                  <?php
+                  echo tronque(utf8_encode($res[$i]["description"]), 100); ?>
+                </p>
+
+                <!-- LOCALISATION -->
+                <p class="card-text">
+                  <small class="text-muted">
+                    <?php echo $res[$i]["localisation"] ?>
+                  </small>
+                </p>
+              </div>
             </div>
 
+            <!-- Ici besoin d'un margin right -->
+            <div class="col-2 d-flex align-items-center ">
+              <div>
+                <a class="button_belleza button_service" href="offrecoiffure.php?id=<?php echo $res[$i]["id"] ?>">Consulter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card mobile -->
+        <div class="card_mobile_service">
+          <div class="d-flex justify-content-center mb-5">
+            <div class="card" style="width: 18rem;">
+              <img src="<?php echo $res[$i]["photo"] ?>" alt="ALEATOIR">
+              <small class="text-muted">
+                <?php echo $res[$i]["localisation"] ?>
+              </small>
+              <div class="card-body mobileDesignText">
+                <h5 class="card-title">
+                  <?php echo $res[$i]["nom_societe"] ?>
+                </h5>
+                <p class="card-text">
+                  <?php echo tronque(utf8_encode($res[$i]["description"]), 100); ?>
+                </p>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <a class="button_belleza" href="offrecoiffure.php?id=<?php echo $res[$i]["id"] ?>">Consulter</a>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
-
     <?php endfor; ?>
   </div>
 </div>
