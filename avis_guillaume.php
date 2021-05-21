@@ -29,7 +29,7 @@ $res = request_sql($dbh, $sql);
         <p>votre commentaire <?php echo var_dump($_POST["name"]) ?> n'a pas été ajouter </p>
     <?php endif ?>
 
-    <form action="./avis2.php" method="POST">
+    <form action="./avis_guillaume.php" method="POST">
 
         <input class="form-control p-1 m-3" type="text" name="name" id="name" placeholder="Nom" required>
 
