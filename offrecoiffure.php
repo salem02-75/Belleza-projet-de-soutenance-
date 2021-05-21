@@ -1,6 +1,5 @@
 <?php
 // $tabdb est la direction de la tab dans la base de donné qui agis sur functions/connect.php
-
 $tabdb = "SELECT * FROM coiffures WHERE `id`=" . $_GET["id"];
 include 'functions/connect.php';
 // $page est une variable qui represente le titre de la page qui se trouve en parts/header.php

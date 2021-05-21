@@ -2,6 +2,7 @@
 // $page est une variable qui represente le titre de la page qui se trouve en parts/header.php
 $page = 'Belleza Offres coiffures';
 include 'parts/header.php';
+// $tabdb est la direction de la tab dans la base de donné qui agis sur functions/connect.php
 $tabdb = "SELECT * FROM `coiffures` ";
 include 'functions/connect.php';
 include 'functions/tronque.php';
