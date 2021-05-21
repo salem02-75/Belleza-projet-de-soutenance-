@@ -110,10 +110,8 @@ include 'parts/header.php';
 
 <h3> A PROPO DE SALIMA</h3>
 
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum doloribus error perferendis
- inventore. Quas omnis enim consequatur in ducimus non, ut minus quibusdam adipisci accusantium et
-  repellendus ipsam corrupti ipsa quidem cum laudantium! Quam, dignissimos, nam maiores, facilis
-   accusantium aperiam exercitationem assumenda qui dolore mollitia nobis asperiores officia ad et.</p>
+<p> Salima fait partie de l'equipe Belleza. Chef de projet c'est elle qui dirige les grandes lignes et direction du site et de sa conseption.
+</p>
 
 </div>
 </body>
