@@ -9,7 +9,7 @@
 
                 <!------ col-1 paje contacte ------->
                 <div class="col-lg-4 col-md-4 col-sm-12 d-md-flex d-lg-flex justify-content-center align-items-center ">
-                    <a href="#" class="d-md-flex d-lg-flex d-none">Nous-contacter</a>
+                    <a href="nousContacter.php" class="d-md-flex d-lg-flex d-none">Nous-contacter</a>
                 </div><!-- col-1 -->
 
                 <!------ col-2  Réseaux sociaux------->
