@@ -34,6 +34,8 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
 
     <!-- mes styles CSS -->
     <link rel="stylesheet" href="style/style.css">
+    <!-- pour les pages services -->
+    <link rel="stylesheet" href="style/service.css">
 
     <title><?php echo $page; ?></title>
 
