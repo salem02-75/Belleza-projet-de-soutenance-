@@ -103,7 +103,7 @@ include 'parts/header.php';
                             <div class="row">
                                 <div class="col-md-12 pb-2">
                                     <div class="form-group">
-                                        <input type="email" name="email" id="email" class="form-control"
+                                        <input type="text" name="objet" id="email" class="form-control"
                                             placeholder="Objet de la demande" size="30"
                                             required>
                                     </div>
