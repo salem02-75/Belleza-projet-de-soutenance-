@@ -341,6 +341,14 @@ h3 {
     color: #dc3545;
 }
 
+.contact-body .contact-medias a i{
+    transition: transform 0.25s ease-in-out;
+}
+.contact-body .contact-medias a i:hover{
+    transform: translate(10px,-10px);
+    text-decoration: none;
+}
+
 /* =======================================
         <-- Footer -->
 =========================================*/
