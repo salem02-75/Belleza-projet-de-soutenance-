@@ -60,7 +60,7 @@ include 'parts/header.php'
                     <input type="password" name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">Connexion</button>
+                  <a href="index.php">  <button type="submit" class="btn btn-primary btn-block">Connexion</button></a>
                 </div>   
             </form>
             <p class="text-center"><a href="inscriptionn.php">Inscription</a></p>

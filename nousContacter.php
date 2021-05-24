@@ -3,9 +3,9 @@ $page = 'Belleza Contact';
 include 'parts/header.php';
 ?>
 
-<!-- 
-    //voir les resultats des ainput apres l'envoi des données
-    // var_dump($_post);
+
+    <!-- voir les resultats des ainput apres l'envoi des données
+     var_dump($_post);
 
     //on vérifie si il y l'enoi de données.
     // if($_post){
@@ -31,7 +31,7 @@ include 'parts/header.php';
         <!-- Nous-Contacter-->
         <!-- ========================================= -->
 
-        <section class="  my-5" id="Nous-contacter">
+        <section class="  my-5" id="Nous-contacter"  action="contacter_traitement.php" method="post">
 
             <div class="container  py-5">
 
@@ -115,7 +115,7 @@ include 'parts/header.php';
                                 <div class="col-md-10 col-md-11 pb-4">
                                     <div class="form-group">
                                         <input type="email" name="email" id="email" class="form-control"
-                                            placeholder="Votre adresse mail" pattern=".+@belleza.com" size="30"
+                                            placeholder="Votre adresse mail" pattern="" size="30"
                                             required>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@ include 'parts/header.php';
                                 <div class="col-md-12 pb-2">
                                     <div class="form-group">
                                         <input type="email" name="email" id="email" class="form-control"
-                                            placeholder="Objet de la demande" pattern=".+@belleza.com" size="30"
+                                            placeholder="Objet de la demande" pattern="" size="30"
                                             required>
                                     </div>
                                 </div>
