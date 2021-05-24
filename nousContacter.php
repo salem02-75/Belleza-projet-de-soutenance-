@@ -20,7 +20,7 @@ include 'parts/header.php';
                     <div class="col-md-6 pl-3 my-5">
                         <div>
                         <h3 class="font-weight-bold pb-2">Avant de nous consulter,</h3>
-                                <p>Pensez à voir notre liste de <span><a href="faq-aide.php">FAQ</a></span></p>
+                                <p>Pensez à voir notre liste de <span><a href="faq-aide.php" class="text-decoration-none">FAQ</a></span></p>
                                 <p>Vous pouvez trouvez des avis de nos Pro et leurs fidèles</p>
                                 <a class="btn btn-outline my-3" href="avis.php" role="button">les avis de nos
                                 clients</a>
@@ -34,15 +34,15 @@ include 'parts/header.php';
                                 <!-- <div  class=" "> -->
                                 <!-- <span class=" d-flex border-right "></span> -->
                                 <!-- <div class=" d-flex  "> -->
-                                <a href="#">
+                                <a href="#" class="text-decoration-none">
                                     <i class="fab fa-facebook-f pl-5 "></i>
                                 </a>
 
-                                <a href="#">
-                                    <i class="fab  fa-instagram px-3"></i>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fab  fa-instagram px-3 "></i>
                                 </a>
 
-                                <a href="#">
+                                <a href="#" class="text-decoration-none">
                                     <i class="fab fa-twitter "></i>
                                 </a>
                                 <!-- </div> -->
