@@ -66,7 +66,26 @@
                 ?>
             
             <form action="inscription_traitement.php" method="post">
-                <h2 class="text-center">Inscription</h2>       
+                <h2 class="text-center">Inscription</h2>  
+
+                <!--    parties inscriptions qui ne sont pas misent dans la base de donnée -->
+
+                <div class="form-group">
+                    <input type="text" name="nom" class="form-control" placeholder="Nom" required="required" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input type="prenom" name="email" class="form-control" placeholder="Prenom" required="required" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input type="ville" name="ville" class="form-control" placeholder="Ville" required="required" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input type="genre" name="email" class="form-control" placeholder="Genre" required="required" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input type="proffession" name="proffession" class="form-control" placeholder="Proffession" required="required" autocomplete="off">
+                </div>
+                <!------------------------------------------------------------------------------------------------------------------>     
                 <div class="form-group">
                     <input type="text" name="pseudo" class="form-control" placeholder="Pseudo" required="required" autocomplete="off">
                 </div>
