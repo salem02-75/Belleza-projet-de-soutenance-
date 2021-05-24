@@ -69,14 +69,15 @@ include 'parts/header.php'
                 </div>
                 <!-- bouton connection -->  
                 <div class="form-group">
-                  <a href="index.php">  <button type="submit" class="btn btn-primary btn-block">Connexion</button></a>
+                   <button type="submit" class="btn btn-primary btn-block"><a class= "btn btn-primary" href="index.php">Connexion</a></button> 
                 </div>   
             </form>
             <!-- bouton qui renvoie a l'inscription -->  
-            <p class="text-center"><a href="inscriptionn.php">Inscription</a></p>
+            <p  class="text-center "><a href="inscriptionn.php">Inscription</a></p>
         </div>
 
         <style>
+
             .login-form {
                 width: 340px;
                 margin: 50px auto;
