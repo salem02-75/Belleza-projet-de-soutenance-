@@ -3,12 +3,22 @@
 
     // Si les variables existent et qu'elles ne sont pas vides
     if(!empty($_POST['pseudo']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['password_retype']))
+    // rajouter quand les attribues serons dans la base de donnée 
+   //  && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['genre']) && !empty($_POST['proffession']) && !empty($_POST['ville'])
     {
         // Patch XSS
         $pseudo = htmlspecialchars($_POST['pseudo']);
         $email = htmlspecialchars($_POST['email']);
         $password = htmlspecialchars($_POST['password']);
         $password_retype = htmlspecialchars($_POST['password_retype']);
+
+        // ajouter dans la base de donnée
+
+        // $nom = htmlspecialchars($_POST['nom']);
+        //  $prenom = htmlspecialchars($_POST['prenom']);
+        // $genre = htmlspecialchars($_POST['genre']);
+        // $proffession = htmlspecialchars($_POST['proffession']);
+        //  $ville = htmlspecialchars($_POST['ville']);
 
         // On vérifie si l'utilisateur existe
         $check = $bdd->prepare('SELECT pseudo, email, password FROM utilisateurs WHERE email = ?');
@@ -48,7 +58,12 @@
                                 'pseudo' => $pseudo,
                                 'email' => $email,
                                 'password' => $password,
-                                'ip' => $ip
+                                'ip' => $ip,
+                                'nom' => $nom,
+                                'prennom' => $prenom,
+                                'ville' => $ville,
+                                'genre' => $genre,
+                                'proffession' => $proffession,
                             ));
                             // On redirige avec le message de succès
                             header('Location:inscriptionn.php?reg_err=success');
