@@ -84,9 +84,6 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
                         <!-- espace de connecxion -->
                         <ul class="navbar-nav  d-flex justify-content-center align-items-center">
                             <li class="nav-item">
-                                <a href="#services" class="nav-link text-white font-weight-bold">Pro</a>
-                            </li>
-                            <li class="nav-item">
                                 <a href="indexx.php" class="nav-link text-white font-weight-bold">Conexion</a>
                             </li>
                         </ul>
