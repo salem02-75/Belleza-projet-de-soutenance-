@@ -54,7 +54,7 @@
 
 p {
     font-family: 'belleza', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 h1,
@@ -327,7 +327,9 @@ h3 {
 /* =======================================
         <-- nous-contacter FIN -->
 =========================================*/
-
+#nous-contacter >.btn-outline:hover  {
+    background-color: #6ce5e8;
+}
 
 
 
@@ -372,7 +374,7 @@ h3 {
 }
 
 .footer {
-    background-image: url(/images/logo.svg);
+    background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: right;

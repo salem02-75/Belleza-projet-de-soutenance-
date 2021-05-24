@@ -53,7 +53,7 @@ include 'functions/tronque.php';
         </div>
 
         <div class="col-auto mt-4">
-          <button type="" class="btn btn-primary ">Filtrer</button>
+          <button  class="btn btn-primary ">Filtrer</button>
         </div>
       </div>
     </form>

@@ -31,29 +31,41 @@ include 'parts/header.php';
         <!-- Nous-Contacter-->
         <!-- ========================================= -->
 
-        <section class="  my-5" id="Nous-contacter">
+        <section class="  my-5" id="nous-contacter">
 
             <div class="container  py-5">
 
-                <h1 class="text-center titre-Contact py-4 ">Contactez-nous</h1>
-                <div class="row ">
-                    <div class="col-2 ">
+                <h1 class="text-center titre-Contact py-4 font-weight-bold ">Contactez-nous</h1>
 
-                        <div class="contact-medias d-none ">
-                            <div class="liste-medias d-flex flex-column text-right pt-5 mr-3">
+               
+                <div class="row contact-body mt-5">
+                    <div class="col-md-6 pl-3 my-5">
+                        <div>
+                        <h3 class="font-weight-bold pb-2">Avant de nous consulter..</h3>
+                                <p>Avez-vous pensé a consulter notre liste de <span>FAQ</span></p>
+                                <p>Vous pouvez trouvez consulter des avis de nos Pro et leurs fidèles</p>
+                                <a class="btn btn-outline my-3" href="avis.php" role="button">les avis de nos
+                                clients</a>
+                        </div>
+                            
+                    </div> 
+                    <div class="col-md-4 offset-md-2  ">
+                        <div class="contact-medias   my-5 ">
+                            <h3 class="font-weight-bold pb-2 ">Via nos réseaux sociaux</h3>
+                            <div class="liste-medias    ">
                                 <!-- <div  class=" "> -->
                                 <!-- <span class=" d-flex border-right "></span> -->
                                 <!-- <div class=" d-flex  "> -->
                                 <a href="#">
-                                    <i class="fab fa-facebook-f pb-4"></i>
+                                    <i class="fab fa-facebook-f pl-5 "></i>
                                 </a>
 
                                 <a href="#">
-                                    <i class="fab  fa-instagram pb-4 "></i>
+                                    <i class="fab  fa-instagram px-3"></i>
                                 </a>
 
                                 <a href="#">
-                                    <i class="fab fa-twitter  "></i>
+                                    <i class="fab fa-twitter "></i>
                                 </a>
                                 <!-- </div> -->
                                 <!-- <span class=" border-left "></span> -->
@@ -63,31 +75,20 @@ include 'parts/header.php';
 
                         </div><!-- contact-media-->
                     </div>
-
-                    <div class="col-md-7 mt-5 ">
-
-                        <div class="contact-text">
-                            <p>Vous avez un question concernat l'inscription.</p>
-                            <p>Vous recontrer des défucultés à vous inscrire dans l'éspace Pro.</p>
-                            <p>vous pouvez nous écrire via le formulaire, nous vous repondons dans les plus brefs délis
-                            </p>
-                        </div><!-- fin col-1  -->
-
-                        <div class=" pt-5">
-                        <p>Consultez les conseils et avis de nous clients</p>
-                        <a class="btn btn-outline-secondary " href="avis_guillaume.php" role="button">les avis de nos
-                        clients</a>
-                    </div> 
-
-                        <!-- formulaire -->
-                    </div>
-                   
-                   
                 </div> <!-- row- nous-contacter fin -->
-               
 
                 <div class="row ">
-                    <div class="col-12  col-md-5  mt-5 ">
+
+                    <div class="col-md-6 mt-5 ">
+                        <h3 class="font-weight-bold pb-2 ">Par e-mail</h3>
+                        <div class="contact-text">
+                            <p>Vous avez un question concernat l'inscription.</p>
+                            <p>Besoin d'une précision ou d'un conseil.</p>
+                            <p>vous pouvez nous écrire via le formulaire, nous vous repondons dans les plus brefs délis
+                            </p>
+                        </div><!-- fin col-email  -->
+                    </div>
+                    <div class="  col-md-6  mt-5 ">
                         <!-- Création du formulaire de contact post -->
                         <form action="" method="POST" id="contact-Form" class="bg-danger  rounded mx-auto py-3 px-4">
 
@@ -134,26 +135,24 @@ include 'parts/header.php';
 
                             <div class="row">
                                 <div class="col-md-12 pb-5">
+
                                     <div class="form-group">
                                         <textarea name="message" id="message" cols="30" rows="4" class="form-control"
                                             placeholder="Votre message"></textarea>
                                     </div><!-- fin col message  -->
                                     <div class="col-md-12">
                                         <input type="submit" name="envoyez" value="Envoyez"
-                                            class="btn btn-md btn-success mb-4">
+                                            class="btn btn-md btn-success mb-4 mt-2">
                                     </div>
+
                                 </div><!-- fin row message  -->
 
                             </div>
-                        
-                            <!-- fin row message et bouton -->
                         </form>
 
                     </div> <!-- fin col-2  -->
-                </div>
 
-                
-
+                </div> <!-- fin row-2  -->
 
             </div> <!-- container fin -->
 

@@ -3,7 +3,7 @@ $page = 'Belleza Mention légal';
 include 'parts/header.php';
 ?>
 
-<div class="container mt-5">
+<div class="container my-5">
     
     <h1 class="py-5 font-weight-bold">MENTIONS LEGALES</h1>
     <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique, dite L.C.E.N., nous portons à la connaissance des utilisateurs et visiteurs du site : www.belleza.fr les informations suivantes :</p>
@@ -53,9 +53,9 @@ Le site www.belleza.fr est déclaré à la CNIL sous le numéro 1871984.
 
 Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données.</p>
 </div>
-<div>
-    <h2 class="py-3 font-weight-bold">8. Loi applicable et juridiction compétente :</h2>
-    <p>Les présentes Conditions Générales d'Utilisation et la relation de l'utilisateur avec le site www.belleza en vertu de ces Conditions Générales d'Utilisation sont régies par le droit Français. L’utilisateur ainsi que www.belleza.fr  acceptent de se soumettre à la compétence exclusive des tribunaux Français en cas de litige résultant de ces conditions générales d'utilisation.</p>
+<div class="pb-5">
+    <h2 class="py-3 font-weight-bold ">8. Loi applicable et juridiction compétente :</h2>
+    <p class="pb-5">Les présentes Conditions Générales d'Utilisation et la relation de l'utilisateur avec le site www.belleza en vertu de ces Conditions Générales d'Utilisation sont régies par le droit Français. L’utilisateur ainsi que www.belleza.fr  acceptent de se soumettre à la compétence exclusive des tribunaux Français en cas de litige résultant de ces conditions générales d'utilisation.</p>
 </div>
 
 
