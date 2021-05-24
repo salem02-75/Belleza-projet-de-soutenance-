@@ -1,3 +1,8 @@
+<?php 
+include 'parts/header.php'
+?>
+
+
 <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -100,7 +105,7 @@
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">Inscription</button>
-                    <a href="conectionn.php">se connecter</a>
+                    <a href="indexx.php">se connecter</a>
                 </div>   
             </form>
         </div>
@@ -129,3 +134,7 @@
         </style>
         </body>
 </html>
+
+<?php
+include 'parts/footer.php';
+?>

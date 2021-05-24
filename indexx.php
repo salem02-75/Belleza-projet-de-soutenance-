@@ -1,3 +1,9 @@
+<?php
+include 'parts/header.php'
+?>
+
+
+
 <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -84,3 +90,7 @@
         </style>
         </body>
 </html>
+
+<?php
+include 'parts/footer.php';
+?>
