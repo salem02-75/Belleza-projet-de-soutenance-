@@ -56,7 +56,7 @@
                 <!----- col-3 btn espace pro-------->
                 <div class="col-lg-4 col-md-4  col-sm-12 d-flex justify-content-center align-items-center ">
                     <!-- metre le #lien  de la page pro -->
-                    <button class="btn btn-outline d-none d-md-flex d-lg-flex"><a href="#">Déposer
+                    <button class="btn btn-outline d-none d-md-flex d-lg-flex"><a href="conectionn.php">Déposer
                             une
                             annonce</a></button>
                 </div><!-- col-3 btn espace pro -->
@@ -97,7 +97,7 @@
                             <!-- rajouter les liens # -->
                             <a href="mention_legal.php" class="py-2">Mention légal</a>
                             <a href="" class="py-2">FAQ/Aide</a>
-                            <a href="avis_guillaume.php" class="py-2">Les avis Guillaume</a>
+                            <a href="avis.php" class="py-2">Les avis</a>
                         </div>
 
                     </div>

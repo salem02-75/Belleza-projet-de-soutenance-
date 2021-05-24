@@ -31,11 +31,10 @@ include 'parts/header.php';
         <!-- Nous-Contacter-->
         <!-- ========================================= -->
 
-<<<<<<< HEAD
+
         <section class="  my-5" id="nous-contacter">
-=======
         <section class="  my-5" id="Nous-contacter"  action="contacter_traitement.php" method="post">
->>>>>>> 5836a373516c7c0f9216a64f2381447e74b8a456
+
 
             <div class="container  py-5">
 
