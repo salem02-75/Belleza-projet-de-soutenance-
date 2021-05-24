@@ -94,7 +94,7 @@ include 'parts/header.php';
                                 <div class="col-md-10 col-md-11 pb-4">
                                     <div class="form-group">
                                         <input type="email" name="email" id="email" class="form-control"
-                                            placeholder="Votre adresse mail" pattern="" size="30"
+                                            placeholder="Votre adresse mail"  size="30"
                                             required>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@ include 'parts/header.php';
                                 <div class="col-md-12 pb-2">
                                     <div class="form-group">
                                         <input type="email" name="email" id="email" class="form-control"
-                                            placeholder="Objet de la demande" pattern="" size="30"
+                                            placeholder="Objet de la demande" size="30"
                                             required>
                                     </div>
                                 </div>

@@ -107,7 +107,7 @@
                 <div
                     class="col-lg-4 col-md-4  d-md-flex  d-lg-flex justify-content-lg-center justify-content-md-center  py-md-4 py-lg-4">
                     <a href="newsletter.php" class="newsletter py-2 ">Newsletter</a>
-                    <a href="deconnexion.php" class="d-md-none d-lg-none py-2">se deconnecter</a>
+                    <a href="qui_somme_nous.php" class="  py-2">A propos</a>
 
                 </div><!-- col-2 Newsletter -->
 
