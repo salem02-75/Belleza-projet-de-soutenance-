@@ -3,10 +3,11 @@
 
     // Si les variables existent et qu'elles ne sont pas vides
     if(!empty($_POST['pseudo']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['password_retype']))
+    
     // rajouter quand les attribues serons dans la base de donnée 
    //  && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['genre']) && !empty($_POST['proffession']) && !empty($_POST['ville'])
     {
-        // Patch XSS
+        // Patch XSS affin de securiser 
         $pseudo = htmlspecialchars($_POST['pseudo']);
         $email = htmlspecialchars($_POST['email']);
         $password = htmlspecialchars($_POST['password']);
@@ -26,7 +27,7 @@
         $data = $check->fetch();
         $row = $check->rowCount();
 
-        $email = strtolower($email); // on transforme toute les lettres majuscule en minuscule pour éviter que Foo@gmail.com et foo@gmail.com soient deux compte différents ..
+        $email = strtolower($email); // on transforme toute les lettres majuscule en minuscule pour éviter que Salemaida@live.fr et salemaida@live.fr soient deux compte différents ..
         
         // Si la requete renvoie un 0 alors l'utilisateur n'existe pas 
         if($row == 0){ 

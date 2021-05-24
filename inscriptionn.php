@@ -18,7 +18,8 @@ include 'parts/header.php'
                 if(isset($_GET['reg_err']))
                 {
                     $err = htmlspecialchars($_GET['reg_err']);
-
+                    // switch equivalent de if, si la valeur contenu dans la case est bonne alors elle s'execute, break permet de dire qu'on dois sortire du switch 
+                    // c'est d'un point de vue visuel plus simple que if else if 
                     switch($err)
                     {
                         case 'success':
