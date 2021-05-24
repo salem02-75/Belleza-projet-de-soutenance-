@@ -81,7 +81,7 @@
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">Inscription</button>
-                    <a href="indexx.php">se connecter</a>
+                    <a href="conectionn.php">se connecter</a>
                 </div>   
             </form>
         </div>

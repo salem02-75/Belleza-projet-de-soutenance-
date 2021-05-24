@@ -32,8 +32,7 @@
                             // On stock l'adresse IP
                             $ip = $_SERVER['REMOTE_ADDR']; 
 
-                            /*
-                                Pour ceux qui souhaite mettre en place un système de mot de passe oublié, pensez à mettre le champ token dans votre requête
+                                // requete mot de passe oublier
                                 $insert = $bdd->prepare('INSERT INTO utilisateurs(pseudo, email, password, ip, token) VALUES(:pseudo, :email, :password, :ip, :token)');
                                 $insert->execute(array(
                                     'pseudo' => $pseudo,
@@ -42,7 +41,7 @@
                                     'ip' => $ip,
                                     'token' =>  bin2hex(openssl_random_pseudo_bytes(24))
                                 ));
-                              */
+        
                             // On insère dans la base de données
                             $insert = $bdd->prepare('INSERT INTO utilisateurs(pseudo, email, password, ip) VALUES(:pseudo, :email, :password, :ip)');
                             $insert->execute(array(

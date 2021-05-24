@@ -2,7 +2,7 @@
     session_start();
     // si la session existe pas soit si l'on est pas connecté on redirige
     if(!isset($_SESSION['user'])){
-        header('Location:indexx.php');
+        header('Location:index.php');
         die();
     }
 ?>
