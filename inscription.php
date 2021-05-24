@@ -1,4 +1,5 @@
 <?php
+$page = 'Belleza Inscription';
 include 'parts/header.php';
 ?>
 

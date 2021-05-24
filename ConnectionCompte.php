@@ -1,4 +1,5 @@
 <?php
+$page = 'Belleza Connection compte';
 include 'parts/header.php';
 ?>
 

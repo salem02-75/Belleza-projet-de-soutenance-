@@ -1,4 +1,5 @@
 <?php
+$page = 'Belleza Mention légal';
 include 'parts/header.php';
 ?>
 

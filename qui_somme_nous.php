@@ -1,4 +1,5 @@
 <?php
+$page = 'Belleza Qui somme_nous';
 include 'parts/header.php';
 ?>
 
