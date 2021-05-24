@@ -16,6 +16,13 @@ include 'parts/header.php';
                     <h2>Esthétique</h2>
                 </div>
 
+                <!-- Image Mobile -->
+                <div class="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mt-5 display-mobile-responsive">
+                    <div class="mb-5 overflow-hidden">
+                        <img src="images/esthétique.jpg" alt="">
+                    </div>
+                </div>
+
                 <!-- Présentation -->
                 <div class="mb-5">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga aperiam hic maxime error non accusantium, quas, ut maiores deserunt incidunt quod voluptates ipsum nisi corporis repellendus ipsam dicta praesentium quo eveniet ducimus commodi libero, itaque provident fugit? Dignissimos dicta facilis nemo ipsam, totam iusto labore perferendis quae, minima corporis rerum.</p>
@@ -27,8 +34,8 @@ include 'parts/header.php';
                 </div>
             </div>
 
-            <!-- Image -->
-            <div class="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mt-5">
+            <!-- Image Desktop -->
+            <div class="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mt-5 display-desktop-responsive">
                 <div class="taille_img overflow-hidden">
                     <img src="images/esthétique.jpg" alt="">
                 </div>

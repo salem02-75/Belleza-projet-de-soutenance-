@@ -98,7 +98,7 @@ include 'functions/tronque.php';
             <!-- Ici besoin d'un margin right -->
             <div class="col-2 d-flex align-items-center ">
               <div>
-                <a class="button_belleza button_service" href="offrecoiffure.php?id=<?php echo $res[$i]["id"] ?>">Consulter</a>
+                <a class="button_belleza button_service" href="offreesthetique.php?id=<?php echo $res[$i]["id"] ?>">Consulter</a>
               </div>
             </div>
           </div>
