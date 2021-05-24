@@ -9,7 +9,7 @@
 
                 <!------ col-1 paje contacte ------->
                 <div class="col-lg-4 col-md-4 col-sm-12 d-md-flex d-lg-flex justify-content-center align-items-center ">
-                    <a href="#" class="d-md-flex d-lg-flex d-none">Nous-contacter</a>
+                    <a href="nousContacter.php" class="d-md-flex d-lg-flex d-none">Nous-contacter</a>
                 </div><!-- col-1 -->
 
                 <!------ col-2  Réseaux sociaux------->
@@ -95,9 +95,9 @@
                         <span class="d-sm-none d-md-none border-left my-3 pr-3"></span>
                         <div class="d-flex flex-column">
                             <!-- rajouter les liens # -->
-                            <a href="html-annexe/mention_legal.php" class="py-2">Mention légal</a>
+                            <a href="mention_legal.php" class="py-2">Mention légal</a>
                             <a href="" class="py-2">FAQ/Aide</a>
-                            <a href="" class="py-2">Les avis</a>
+                            <a href="avis_guillaume.php" class="py-2">Les avis Guillaume</a>
                         </div>
 
                     </div>

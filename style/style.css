@@ -27,12 +27,24 @@
 
 /*  Arial  => boutons */
 
+
+/*  background */
+
+
 * {
     margin: 0;
     padding: 0;
     font-size: 0, 875 rem;
     /*14 px*/
 }
+/* margin pour la section : engagement/avis */
+.my-150{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+/* les class background Belleza */
+
 
 
 /* POLICE */
@@ -42,6 +54,7 @@
 
 p {
     font-family: 'belleza', sans-serif;
+    font-size: 1.2em;
 }
 
 h1,
@@ -184,7 +197,7 @@ h3 {
 #service h3,
 .service-title,
 .avis-title,
-.avis-title span {
+.avis-title span,#engagement>h2 {
     font-size: 2.25rem;
 }
 
@@ -266,7 +279,7 @@ h3 {
 
 
 #newsletter {
-    background-color: #E56969;
+    background-color: #E56969 !important;
     padding: 100px 40px;
 }
 
@@ -310,6 +323,18 @@ h3 {
 /* =======================================
         <-- Newsletter FIN -->
 =========================================*/
+
+/* =======================================
+        <-- nous-contacter FIN -->
+=========================================*/
+
+
+
+
+/* =======================================
+        <-- nous-contacter FIN -->
+=========================================*/
+
 
 /* =======================================
         <-- Footer -->
@@ -466,7 +491,7 @@ hr {
     .liste-medias a:nth-child(2) i:hover {
         color: transparent;
         background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
-        -webkit-background-clip: text;
+        background-clip: text;
         font-weight: 600;
     }
     /* twitter : hover */
@@ -478,7 +503,7 @@ hr {
 
 /* en dessou de 525px small sm Mobile */
 
-@media (max-width: 425px) {
+@media (max-width: 576px) {
     .liste-medias {
         margin: 20px 15px 0 15px;
     }
@@ -501,6 +526,15 @@ hr {
         letter-spacing: 2px;
         font-size: 27px;
     }
+
+    #engagement .box-col{
+        /* width: 189px !important;
+        display: flex;
+        /* width: 150px; */
+        /* flex-direction: column; 
+     */
+    }
+    
 }
 
 @media (max-width: 767px) {

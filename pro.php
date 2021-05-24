@@ -1,4 +1,5 @@
 <?php
+$page = 'Belleza Espace Pro';
 include 'parts/header.php';
 ?>
 

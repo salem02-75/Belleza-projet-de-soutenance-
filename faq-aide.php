@@ -1,4 +1,5 @@
 <?php
+$page = 'Belleza FAQ';
 include '../parts/header.php';
 ?>
 
