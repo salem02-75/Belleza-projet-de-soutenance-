@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 include 'parts/header.php';
 ?>
 

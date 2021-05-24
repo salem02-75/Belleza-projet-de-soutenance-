@@ -79,4 +79,4 @@ include 'functions/connect.php';
 <?php
 include 'parts/footer.php';
 ?>
->>>>>>> e30164eba2923a095f0ec39fd9e429a8852360c9
+
