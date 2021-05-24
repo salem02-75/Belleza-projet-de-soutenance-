@@ -44,6 +44,7 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
 
 <body>
     <header>
+    
         <!-- ========================================= -->
         <!-- Navbar start -->
         <!-- ========================================= -->
@@ -86,7 +87,7 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
                                 <a href="#services" class="nav-link text-white font-weight-bold">Pro</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#contact" class="nav-link text-white font-weight-bold">Conexion</a>
+                                <a href="indexx.php" class="nav-link text-white font-weight-bold">Conexion</a>
                             </li>
                         </ul>
                     </div>

@@ -32,15 +32,15 @@
                             <!-- <div  class=" "> -->
                             <!-- <span class=" d-flex border-right "></span> -->
                             <!-- <div class=" d-flex  "> -->
-                            <a href="#">
+                            <a href="https://www.facebook.com/belleza.france">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
 
-                            <a href="#">
+                            <a href="https://www.instagram.com/belleza_france/">
                                 <i class="fab  fa-instagram "></i>
                             </a>
 
-                            <a href="#">
+                            <a href="https://twitter.com/belleza42020217">
                                 <i class="fab fa-twitter "></i>
                             </a>
                             <!-- </div> -->
@@ -107,6 +107,8 @@
                 <div
                     class="col-lg-4 col-md-4  d-md-flex  d-lg-flex justify-content-lg-center justify-content-md-center  py-md-4 py-lg-4">
                     <a href="newsletter.php" class="newsletter py-2 ">Newsletter</a>
+                    <a href="deconnexion.php" class="d-md-none d-lg-none py-2">se deconnecter</a>
+
                 </div><!-- col-2 Newsletter -->
 
                 <!------ col-4  Annonce/Newsletter/contact ------->
