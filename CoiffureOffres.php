@@ -8,7 +8,10 @@ $dbh = db_connect();
 // $sql est la direction de la tab dans la base de donné qui agis sur functions/connect.php
 $sql = "SELECT * FROM `coiffures` ";
 $res = request_sql($dbh, $sql);
+include 'functions/paginationC.php';
 include 'functions/tronque.php';
+
+
 ?>
 
 <div class="container">
@@ -53,13 +56,16 @@ include 'functions/tronque.php';
         </div>
 
         <div class="col-auto mt-4">
-          <button  class="btn btn-primary ">Filtrer</button>
+          <button class="btn btn-primary ">Filtrer</button>
         </div>
       </div>
     </form>
     <!-- fin de filtre -->
 
-    <?php for ($i = 0; $i < count($res); $i++) : ?>
+    <?php
+    for ($i = 0; $i < count($res); $i++) :
+
+    ?>
       <!--template pour une future boucle php -->
 
 
@@ -131,7 +137,45 @@ include 'functions/tronque.php';
       </div>
     <?php endfor; ?>
 
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example mt-5">
+      <ul class="pagination justify-content-center">
+        <li class="page-item 
+         <?php if ($page <= 1) {
+            echo 'disabled';
+          } ?>
+        ">
+          <a class="page-link" href="<?php if ($page <= 1) {
+                                        echo '#';
+                                      } else {
+                                        echo "?page=" . $prev;
+                                      } ?>">Previous</a>
+        </li>
+
+        <?php for ($i = 1; $i <= $totoalPages; $i++) : ?>
+          <li class="page-item <?php if ($page == $i) {
+                                  echo 'active';
+                                } ?>">
+            <a class="page-link" href="CoiffureOffres.php?page=<?= $i; ?>"> <?= $i; ?> </a>
+          </li>
+        <?php endfor; ?>
+
+        <li class="page-item <?php if ($page >= $totoalPages) {
+                                echo 'disabled';
+                              } ?>">
+          <a class="page-link" href="<?php if ($page >= $totoalPages) {
+                                        echo '#';
+                                      } else {
+                                        echo "?page=" . $next;
+                                      } ?>">Next</a>
+        </li>
+      </ul>
+    </nav>
   </div>
+<!-- fin pagination -->
+
+
+</div>
 </div>
 
 <?php

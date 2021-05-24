@@ -8,6 +8,7 @@ $dbh = db_connect();
 // $sql est la direction de la tab dans la base de donné qui agis sur functions/connect.php
 $sql = "SELECT * FROM `esthetiques` ";
 $res = request_sql($dbh, $sql);
+include 'functions/paginationE.php';
 include 'functions/tronque.php';
 ?>
 
@@ -130,8 +131,46 @@ include 'functions/tronque.php';
         </div>
       </div>
     <?php endfor; ?>
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example mt-5">
+      <ul class="pagination justify-content-center">
+        <li class="page-item 
+         <?php if ($page <= 1) {
+            echo 'disabled';
+          } ?>
+        ">
+          <a class="page-link" href="<?php if ($page <= 1) {
+                                        echo '#';
+                                      } else {
+                                        echo "?page=" . $prev;
+                                      } ?>">Previous</a>
+        </li>
 
+        <?php for ($i = 1; $i <= $totoalPages; $i++) : ?>
+          <li class="page-item <?php if ($page == $i) {
+                                  echo 'active';
+                                } ?>">
+            <a class="page-link" href="esthetiqueoffres.php?page=<?= $i; ?>"> <?= $i; ?> </a>
+          </li>
+        <?php endfor; ?>
+
+        <li class="page-item <?php if ($page >= $totoalPages) {
+                                echo 'disabled';
+                              } ?>">
+          <a class="page-link" href="<?php if ($page >= $totoalPages) {
+                                        echo '#';
+                                      } else {
+                                        echo "?page=" . $next;
+                                      } ?>">Next</a>
+        </li>
+      </ul>
+    </nav>
   </div>
+  <!-- fin pagination -->
+
+
+
+</div>
 </div>
 
 <?php
