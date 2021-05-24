@@ -2,31 +2,6 @@
 $page = 'Belleza Contact';
 include 'parts/header.php';
 ?>
-
-
-    <!-- voir les resultats des ainput apres l'envoi des données
-     var_dump($_post);
-
-    //on vérifie si il y l'enoi de données.
-    // if($_post){
-        //si il y a un clique on vérifie l'envoi
-        // if(isset($_poste['envoyer'])){
-
-            // traitement des données
-            // si l'input Nom exiiste , on prend sa value, sinon $nom = à rien (valable en PHP)
-            // htmlentities = protection => pour eviter d'ecrire un scripte dans le chemin
-            
-            // $nom = isset($_post ['nom']) ? htmlentities($post['nom']): '';
-            // $prenom = isset($_post ['prenom']) ? htmlentities($post['prenom']): '';
-            // $mail = isset($_post ['mail']) ? htmlentities($post['mail']): '';
-            // $objet = isset($_post ['objet']) ? htmlentities($post['objet']): '';
-            // $message = isset($_post ['message']) ? htmlentities($post['message']): '';
-        
-            // }
-        // }
-     -->
-   
-
          <!-- ========================================= -->
         <!-- Nous-Contacter-->
         <!-- ========================================= -->
@@ -44,9 +19,9 @@ include 'parts/header.php';
                 <div class="row contact-body mt-5">
                     <div class="col-md-6 pl-3 my-5">
                         <div>
-                        <h3 class="font-weight-bold pb-2">Avant de nous consulter..</h3>
-                                <p>Avez-vous pensé a consulter notre liste de <span>FAQ</span></p>
-                                <p>Vous pouvez trouvez consulter des avis de nos Pro et leurs fidèles</p>
+                        <h3 class="font-weight-bold pb-2">Avant de nous consulter,</h3>
+                                <p>Pensez à voir notre liste de <span><a href="faq-aide.php">FAQ</a></span></p>
+                                <p>Vous pouvez trouvez des avis de nos Pro et leurs fidèles</p>
                                 <a class="btn btn-outline my-3" href="avis.php" role="button">les avis de nos
                                 clients</a>
                         </div>
