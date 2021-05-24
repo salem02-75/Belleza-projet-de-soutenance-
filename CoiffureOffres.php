@@ -89,7 +89,7 @@ include 'functions/tronque.php';
                 <!-- DESCRIPTION -->
                 <p class="card-text description_responsive_mobile" maxlength="10">
                   <?php
-                  echo tronque(utf8_encode($res[$i]["description"]), 100); ?>
+                  echo tronque($res[$i]["description"], 100); ?>
                 </p>
 
                 <!-- LOCALISATION -->
@@ -123,7 +123,7 @@ include 'functions/tronque.php';
                   <?php echo $res[$i]["nom_societe"] ?>
                 </h5>
                 <p class="card-text">
-                  <?php echo tronque(utf8_encode($res[$i]["description"]), 100); ?>
+                  <?php echo tronque($res[$i]["description"], 100); ?>
                 </p>
               </div>
 
