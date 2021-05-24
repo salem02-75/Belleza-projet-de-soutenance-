@@ -17,9 +17,9 @@ include 'parts/header.php';
 
                
                 <div class="row contact-body mt-5">
-                    <div class="col-md-6 pl-3 my-5">
+                    <div class="col-md-6 pl-3 my-5 ">
                         <div>
-                        <h3 class="font-weight-bold pb-2">Avant de nous consulter,</h3>
+                        <h3 class="font-weight-bold pb-2 ">Avant de nous consulter,</h3>
                                 <p>Pensez à voir notre liste de <span><a href="faq-aide.php" class="text-decoration-none">FAQ</a></span></p>
                                 <p>Vous pouvez trouvez des avis de nos Pro et leurs fidèles</p>
                                 <a class="btn btn-outline my-3" href="avis.php" role="button">les avis de nos
