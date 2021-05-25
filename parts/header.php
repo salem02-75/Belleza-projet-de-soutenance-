@@ -47,10 +47,10 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
         <!-- ========================================= -->
         <!-- Navbar start -->
         <!-- ========================================= -->
-<header class="">
+<header>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-info shrink">
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar shrink">
     <div class="container">
 
         <!-- logo -->
