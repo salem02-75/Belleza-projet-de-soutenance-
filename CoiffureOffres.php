@@ -1,4 +1,5 @@
 <?php
+$ma_tab = "coiffures";
 // $page est une variable qui represente le titre de la page qui se trouve en parts/header.php
 $page = 'Belleza Offres coiffures';
 include 'parts/header.php';
@@ -6,10 +7,11 @@ include 'functions/connect.php';
 // lance la fonction de connection a la db
 $dbh = db_connect();
 // $sql est la direction de la tab dans la base de donné qui agis sur functions/connect.php
-$sql = "SELECT * FROM `coiffures` ";
+$sql = "SELECT * FROM $ma_tab ";
 $res = request_sql($dbh, $sql);
-include 'functions/paginationC.php';
+include 'functions/pagination.php';
 include 'functions/tronque.php';
+include 'functions/tri.php';
 
 
 ?>
@@ -62,11 +64,13 @@ include 'functions/tronque.php';
     </form>
     <!-- fin de filtre -->
 
+
+    <th><a class="column_sort" id="id" href='?order=id&sort=$sort'>ID<span class="glyphicon glyphicon-sort-by-alphabet"></span></a></th>
+
     <?php
     for ($i = 0; $i < count($res); $i++) :
-
     ?>
-      <!--template pour une future boucle php -->
+
 
 
       <div class="col-lg-12 col-md-12 col-sm-12">
@@ -83,7 +87,9 @@ include 'functions/tronque.php';
 
                 <!-- NOM -->
                 <h5 class="card-title">
-                  <?php echo $res[$i]["nom_societe"] ?>
+                  <?php
+                  echo $res[$i]["nom_societe"]
+                  ?>
                 </h5>
 
                 <!-- DESCRIPTION -->
@@ -114,16 +120,24 @@ include 'functions/tronque.php';
         <div class="card_mobile_service">
           <div class="d-flex justify-content-center mb-5">
             <div class="card" style="width: 18rem;">
-              <img src="<?php echo $res[$i]["photo"] ?>" alt="ALEATOIR">
+              <img src="<?php
+                        echo $res[$i]["photo"] 
+                        ?>" alt="ALEATOIR">
               <small class="text-muted">
-                <?php echo $res[$i]["localisation"] ?>
+                <?php
+                echo $res[$i]["localisation"] 
+                ?>
               </small>
               <div class="card-body mobileDesignText">
                 <h5 class="card-title">
-                  <?php echo $res[$i]["nom_societe"] ?>
+                  <?php
+                  echo $res[$i]["nom_societe"] 
+                  ?>
                 </h5>
                 <p class="card-text">
-                  <?php echo tronque($res[$i]["description"], 100); ?>
+                  <?php
+                  echo tronque($res[$i]["description"], 100);
+                  ?>
                 </p>
               </div>
 
@@ -136,6 +150,10 @@ include 'functions/tronque.php';
         </div>
       </div>
     <?php endfor; ?>
+
+
+
+
 
     <!-- Pagination -->
     <nav aria-label="Page navigation example mt-5">
@@ -172,7 +190,7 @@ include 'functions/tronque.php';
       </ul>
     </nav>
   </div>
-<!-- fin pagination -->
+  <!-- fin pagination -->
 
 
 </div>

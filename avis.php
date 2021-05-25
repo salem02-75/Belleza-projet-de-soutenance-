@@ -7,20 +7,13 @@ include 'functions/add_avis.php';
 $sql = "SELECT * FROM `avis` ";
 // lance la fonction de connection a la db
 $dbh = db_connect();
-
 // $tabdb est la direction de la tab dans la base de donné qui agis sur functions/connect.php
-
-
 $res = request_sql($dbh, $sql);
-
-
 ?>
 
 <main>
 
-
 <div class="bg-white w-75 m-auto p-4 my-5">
-
 
     <?php if (isset($_POST["name"]) && $done) : ?>
         <p>votre commentaire <?php echo $_POST["name"] ; ?> a bien été ajouter</p>
@@ -38,16 +31,9 @@ $res = request_sql($dbh, $sql);
 
         <a href="./index.php" class="btn btn-warning  my-4">annuler</a>
         <button type="submit"  class="btn btn-primary float-end my-4">envoyer</button>
-
     </form>
     </div>
-
-
-
-
 </main>
-
-
 
 <?php
 include 'parts/footer.php';
