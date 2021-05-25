@@ -66,6 +66,11 @@ include 'parts/header.php'
             </form>
             <p class="text-center"><a href="inscriptionn.php">Inscription</a></p>
         </div>
+
+        <div>
+        <a href="playlist.php"><button class="btn btn-primary btn-block">decouvrez notre playlist zen ! </button></a>
+        
+        </div>
         <style>
             .login-form {
                 width: 340px;
