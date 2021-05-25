@@ -47,8 +47,8 @@ $res = request_sql($dbh, $sql);
     <div id="service" class="container">
         <div class="row d-flex justify-content-center ">
             <!-- col-1 -->
-            <div class=" col-9 col-md-6 col-lg-4  mb-sm-4">
-                <div class="card mb-4">
+            <div class=" col-9 col-md-6 col-lg-4  mb-sm-4" >
+                <a class="card mb-4" href="coiffure.php">
                     <a href="coiffure.php">
                         <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux" class="card-img-top imgService">
                     </a>
@@ -61,7 +61,7 @@ $res = request_sql($dbh, $sql);
                         </p>
                     </div><!-- fin de card-body -->
 
-                </div><!-- fin de card-->
+                </a><!-- fin de card-->
 
             </div><!-- fin de col-1 card -->
 
