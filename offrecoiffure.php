@@ -8,6 +8,7 @@ $res = request_sql($dbh, $sql);
 // $page est une variable qui represente le titre de la page qui se trouve en parts/header.php
 $page = 'Belleza coiffure' . ' ' . $res[0]["nom_societe"];
 include 'parts/header.php';
+include 'functions/mail_offres.php';
 ?>
 
 <div class="container">
@@ -21,13 +22,53 @@ include 'parts/header.php';
                     </small>
                 </p>
                 <p class="card-text"><?php echo $res[0]["description"] ?></p>
+                <!-- Bouton -->
+
             </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 overflow-hidden align-middle d-flex">
             <img src="<?php echo $res[0]["photo"] ?>" class="card-img-top" alt="...">
         </div>
+
+
+    </div>
+    <div class="d-flex justify-content-center">
+        <a class="button_belleza justify-content-end" href="coiffureoffres.php">Consulter</a>
     </div>
 </div>
+
+
+
+<!-- Email -->
+<?php if (!$_mail_state) : ?>
+    <form class="container" action="offrecoiffure.php?id=<?php echo $res[0]["id"] ?>" method="post">
+
+
+        <div class="mb-3 email">
+            <label for="exampleFormControlInput1" class="form-label">Mon adresse mail</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+        </div>
+
+        <div class="mb-3 content">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea name="content" class="form-control" id="content" rows="3">Bonjour, je prend contact avec vous pour connaître vos disponibilité...</textarea>
+        </div>
+
+        <input type="submit" valeur="envoyer">
+    </form>
+<?php else : ?>
+    <h3 class="d-flex justify-content-center mt-5 text-info">mail envoyer</h3>
+<?php endif; ?>
+
+
+
+<!-- Fin Email -->
+
+
+
+
+
+
 
 <?php
 include 'parts/footer.php';
