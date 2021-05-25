@@ -50,5 +50,5 @@ $res = request_sql($dbh, $sql);
 
 
 <?php
-include 'parts/footer.php';
+include 'parts/footer-light.php';
 ?>

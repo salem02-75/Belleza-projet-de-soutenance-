@@ -108,11 +108,6 @@ h3 {
 }
 
 
-/* .navbar ul li  a:hover{
-    color: royalblue;
-} */
-
-
 /* les a dans la navbar */
 
 .nav-link:hover {
@@ -367,7 +362,7 @@ a>i {
     color:#6ce5e8 ;
     } */
 
-#faq h2  a:hover {
+#faq h2 a:hover {
     color: #dc3545 !important;
 }
 
@@ -467,7 +462,7 @@ hr {
 .liste-medias a:nth-child(2) i {
     color: transparent;
     background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
-    -webkit-background-clip: text;
+    background-clip: text;
     font-weight: 600;
 }
 
@@ -502,15 +497,8 @@ hr {
         <-- footer - light  -->
 =========================================*/
 
-.footer-light  {
-
+.footer-light {
     background-color: #494f5624;
-}
-
-.footer-light  a {
-    text-decoration: none;
-    color: #000000 !important;
-
 }
 
 hr {
@@ -519,16 +507,21 @@ hr {
 
 
 /* color &  le hover des icons réseaux */
-.footer-light >.footer-light .liste-medias a {
+.footer-light>.footer-light> .liste-medias-light> a  {
     font-size: 30px;
 }
 
-.footer-medias >.liste-medias a i {
-color: #0e0e0e5c !important;
+.footer-medias>.liste-medias-light> a i {
+    color: #0e0e0e5c !important;
+    font-weight: 600;
+    font-size: 30px;
 }
+/* .footer-light>.liste-medias-light> a:nth-child(2) i{
+    color: #0e0e0e5c !important;
+} */
 
 /* Faceboock :hover */
-.footer-light >.liste-medias a:nth-child(1) i:hover {
+.footer-medias>.liste-medias-light> a:nth-child(1) i:hover {
     color: #1DA0F0 !important;
     transition: transforme ease-in-out 0.2s;
 }
@@ -540,29 +533,38 @@ color: #0e0e0e5c !important;
 } */
 
 /* instagram : hover */
-.footer-light >.liste-medias a:nth-child(2) i:hover {
+.footer-medias>.liste-medias-light a:nth-child(2) i:hover {
     color: transparent;
     background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
     background-clip: text;
     transition: transforme ease-in-out 0.2s;
-    font-weight: 600;
+    
 }
 
 /* twitter: hover */
-.footer-light >.liste-medias a:nth-child(3) i:hover {
+.footer-medias>.liste-medias-light a:nth-child(3) i:hover {
     color: #1DA0F0 !important;
     transition: transforme ease-in-out 0.2s;
 }
 
 /* *********************************** */
-.footer-light >.logo-b {
-    width: 150px;
-    height: 250px;
-}
+
 
 /* =======================================
         <-- footer - light fin -->
 =========================================*/
+/* logo belleza */
+.logo-footer-light {
+    height: 50px;
+}
+
+.logo-img-light {
+    position: relative;
+    top: 79%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 146px;
+}
 
 /* =======================================
         <-- Responsive -->
@@ -643,14 +645,15 @@ color: #0e0e0e5c !important;
         font-size: 27px;
     }
 
-    
+
 }
 
 @media (max-width: 767px) {
     .newsletter {
         display: none;
     }
-    .footer-light hr{
+
+    .footer-light hr {
 
         display: flex;
     }

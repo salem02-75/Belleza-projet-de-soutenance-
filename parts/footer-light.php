@@ -4,20 +4,20 @@
         <div class="row py-4 ">
 
             <div class=" col-md-6  d-flex justify-content-center align-items-center ">
-                <!-- logo -->
-                <div class="logo">
-                    <a class="navbar-brand logo-image" href="index.php"><img src="images/Logomarque.svg"
-                            alt="logo de la marque  Belleza"></a>
-                </div>
+                            <!-- logo -->
+                            <a href="//<?php echo __ENDPOINT__ ?>/index.php" class="logo-footer-light">
+                        <img src="images/Logomarque.svg" class="logo-img-light" alt="logo de Belleza">
+                    </a>
+
             </div>
 
             <!-- hr ligne -->
             <hr class="col-md-12 d-md-none">
 
             <!------ col-2  Réseaux sociaux------->
-            <div class="col-md-6  justify-content-center align-items-center my-md-0 ">
+            <div class="col-md-6  ">
                 <div class="footer-medias  py-md-0">
-                    <div class="liste-medias d-flex justify-content-around ">
+                    <div class="liste-medias-light d-flex justify-content-around ">
                         <!-- <div  class=" "> -->
                         <!-- <span class=" d-flex border-right "></span> -->
                         <!-- <div class=" d-flex  "> -->
