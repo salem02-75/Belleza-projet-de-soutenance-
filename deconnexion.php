@@ -6,9 +6,6 @@
 
    
 
-    //  LA PAGE DE S4AFFICHE PLUS 
-    // ELLE N EST PAS RELIER A UN BOUTON DECONNECTION 
 
     ?>
 
-    

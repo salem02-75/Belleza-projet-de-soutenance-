@@ -50,6 +50,8 @@
                     break;
             }
         }
+
+        $_SESSION['nom']=$_POST['nom']
         ?>
 
         <form action="conectionn.php" method="post">
@@ -107,6 +109,7 @@
 </body>
 
 </html>
+
 
 <?php
 include 'parts/footer.php';

@@ -40,12 +40,15 @@
                                 break; 
                             }
                         }
+                        if (isset($_SESSION['utilisateurs'])) {
+                            echo "Bonjour " .$_SESSION['nom'];
+                          }
                     ?>
 
 
                 <div class="text-center">
-                        <h1 class="p-5">Bonjour ! <?php echo $_SESSION['utilisateurs']; ?></h1>
-                        <a href="deconnexion.php" class="btn btn-danger btn-lg">Déconnexion</a>
+                        <h1 class="p-5">Bonjour ! </h1>
+                        <a href="index.php" class="btn btn-danger btn-lg">Déconnexion</a>
                         <!-- Bouton qui renvoie a la page changer de mdp -->
                         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#change_password">
                           Changer mon mot de passe
@@ -54,6 +57,8 @@
                           Changer mon avatar
                         </button>
                 </div>
+
+                <a href="nousContacter.php" >nous contacter</a>
             </div>
         </div>    
 
