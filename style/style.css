@@ -122,7 +122,10 @@ h3 {
 
 
 /* taille de logo dans le header navbar  */
-
+header{
+    width: 100%;
+    z-index: 999;
+}
 .logo {
     height: 50px;
 }
@@ -131,6 +134,14 @@ h3 {
     position: relative;
     top: -59px;
     width: 146px;
+}
+.banniere {
+    background-image: url(../images/img-banniere.jpg);
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    position: relative;
+    padding: 150px 0 150px;
 }
 
 .banniere .container {
@@ -618,6 +629,22 @@ hr {
 /* en dessou de 525px small sm Mobile */
 
 @media (max-width: 576px) {
+    .banniere-title h1,
+    .banniere-text,
+    .banniere-text>span,
+    .banniere-titel>span {
+            font-size: 18px;
+    }
+
+    .banniere-title span, .banniere-text span {
+        color: #E56969;
+        /* font-size: x-large; */
+        font-size: 30px;
+        font-weight: bold;
+        /* display: inline-block;
+        display: block; */
+        display: inline;
+    }
     .liste-medias {
         margin: 20px 15px 0 15px;
     }
@@ -657,4 +684,25 @@ hr {
 
         display: flex;
     }
+}
+
+/*  ***************** banniere fin ************************* */
+@media (max-width: 750px) {
+    .navbar-light .navbar-nav .nav-link {
+            display: flex;
+            justify-content: center;
+    }
+
+    .banniere-title h1,
+    .banniere-title span
+            {
+            font-size: 30px;
+    }
+
+    .banniere-text,
+    .banniere-text>span {
+            font-size: 28px;
+    }
+
+
 }
