@@ -2,7 +2,6 @@
 // $page est une variable qui represente le titre de la page qui se trouve en parts/header.php
 $page = 'Belleza Avis';
 include 'parts/header.php';
-
 include 'functions/connect.php';
 include 'functions/add_avis.php';
 $sql = "SELECT * FROM `avis` ";
@@ -29,7 +28,7 @@ $res = request_sql($dbh, $sql);
         <p>votre commentaire <?php echo var_dump($_POST["name"]) ?> n'a pas été ajouter </p>
     <?php endif ?>
 
-    <form action="./avis_guillaume.php" method="POST">
+    <form action="./avis.php" method="POST">
 
         <input class="form-control p-1 m-3" type="text" name="name" id="name" placeholder="Nom" required>
 
