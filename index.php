@@ -336,8 +336,8 @@ $res = request_sql($dbh, $sql);
                 <div class="box-col col-9 col-md-5 col-lg-2 bg-light  border-0rounded    mx-3 my-4">
                     <img class="img-icon text-center my-3 " class="text-center" src="images/key.png" alt="cles">
                     <div>
-                        <h3 class=" text-center py-3 text-uppercase">Discrétion</h3>
-                        <p class=" text-center pb-3   font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisic.corrupti!</p>
+                        <h3 class=" text-center py-3 text-uppercase">Proximité</h3>
+                        <p class=" text-center pb-3   font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div><!-- col-->
                 </div><!-- col-->
 
