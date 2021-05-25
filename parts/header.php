@@ -84,10 +84,6 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="pro.php">Pro</a>
-                </li>
-
-                <li class="nav-item">
                     <a class="nav-link text-white" href="connection.php">Connexion</a>
                 </li>
             </ul>
