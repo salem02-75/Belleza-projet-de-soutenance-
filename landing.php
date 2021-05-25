@@ -26,11 +26,11 @@
                             // switch equivalent de if ou els if 
                             switch($err){
                                 case 'current_password':
-                                    echo "<div class='alert alert-danger'>Le mot de passe actuel est incorrect</div>";
+                                    echo "le mot de passe actuel est incorrect";
                                 break;
 
                                 case 'success_password':
-                                    echo "<div class='alert alert-success'>Le mot de passe a bien été modifié ! </div>";
+                                    echo "Le mot de passe a bien été modifié !";
                                 break; 
                             }
                         }
