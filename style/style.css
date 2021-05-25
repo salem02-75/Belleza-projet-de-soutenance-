@@ -36,13 +36,15 @@
     padding: 0;
     font-size: 0, 875 rem;
     /*14 px*/
-    
+
 }
+
 /* margin pour la section : engagement/avis */
-.my-150{
+.my-150 {
     margin-top: 150px;
     margin-bottom: 150px;
 }
+
 
 /* les class background Belleza */
 
@@ -198,7 +200,8 @@ h3 {
 #service h3,
 .service-title,
 .avis-title,
-.avis-title span,#engagement>h2 {
+.avis-title span,
+#engagement>h2 {
     font-size: 2.25rem;
 }
 
@@ -269,6 +272,7 @@ h3 {
 #engagement h3 {
     color: #00c2cb;
 }
+
 /* =======================================
         <-- Engagement FIN -->
 =========================================*/
@@ -293,7 +297,7 @@ h3 {
 
 }
 
-#newsletter .email-body > i {
+#newsletter .email-body>i {
     background: #6ce5e8;
     width: 40px;
     line-height: 40px;
@@ -305,22 +309,26 @@ h3 {
 .btn-email {
     /* outline-0 */
     outline: none !important;
-    border: none !important ;
+    border: none !important;
 
 }
 
 #newsletter .btn-email {
     background: #6ce5e8;
 }
+
 .input-email {
     width: 0px;
     /* transition en : focus */
     transition: 0.5s;
 }
-.email-body:hover>.input-email,.input-email:focus{
+
+.email-body:hover>.input-email,
+.input-email:focus {
     width: 200px;
-    padding:0 15px;
+    padding: 0 15px;
 }
+
 /* =======================================
         <-- Newsletter FIN -->
 =========================================*/
@@ -328,7 +336,7 @@ h3 {
 /* =======================================
         <-- nous-contacter FIN -->
 =========================================*/
-#nous-contacter >.btn-outline:hover  {
+#nous-contacter>.btn-outline:hover {
     background-color: #6ce5e8;
 }
 
@@ -337,17 +345,35 @@ h3 {
 /* =======================================
         <-- nous-contacter FIN -->
 =========================================*/
-.contact-body span a{
+.contact-body span a,
+#faq span,
+a>i {
     color: #dc3545;
 }
 
-.contact-body .contact-medias a i{
+.contact-body .contact-medias a i {
     transition: transform 0.25s ease-in-out;
 }
-.contact-body .contact-medias a i:hover{
-    transform: translate(10px,-10px);
+
+.contact-body .contact-medias a i:hover {
+    transform: translate(10px, -10px);
     text-decoration: none;
 }
+
+/* =======================================
+        <-- Faq-->
+=========================================*/
+/* #faq h2 a{
+    color:#6ce5e8 ;
+    } */
+
+#faq h2  a:hover {
+    color: #dc3545 !important;
+}
+
+/* =======================================
+        <-- Faq fin-->
+=========================================*/
 
 /* =======================================
         <-- Footer -->
@@ -473,6 +499,72 @@ hr {
 =========================================*/
 
 /* =======================================
+        <-- footer - light  -->
+=========================================*/
+
+.footer-light  {
+
+    background-color: #494f5624;
+}
+
+.footer-light  a {
+    text-decoration: none;
+    color: #000000 !important;
+
+}
+
+hr {
+    border-bottom: 1px solid white;
+}
+
+
+/* color &  le hover des icons réseaux */
+.footer-light >.footer-light .liste-medias a {
+    font-size: 30px;
+}
+
+.footer-medias >.liste-medias a i {
+color: #0e0e0e5c !important;
+}
+
+/* Faceboock :hover */
+.footer-light >.liste-medias a:nth-child(1) i:hover {
+    color: #1DA0F0 !important;
+    transition: transforme ease-in-out 0.2s;
+}
+
+
+/* instagram */
+/* .footer-light >.liste-medias a:nth-child(2) i {
+    font-weight: 600;
+} */
+
+/* instagram : hover */
+.footer-light >.liste-medias a:nth-child(2) i:hover {
+    color: transparent;
+    background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
+    background-clip: text;
+    transition: transforme ease-in-out 0.2s;
+    font-weight: 600;
+}
+
+/* twitter: hover */
+.footer-light >.liste-medias a:nth-child(3) i:hover {
+    color: #1DA0F0 !important;
+    transition: transforme ease-in-out 0.2s;
+}
+
+/* *********************************** */
+.footer-light >.logo-b {
+    width: 150px;
+    height: 250px;
+}
+
+/* =======================================
+        <-- footer - light fin -->
+=========================================*/
+
+/* =======================================
         <-- Responsive -->
 =========================================*/
 
@@ -484,32 +576,39 @@ hr {
     .footer hr {
         display: flex;
     }
+
     /* btn déposer une annonce */
     .footer .btn {
         display: flex;
     }
+
     .footer .btn:hover {
         color: gray;
     }
+
     /* les réseaux sociaux */
     .footer-medias .liste-medias a i {
         color: #f1f1f1f1;
     }
+
     /* Facebook : hover */
     .liste-medias a:nth-child(1) i:hover {
-        color: #1DA0F0;
+        color: #1DA0F0 !important;
         transition: transforme ease-in-out 0.2s;
     }
+
     /* instagram : hover*/
     .liste-medias a:nth-child(2) i:hover {
         color: transparent;
         background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
         background-clip: text;
+        transition: transforme ease-in-out 0.2s;
         font-weight: 600;
     }
+
     /* twitter : hover */
     .liste-medias a:nth-child(3) i:hover {
-        color: #1DA0F0;
+        color: #1DA0F0 !important;
     }
 }
 
@@ -520,6 +619,7 @@ hr {
     .liste-medias {
         margin: 20px 15px 0 15px;
     }
+
     /* les span  */
     /* .border-left .border-right{
             display: none;
@@ -527,31 +627,31 @@ hr {
     .newsletter {
         display: none;
     }
+
     .carousel-indicators li:nth-child(2) {
         display: none;
     }
+
     .carousel-indicators li:nth-child(3) {
         display: none;
     }
+
     /* newsletter */
-    #newsletter h1{
+    #newsletter h1 {
         font-weight: 600;
         letter-spacing: 2px;
         font-size: 27px;
     }
 
-    #engagement .box-col{
-        /* width: 189px !important;
-        display: flex;
-        /* width: 150px; */
-        /* flex-direction: column; 
-     */
-    }
     
 }
 
 @media (max-width: 767px) {
     .newsletter {
         display: none;
+    }
+    .footer-light hr{
+
+        display: flex;
     }
 }
