@@ -43,52 +43,55 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
 </head>
 
 <body>
-    <header>
     
         <!-- ========================================= -->
         <!-- Navbar start -->
         <!-- ========================================= -->
-        <div class="bg-navbar">
-            <div class="container">
+<header class="position-fixed">
 
 
-                <nav class="navbar  navbar-expand-xl navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info shrink">
+    <div class="container">
 
-                    <!-- logo -->
-                    <a href="//<?php echo __ENDPOINT__ ?>/index.php" class="logo">
-                        <img src="images/Logomarque.svg" class="logo-image" alt="logo de Belleza">
-                    </a>
-
-
-                    <!-- ml-auto : margin left automatique mettra le bouton à droite -->
-                    <!-- aria-controls : pour l'accessibilité //  aria-expanded="false" : on démarre avec le menu qui n'est pas étendu donc on démarre à false // navbar-toggler-icon le .svg du burger-->
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- collapse navbar-collapse : pour le masquer ou pas // id="navbarToggler" qui est ciblé plus haut ds data-target-->
-                    <div class="collapse navbar-collapse " id="navbarToggler">
-                        <!-- d-flex : tout est flex dans la ul // justify-content-center align-items-center centré horizontalement et verticalement -->
-                        <ul class="navbar-nav  d-flex justify-content-center align-items-center ml-auto">
-                            <li class="nav-item">
-                                <a href="coiffure.php" class="nav-link active  bg-dark text-white font-weight-bold">Coiffure</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="esthetique.php" class="nav-link text-white font-weight-bold">Esthétique</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="massage.php" class="nav-link text-white font-weight-bold">Massage</a>
-                            </li>
-                        </ul>
-
-                        <!-- espace de connecxion -->
-                        <ul class="navbar-nav  d-flex justify-content-center align-items-center">
-                            <li class="nav-item">
-                                <a href="indexx.php" class="nav-link text-white font-weight-bold">Conexion</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div><!-- fin de container-->
+        <!-- logo -->
+        <div class="logo">
+            <a class="navbar-brand logo-image" href="//<?php echo __ENDPOINT__ ?>/index.php"><img src="images/Logomarque.svg"
+                    alt="logo de la marque  Belleza"></a>
         </div>
-    </header>
+
+
+        <!-- le burger => sm-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAV -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--  ml-auto => placer a droite -->
+            <ul class="navbar-nav ml-auto">
+                <!-- #coiffure => active -->
+                <li class="nav-item active">
+                    <a class="nav-link " href="coiffure.php">Coiffure<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="esthetique.php">Esthétique</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="massage.php">Massage</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="connection.php">Connexion</a>
+                </li>
+            </ul>
+        </div>
+    </div><!-- container fin-->
+</nav><!-- nav fin -->
+
+</header>
+
+</div>
+   
