@@ -11,9 +11,6 @@
         $email = htmlspecialchars($_POST['email']);
         $password = htmlspecialchars($_POST['password']);
         $password_retype = htmlspecialchars($_POST['password_retype']);
-
-        // ajouter dans la base de donnée
-
         $nom = htmlspecialchars($_POST['nom']);
           $prenom = htmlspecialchars($_POST['prenom']);
          $genre = htmlspecialchars($_POST['genre']);
@@ -66,7 +63,7 @@
                                 'proffession' => $proffession,
                             ));
                             // On redirige avec le message de succès
-                             header('Location:inscriptionn.php?reg_err=success');
+                           header('Location:inscriptionn.php?reg_err=success');
                              die();
                          }else{ header('Location: inscriptionn.php?reg_err=password'); die();}
                      }else{ header('Location: inscriptionn.php?reg_err=email'); die();}

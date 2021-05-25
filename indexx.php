@@ -52,7 +52,7 @@ include 'parts/header.php'
                 }
                 ?> 
             
-            <form action="connexionn.php" method="post">
+            <form action="conexionn.php" method="post">
                 <h2 class="text-center">Connexion</h2>       
                 <div class="form-group">
                     <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
@@ -95,3 +95,7 @@ include 'parts/header.php'
 <?php
 include 'parts/footer.php';
 ?>
+
+<!-- 
+NE RENVOIE PLUS A L INDEX
+N AFFICHE PLUS LE SUCCES OU LERREURE LORS DE LA CONNECTION

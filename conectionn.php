@@ -2,7 +2,7 @@
     session_start(); // Démarrage de la session
     require_once 'config.php'; // On inclut la connexion à la base de données
 
-    if(!empty($_POST['email']) && !empty($_POST['password'])) // Si il existe les champs email, password et qu'il sont pas vident
+    if(isset($_POST['email']) && isset($_POST['password'])) // Si il existe les champs email, password et qu'il sont pas vident
     {
         // Patch XSS
         $email = htmlspecialchars($_POST['email']); 
@@ -13,13 +13,14 @@
         // On regarde si l'utilisateur est inscrit dans la table utilisateurs
         $check = $bdd->prepare('SELECT pseudo, email, password FROM utilisateurs WHERE email = ?');
         $check->execute(array($email));
+        //stoquer données dans DATA
         $data = $check->fetch();
         $row = $check->rowCount();
         
         
 
         // Si > à 0 alors l'utilisateur existe
-        if($row > 0)
+        if($row == 1)
         {
             // Si le mail est bon niveau format
             if(filter_var($email, FILTER_VALIDATE_EMAIL))
