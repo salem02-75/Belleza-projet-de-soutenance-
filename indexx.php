@@ -65,6 +65,7 @@
             </div>
         </form>
         <p class="text-center"><a href="inscriptionn.php">Inscription</a></p>
+       <!-- <p class="text-center"><a href="deconnexion.php">changer de mot de passe</a></p> -->
     </div>
 
     <div>

@@ -118,8 +118,8 @@ include 'parts/header.php'
             <div class="form-group">
                 <input type="password" name="password_retype" class="form-control" placeholder="Re-tapez le mot de passe" required="required" autocomplete="off">
             </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block">Inscription</button>
+            <div method="post" class="form-group">
+                <button  type="submit" class="btn btn-primary btn-block">Inscription</button>
                 <a href="indexx.php">se connecter</a>
             </div>
         </form>
@@ -273,6 +273,5 @@ include 'parts/footer.php';
 
 
 <!-- 
-NE RENVOIS A AUCUNES PAGES
-LES NOUVEAUX ELEMENTS DE LA CLASSE DE LA BDD NE SE CONNECT PAS A LA BDD 
+RENVOYER A LA PAGE CONNECTION
 -->
