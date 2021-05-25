@@ -36,5 +36,5 @@ $res = request_sql($dbh, $sql);
 </main>
 
 <?php
-include 'parts/footer-light.php';
+include 'parts/footer.php';
 ?>

@@ -156,5 +156,5 @@ include 'parts/header.php';
 
 
 <?php
-include 'parts/footer-light.php';
+include 'parts/footer.php';
 ?>
