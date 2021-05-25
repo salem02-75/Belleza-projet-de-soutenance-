@@ -47,7 +47,7 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
         <!-- ========================================= -->
         <!-- Navbar start -->
         <!-- ========================================= -->
-<header class="position-fixed">
+<header class="">
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-info shrink">
@@ -84,7 +84,7 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="connection.php">Connexion</a>
+                    <a class="nav-link text-white" href="conectionn.php">Connexion</a>
                 </li>
             </ul>
         </div>
