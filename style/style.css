@@ -131,7 +131,8 @@ header {
 }
 
 .logo {
-    height: 50px;
+    height: 55px;
+    overflow: hidden;
 }
 
 .logo-image {

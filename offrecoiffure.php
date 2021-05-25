@@ -59,9 +59,6 @@ include 'functions/mail_offres.php';
 <?php else : ?>
     <h3 class="d-flex justify-content-center mt-5 text-info">mail envoyer</h3>
 <?php endif; ?>
-
-
-
 <!-- Fin Email -->
 
 
