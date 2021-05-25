@@ -17,16 +17,14 @@ include 'parts/header.php'
         
         <div class="login-form">
              <?php 
-
-             // renvois d'eereures mdp ou mail
+               // renvois d'eereures mdp ou mail
                 if(isset($_GET['login_err']))
                 {
                     $err = htmlspecialchars($_GET['login_err']);
 
                     switch($err)
                     {
-
-                        // s'affiche si le mdp n'est pas correct 
+                         // s'affiche si le mdp n'est pas correct 
                         case 'password':
                         ?>
                             <div class="alert alert-danger">
@@ -34,9 +32,7 @@ include 'parts/header.php'
                             </div>
                         <?php
                         break;
-
-
-                        // s'affiche si le mail n'est pas correct
+                             // s'affiche si le mail n'est pas correct 
                         case 'email':
                         ?>
                             <div class="alert alert-danger">
@@ -44,8 +40,7 @@ include 'parts/header.php'
                             </div>
                         <?php
                         break;
-
-                        // s'affiche si le compte existe deja 
+                             // s'affiche si le mail existe dns la  base de donnée 
                         case 'already':
                         ?>
                             <div class="alert alert-danger">
@@ -57,27 +52,21 @@ include 'parts/header.php'
                 }
                 ?> 
             
-            <form action="conexionn.php" method="post">
-                <h2 class="text-center">Connexion</h2>  
-                <!-- bouton email -->     
+            <form action="connexionn.php" method="post">
+                <h2 class="text-center">Connexion</h2>       
                 <div class="form-group">
                     <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
                 </div>
-                <!-- bouton password -->  
                 <div class="form-group">
                     <input type="password" name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
                 </div>
-                <!-- bouton connection -->  
                 <div class="form-group">
-                   <button type="submit" class="btn btn-primary btn-block"><a class= "btn btn-primary" href="index.php">Connexion</a></button> 
+                    <button type="submit" class="btn btn-primary btn-block">Connexion</button>
                 </div>   
             </form>
-            <!-- bouton qui renvoie a l'inscription -->  
-            <p  class="text-center "><a href="inscriptionn.php">Inscription</a></p>
+            <p class="text-center"><a href="inscriptionn.php">Inscription</a></p>
         </div>
-
         <style>
-
             .login-form {
                 width: 340px;
                 margin: 50px auto;

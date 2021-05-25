@@ -2,10 +2,9 @@
     require_once 'config.php'; // On inclu la connexion à la bdd
 
     // Si les variables existent et qu'elles ne sont pas vides
-    if(!empty($_POST['pseudo']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['password_retype']))
+    if(!empty($_POST['pseudo']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['password_retype']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['genre']) && !empty($_POST['proffession']) && !empty($_POST['ville']))
     
-    // rajouter quand les attribues serons dans la base de donnée 
-   //  && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['genre']) && !empty($_POST['proffession']) && !empty($_POST['ville'])
+   
     {
         // Patch XSS affin de securiser 
         $pseudo = htmlspecialchars($_POST['pseudo']);
@@ -15,11 +14,11 @@
 
         // ajouter dans la base de donnée
 
-        // $nom = htmlspecialchars($_POST['nom']);
-        //  $prenom = htmlspecialchars($_POST['prenom']);
-        // $genre = htmlspecialchars($_POST['genre']);
-        // $proffession = htmlspecialchars($_POST['proffession']);
-        //  $ville = htmlspecialchars($_POST['ville']);
+        $nom = htmlspecialchars($_POST['nom']);
+          $prenom = htmlspecialchars($_POST['prenom']);
+         $genre = htmlspecialchars($_POST['genre']);
+         $proffession = htmlspecialchars($_POST['proffession']);
+          $ville = htmlspecialchars($_POST['ville']);
 
         // On vérifie si l'utilisateur existe
         $check = $bdd->prepare('SELECT pseudo, email, password FROM utilisateurs WHERE email = ?');
@@ -54,7 +53,7 @@
                                 ));
         
                             // On insère dans la base de données
-                            $insert = $bdd->prepare('INSERT INTO utilisateurs(pseudo, email, password, ip) VALUES(:pseudo, :email, :password, :ip)');
+                            $insert = $bdd->prepare('INSERT INTO utilisateurs(pseudo, nom, prenom, genre, proffession, ville, email, password, ip) VALUES(:pseudo, :nom, :prenom, :genre, :proffession, :ville, :email, :password, :ip)');
                             $insert->execute(array(
                                 'pseudo' => $pseudo,
                                 'email' => $email,
@@ -67,11 +66,11 @@
                                 'proffession' => $proffession,
                             ));
                             // On redirige avec le message de succès
-                            header('Location:inscriptionn.php?reg_err=success');
-                            die();
-                        }else{ header('Location: inscriptionn.php?reg_err=password'); die();}
-                    }else{ header('Location: inscriptionn.php?reg_err=email'); die();}
-                }else{ header('Location: inscriptionn.php?reg_err=email_length'); die();}
-            }else{ header('Location: inscriptionn.php?reg_err=pseudo_length'); die();}
-        }else{ header('Location: inscriptionn.php?reg_err=already'); die();}
+                             header('Location:inscriptionn.php?reg_err=success');
+                             die();
+                         }else{ header('Location: inscriptionn.php?reg_err=password'); die();}
+                     }else{ header('Location: inscriptionn.php?reg_err=email'); die();}
+                 }else{ header('Location: inscriptionn.php?reg_err=email_length'); die();}
+             }else{ header('Location: inscriptionn.php?reg_err=pseudo_length'); die();}
+         }else{ header('Location: inscriptionn.php?reg_err=already'); die();}
     }
