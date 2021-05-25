@@ -1,5 +1,9 @@
 /* IMPORTANT */
+
+
 /* BOUTON BELLEZA INTERACTIVE  */
+
+
 /* CLASS : .button_belleza */
 
 
@@ -26,16 +30,16 @@
 
 /*  background */
 
-
 * {
     margin: 0;
     padding: 0;
     font-size: 0, 875 rem;
     /*14 px*/
-
 }
 
+
 /* margin pour la section : engagement/avis */
+
 .my-150 {
     margin-top: 150px;
     margin-bottom: 150px;
@@ -43,7 +47,6 @@
 
 
 /* les class background Belleza */
-
 
 
 /* POLICE */
@@ -118,10 +121,12 @@ h3 {
 
 
 /* taille de logo dans le header navbar  */
-header{
+
+header {
     width: 100%;
     z-index: 999;
 }
+
 .logo {
     height: 50px;
 }
@@ -131,14 +136,31 @@ header{
     top: -59px;
     width: 146px;
 }
-.banniere {
-    /* background-image: url(../images/img-banniere.jpg); */
-    background-image: url(../images/banniere_550.jpg); 
+
+
+/* banniere version 1 */
+
+
+/* .banniere {
+    background-image: url(../images/banniere_550.jpg);
     width: 100%;
     height: 550px;
     background-size: cover;
     position: relative;
     padding: 150px 0 150px;
+} */
+
+
+/* banniere version 2 */
+
+.banniere {
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-position: top;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-image: url(../images/banniere_large.jpg);
 }
 
 .banniere .container {
@@ -276,6 +298,7 @@ header{
     color: #00c2cb;
 }
 
+
 /* =======================================
         <-- Engagement FIN -->
 =========================================*/
@@ -284,7 +307,6 @@ header{
 /* =======================================
         <-- Newsletter -->
 =========================================*/
-
 
 #newsletter {
     background-color: #E56969 !important;
@@ -297,7 +319,6 @@ header{
 
 #newsletter .email-body {
     height: 40px;
-
 }
 
 #newsletter .email-body>i {
@@ -305,7 +326,6 @@ header{
     width: 40px;
     line-height: 40px;
     cursor: pointer;
-
 }
 
 .input-email,
@@ -313,7 +333,6 @@ header{
     /* outline-0 */
     outline: none !important;
     border: none !important;
-
 }
 
 #newsletter .btn-email {
@@ -332,22 +351,25 @@ header{
     padding: 0 15px;
 }
 
+
 /* =======================================
         <-- Newsletter FIN -->
 =========================================*/
 
+
 /* =======================================
         <-- nous-contacter FIN -->
 =========================================*/
+
 #nous-contacter>.btn-outline:hover {
     background-color: #6ce5e8;
 }
 
 
-
 /* =======================================
         <-- nous-contacter FIN -->
 =========================================*/
+
 .contact-body span a,
 #faq span,
 a>i {
@@ -363,9 +385,12 @@ a>i {
     text-decoration: none;
 }
 
+
 /* =======================================
         <-- Faq-->
 =========================================*/
+
+
 /* #faq h2 a{
     color:#6ce5e8 ;
     } */
@@ -374,9 +399,11 @@ a>i {
     color: #dc3545 !important;
 }
 
+
 /* =======================================
         <-- Faq fin-->
 =========================================*/
+
 
 /* =======================================
         <-- Footer -->
@@ -497,9 +524,11 @@ hr {
     transition: transforme ease-in-out 0.2s;
 }
 
+
 /* =======================================
         <-- footer fin -->
 =========================================*/
+
 
 /* =======================================
         <-- footer - light  -->
@@ -515,45 +544,56 @@ hr {
 
 
 /* color &  le hover des icons réseaux */
-.footer-light>.footer-light> .liste-medias-light> a  {
+
+.footer-light>.footer-light>.liste-medias-light>a {
     font-size: 30px;
 }
 
-.footer-medias>.liste-medias-light> a i {
+.footer-medias>.liste-medias-light>a i {
     color: #0e0e0e5c !important;
     font-weight: 600;
     font-size: 30px;
 }
+
+
 /* .footer-light>.liste-medias-light> a:nth-child(2) i{
     color: #0e0e0e5c !important;
 } */
 
+
 /* Faceboock :hover */
-.footer-medias>.liste-medias-light> a:nth-child(1) i:hover {
+
+.footer-medias>.liste-medias-light>a:nth-child(1) i:hover {
     color: #1DA0F0 !important;
     transition: transforme ease-in-out 0.2s;
 }
 
 
 /* instagram */
+
+
 /* .footer-light >.liste-medias a:nth-child(2) i {
     font-weight: 600;
 } */
 
+
 /* instagram : hover */
+
 .footer-medias>.liste-medias-light a:nth-child(2) i:hover {
     color: transparent;
     background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
     background-clip: text;
     transition: transforme ease-in-out 0.2s;
-    
 }
 
+
 /* twitter: hover */
+
 .footer-medias>.liste-medias-light a:nth-child(3) i:hover {
     color: #1DA0F0 !important;
     transition: transforme ease-in-out 0.2s;
 }
+
 
 /* *********************************** */
 
@@ -561,7 +601,10 @@ hr {
 /* =======================================
         <-- footer - light fin -->
 =========================================*/
+
+
 /* logo belleza */
+
 .logo-footer-light {
     height: 50px;
 }
@@ -570,9 +613,10 @@ hr {
     position: relative;
     top: 79%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 146px;
 }
+
 
 /* =======================================
         <-- Responsive -->
@@ -580,33 +624,30 @@ hr {
 
 
 /* a partir de 767px Medium md Tablette */
+
+
 /* max = ou > que 767px */
 
 @media (min-width: 767px) {
     .footer hr {
         display: flex;
     }
-
     /* btn déposer une annonce */
     .footer .btn {
         display: flex;
     }
-
     .footer .btn:hover {
         color: gray;
     }
-
     /* les réseaux sociaux */
     .footer-medias .liste-medias a i {
         color: #f1f1f1f1;
     }
-
     /* Facebook : hover */
     .liste-medias a:nth-child(1) i:hover {
         color: #1DA0F0 !important;
         transition: transforme ease-in-out 0.2s;
     }
-
     /* instagram : hover*/
     .liste-medias a:nth-child(2) i:hover {
         color: transparent;
@@ -615,7 +656,6 @@ hr {
         transition: transforme ease-in-out 0.2s;
         font-weight: 600;
     }
-
     /* twitter : hover */
     .liste-medias a:nth-child(3) i:hover {
         color: #1DA0F0 !important;
@@ -630,10 +670,10 @@ hr {
     .banniere-text,
     .banniere-text>span,
     .banniere-titel>span {
-            font-size: 18px;
+        font-size: 18px;
     }
-
-    .banniere-title span, .banniere-text span {
+    .banniere-title span,
+    .banniere-text span {
         color: #E56969;
         /* font-size: x-large; */
         font-size: 30px;
@@ -645,7 +685,6 @@ hr {
     .liste-medias {
         margin: 20px 15px 0 15px;
     }
-
     /* les span  */
     /* .border-left .border-right{
             display: none;
@@ -653,53 +692,43 @@ hr {
     .aPropos {
         display: none;
     }
-
     .carousel-indicators li:nth-child(2) {
         display: none;
     }
-
     .carousel-indicators li:nth-child(3) {
         display: none;
     }
-
     /* newsletter */
     #newsletter h1 {
         font-weight: 600;
         letter-spacing: 2px;
         font-size: 27px;
     }
-
-
 }
 
 @media (max-width: 767px) {
     .newsletter {
         display: none;
     }
-
     .footer-light hr {
-
         display: flex;
     }
 }
 
+
 /*  ***************** banniere fin ************************* */
+
 @media (max-width: 750px) {
     .navbar-light .navbar-nav .nav-link {
-            display: flex;
-            justify-content: center;
+        display: flex;
+        justify-content: center;
     }
-
     .banniere-title h1,
-    .banniere-title span
-            {
-            font-size: 30px;
+    .banniere-title span {
+        font-size: 30px;
     }
-
     .banniere-text,
     .banniere-text>span {
-            font-size: 28px;
+        font-size: 28px;
     }
-
-
 }
