@@ -40,28 +40,31 @@
                             $ip = $_SERVER['REMOTE_ADDR']; 
 
                                 // requete mot de passe oublier
-                                $insert = $bdd->prepare('INSERT INTO utilisateurs(pseudo, email, password, ip, token) VALUES(:pseudo, :email, :password, :ip, :token)');
-                                $insert->execute(array(
-                                    'pseudo' => $pseudo,
-                                    'email' => $email,
-                                    'password' => $password,
-                                    'ip' => $ip,
-                                    'token' =>  bin2hex(openssl_random_pseudo_bytes(24))
-                                ));
+                                // $insert = $bdd->prepare('INSERT INTO utilisateurs(pseudo, email, password, ip, token) VALUES(:pseudo, :email, :password, :ip, :token)');
+                                // $insert->execute(array(
+                                //     'pseudo' => $pseudo,
+                                //     'email' => $email,
+                                //     'password' => $password,
+                                //     'ip' => $ip,
+                                //     'token' =>  bin2hex(openssl_random_pseudo_bytes(24))
+                                // ));
         
                             // On insère dans la base de données
-                            $insert = $bdd->prepare('INSERT INTO utilisateurs(pseudo, nom, prenom, genre, proffession, ville, email, password, ip) VALUES(:pseudo, :nom, :prenom, :genre, :proffession, :ville, :email, :password, :ip)');
+                            $insert = $bdd->prepare('INSERT INTO `utilisateurs` (`pseudo`, `nom`, `prenom`, `genre`, `proffession`,  `email`, `password`, `ip`) VALUES(:pseudo, :nom, :prenom, :genre, :proffession, :email, :password, :ip)');
+                            $d = new DateTime('NOW');
                             $insert->execute(array(
-                                'pseudo' => $pseudo,
-                                'email' => $email,
-                                'password' => $password,
-                                'ip' => $ip,
-                                'nom' => $nom,
-                                'prennom' => $prenom,
-                                'ville' => $ville,
-                                'genre' => $genre,
-                                'proffession' => $proffession,
+                                ':pseudo' => $pseudo,
+                                ':nom' => $nom,
+                                ':prenom' => $prenom,
+                                ':genre' => $genre,
+                                ':proffession' => $proffession,
+                                // ':ville' => $ville,
+                                ':email' => $email,
+                                ':password' => $password,
+                                ':ip' => $ip,
+                                // ':date_inscription' => $d->format('c')
                             ));
+                            die();
                             // On redirige avec le message de succès
                            header('Location:inscriptionn.php?reg_err=success');
                              die();

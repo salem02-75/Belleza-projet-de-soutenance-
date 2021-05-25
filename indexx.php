@@ -1,6 +1,3 @@
-<?php
-include 'parts/header.php'
-?>
 
 
 
@@ -55,7 +52,7 @@ include 'parts/header.php'
         }
         ?>
 
-        <form action="conexionn.php" method="post">
+        <form action="conectionn.php" method="post">
             <h2 class="text-center">Connexion</h2>
             <div class="form-group">
                 <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
