@@ -103,7 +103,10 @@ h3 {
 /*bg Navbar */
 
 .bg-navbar {
-    background: #00c2cb;
+    /* background: #00c2cb; */
+    background-color: #81d4e2;
+    /* background-color: #98dee7; */
+    /* background-color: #87d4e6; */
 }
 
 
