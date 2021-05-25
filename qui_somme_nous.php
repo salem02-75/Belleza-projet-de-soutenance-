@@ -27,7 +27,7 @@ include 'parts/header.php';
   <div class="container">
   <div>
   <h1>
-  <a href="" class="typewrite" data-period="2000" data-type='[ "bienvenu dans , a propos.", "choisisez", "le profil.", "De votre choix." ]'>
+  <a href="" class="typewrite" data-period="2000" data-type='[ "bienvenu dans , a propos.", "choisisez le profil.", "De votre choix." ]'>
     <span class="wrap"></span>
   </a>
 </h1></div>
