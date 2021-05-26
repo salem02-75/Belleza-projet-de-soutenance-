@@ -86,6 +86,9 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
                 <li class="nav-item">
                     <a class="nav-link text-white" href="indexx.php">Connexion</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="inscriptionn.php">Inscription</a>
+                </li>
             </ul>
         </div>
     </div><!-- container fin-->

@@ -1,8 +1,8 @@
-<!--
+
 <?php
 include 'parts/header.php'
 ?>
--->
+
 
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ include 'parts/header.php'
 </head>
 
 <body>
-    <div class="">
+    <div class="base">
         <div class="holder"></div>
         <div class="thread">
             <div class="knob"></div>

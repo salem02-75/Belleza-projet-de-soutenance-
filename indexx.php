@@ -1,4 +1,6 @@
-
+<?php
+include 'parts/header.php'
+?>
 
 
 <!DOCTYPE html>
@@ -51,7 +53,7 @@
             }
         }
 
-        $_SESSION['nom']=$_POST['nom']
+        // $_SESSION['nom']=$_POST['nom']
         ?>
 
         <form action="conectionn.php" method="post">
