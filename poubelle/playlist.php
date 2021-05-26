@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <title>Document</title>
-</head>
-<body>
+
 <div class="myimages">
     <div class="first-column"> <a href="https://youtu.be/Jq3htwznGJk"><img src="images/zen1.jpg" alt="image"></a> <a href="https://youtu.be/H_nYLZ6D4_M"><img src="images/zen2.jpg" alt="image"></a> <a href="https://youtu.be/H_nYLZ6D4_M"><img src="images/zen3.jpg" alt="image"></a> <a href="https://youtu.be/t9hpS3HbpDc"><img src="images/zen4.jpg" alt="image"></a> </div>
     <div class="first-column"> <a href="https://youtu.be/Jq3htwznGJk"><img src="images/zen1.jpg" alt="image"></a> <a href="https://youtu.be/H_nYLZ6D4_M"><img src="images/zen2.jpg" alt="image"></a> <a href="https://youtu.be/H_nYLZ6D4_M"><img src="images/zen3.jpg" alt="image"></a> <a href="https://youtu.be/t9hpS3HbpDc"><img src="images/zen4.jpg" alt="image"></a> </div>
@@ -23,8 +12,6 @@
 
 
 
-</body>
-</html>
 
 <style>
  body {

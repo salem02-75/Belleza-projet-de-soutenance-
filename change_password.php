@@ -8,7 +8,7 @@
     // Si la session n'existe pas 
     if(!isset($_SESSION['user']))
     {
-        header('Location:../indexx.php');
+        header('Location:../connection.php');
         die();
     }
 

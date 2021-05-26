@@ -32,7 +32,7 @@
                     $_SESSION['user'] = $data['email'];
                     header('Location: landing.php');
                     die();
-                }else{ header('Location: indexx.php?login_err=password'); die(); }
-            }else{ header('Location: indexx.php?login_err=email'); die(); }
-        }else{ header('Location: indexx.php?login_err=already'); die(); }
+                }else{ header('Location: connection.php?login_err=password'); die(); }
+            }else{ header('Location: connection.php?login_err=email'); die(); }
+        }else{ header('Location: connection.php?login_err=already'); die(); }
     }

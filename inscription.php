@@ -1,102 +1,115 @@
 <?php
-$page = 'Belleza Inscription';
-include 'parts/header.php';
+$page = 'Belleza inscription';
+include 'parts/header.php'
 ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>Document</title>
-</head>
-<body>
-    
 
-<!-- 		ville 	adresse_mail 	mot_de_passe 	 	-->
-<script type='text/javascript'>
-    function myCallback(pos) {
-        var myLatitude  = pos.latitude;
-        var myLongitude = pos.longitude;
-        var myAltitude  = pos.altitude;
+<div class="base">
+    <div class="holder"></div>
+    <div class="thread">
+        <div class="knob"></div>
+        <div class="pendulum">Rejoignez nous</div>
+    </div>
+    <div class="shadow"></div>
+</div>
+<div class="login-form">
+    <?php
+    if (isset($_GET['reg_err'])) {
+        $err = htmlspecialchars($_GET['reg_err']);
+        // switch equivalent de if, si la valeur contenu dans la case est bonne alors elle s'execute, break permet de dire qu'on dois sortire du switch 
+        // c'est d'un point de vue visuel plus simple que if else if 
+
+        switch ($err) {
+            case 'success':
+    ?>
+                <div class="alert alert-success">
+                    <strong>Succès</strong> inscription réussie !
+                </div>
+            <?php
+                break;
+
+            case 'password':
+            ?>
+                <div class="alert alert-danger">
+                    <strong>Erreur</strong> mot de passe différent
+                </div>
+            <?php
+                break;
+
+            case 'email':
+            ?>
+                <div class="alert alert-danger">
+                    <strong>Erreur</strong> email non valide
+                </div>
+            <?php
+                break;
+
+            case 'email_length':
+            ?>
+                <div class="alert alert-danger">
+                    <strong>Erreur</strong> email trop long
+                </div>
+            <?php
+                break;
+
+            case 'pseudo_length':
+            ?>
+                <div class="alert alert-danger">
+                    <strong>Erreur</strong> pseudo trop long
+                </div>
+            <?php
+            case 'already':
+            ?>
+                <div class="alert alert-danger">
+                    <strong>Erreur</strong> compte deja existant
+                </div>
+    <?php
+
+        }
     }
- 
-    /**
-     * Test pour support de GeoLocation
-     */
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(myCallback);
-    }
-</script>
-<!-- input Prenom -->
 
-<div class="input-group input-group-sm mb-3">
-  <span class="input-group-text" id="inputGroup-sizing-sm">Prenom</span>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    ?>
+
+    <form action="inscription_traitement.php" method="post">
+        <h2 class="text-center">Inscription</h2>
+
+
+        <div class="form-group">
+            <input type="text" name="nom" class="form-control" placeholder="Nom" required="required" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="text" name="prenom" class="form-control" placeholder="Prenom" required="required" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="text" name="ville" class="form-control" placeholder="Ville" required="required" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="text" name="genre" class="form-control" placeholder="Genre" required="required" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="text" name="proffession" class="form-control" placeholder="Proffession" required="required" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="text" name="pseudo" class="form-control" placeholder="Pseudo" required="required" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="password" name="password_retype" class="form-control" placeholder="Re-tapez le mot de passe" required="required" autocomplete="off">
+        </div>
+        <div method="post" class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Inscription</button>
+            <a href="connection.php">se connecter</a>
+        </div>
+    </form>
 </div>
-
-
-<!-- input Nom -->
-
-<div class="input-group input-group-sm mb-3">
-  <span class="input-group-text" id="inputGroup-sizing-sm">Nom</span>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-</div>
-
-<!-- input mail -->
-
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-  <span class="input-group-text">@</span>
-  <input type="text" class="form-control" placeholder="belleza.com" aria-label="Server">
-</div>
-
-
-
-
-<!-- input selection proffession -->
-
-<div class="input-group mb-3">
-  <button class="btn btn-outline-secondary" type="button">Proffession</button>
-  <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-    <option selected>Choisissez</option>
-    <option value="1">Employé</option>
-    <option value="2">Fonctionnaire</option>
-    <option value="3">autres</option>
-  </select>
-</div>
-
-<!--input selection sex -->
-<div class="input-group">
-  <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-    <option selected>sex</option>
-    <option value="1">Femme</option>
-    <option value="2">Homme</option>
-    <option value="3">Autres</option>
-  </select>
-</div>
-
-
-<!-- input pour recuperer image de profil -->
-<div class="input-group mb-3">
-  <input type="file" class="form-control" id="inputGroupFile02">
-  <label class="input-group-text" for="inputGroupFile02">Upload</label>
-</div>
-
-<a href="ConnectionCompte.php"> <button>envoyer</button> </a>
-<p>En cliquant ici vous allez etre rediriger vers la connection</p>
-
-
-</body>
-</html>
-
-
-
 
 <?php
-    include 'parts/footer.php';
-    ?>
+include 'parts/footer.php'
+?>
