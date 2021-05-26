@@ -84,10 +84,9 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
                 <!-- #coiffure => active -->
 
                 <li class="nav-item ">
-                    <a class="nav-link " href="coiffure.php">Coiffure</a>
-
+                   
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="coiffure.php">Coiffure<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="coiffure.php">Coiffure</a>
 
                 </li>
                 <li class="nav-item">
