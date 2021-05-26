@@ -2,7 +2,7 @@
     // Démarrage de la session 
     session_start();
     // Include de la base de données
-    require_once '../config.php';
+    require_once 'config.php';
 
 
     // Si la session n'existe pas 
@@ -38,12 +38,12 @@
                     "password" => $new_password,
                     "email" => $_SESSION['user']
                 ));
-                header('Location: ../inscription.php?err=success_password');
+                header('Location:espace_membre.php?err=success_password');
                 die();
             }
         }
         else{
-            header('Location: ../inscription.php?err=current_password');
+            header('Location:espace_membre.php?err=current_password');
             die();
         }
 

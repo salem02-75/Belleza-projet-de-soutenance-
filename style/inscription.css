@@ -57,11 +57,11 @@
 
 .pendulum {
     width: 160px;
-    background: -moz-radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
-    background: -webkit-radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
-    background: -o-radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
-    background: -ms-radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
-    background: radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
+    background: -moz-radial-gradient(circle at 70% 35%, rgb(250, 79, 79), #fd2222 30%, #ff002b 50%);
+    background: -webkit-radial-gradient(circle at 70% 35%, rgb(250, 79, 79), #fd2222 30%, #ff002b 50%);
+    background: -o-radial-gradient(circle at 70% 35%, rgb(250, 79, 79), #fd2222 30%, #ff002b 50%);
+    background: -ms-radial-gradient(circle at 70% 35%, rgb(250, 79, 79), #fd2222 30%, #ff002b 50%);
+    background: radial-gradient(circle at 70% 35%, rgb(250, 79, 79), #fd2222 30%, #ff002b 50%);
     border-radius: 10%;
     position: absolute;
     bottom: -37px;
@@ -128,4 +128,22 @@
 .btn {
     font-size: 15px;
     font-weight: bold;
+}
+
+.degradé {
+    background: linear-gradient(-45deg, #070570, #57caf7, #23a6d5, #0c035e);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

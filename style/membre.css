@@ -1,0 +1,79 @@
+    .degradé {
+        background: linear-gradient(-45deg, #bdf8f5, #f5f5f8, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    .btn {
+        line-height: 50px;
+        height: 50px;
+        text-align: center;
+        width: 250px;
+        cursor: pointer;
+    }
+    
+    .btn-two {
+        color: rgb(255, 255, 255);
+        transition: all 0.5s;
+        position: relative;
+    }
+    
+    .btn-two span {
+        z-index: 2;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .btn-two::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.7s;
+        border: 1px solid rgba(238, 5, 5, 0.5);
+        background-color: rgba(250, 11, 11, 0.3);
+    }
+    
+    .btn-two::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.5s;
+        border: 1px solid rgb(252, 4, 4);
+        background-color: rgb(253, 253, 253);
+    }
+    
+    .btn-two:hover::before {
+        transform: rotate(-45deg);
+        background-color: rgba(252, 7, 7, 0.1);
+    }
+    
+    .btn-two:hover::after {
+        transform: rotate(45deg);
+        background-color: rgba(250, 7, 7, 0);
+    }
+    
+    .contact:hover {
+        text-decoration: none;
+    }

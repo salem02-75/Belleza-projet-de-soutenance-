@@ -11,11 +11,11 @@ include 'parts/header.php'
     <div class="holder"></div>
     <div class="thread">
         <div class="knob"></div>
-        <div class="pendulum">Rejoignez nous</div>
+        <div class=" text-white pendulum">Rejoignez nous</div>
     </div>
     <div class="shadow"></div>
 </div>
-<div class="login-form">
+<div class="login-form ">
     <?php
     if (isset($_GET['reg_err'])) {
         $err = htmlspecialchars($_GET['reg_err']);
@@ -105,7 +105,7 @@ include 'parts/header.php'
             <input type="password" name="password_retype" class="form-control" placeholder="Re-tapez le mot de passe" required="required" autocomplete="off">
         </div>
         <div method="post" class="form-group">
-            <button type="submit" class="btn btn-primary btn-block">Inscription</button>
+            <button type="submit" class="btn  text-white degradé btn-block">Inscription</button>
             <a href="connection.php">se connecter</a>
         </div>
     </form>
