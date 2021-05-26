@@ -17,8 +17,6 @@ include 'functions/tri.php';
 <div class="container">
   <div class="row d-flex justify-content-center mt-5">
 
-
-
     <?php for ($i = 0; $i < count($res); $i++) : ?>
       <!--template pour une future boucle php -->
 

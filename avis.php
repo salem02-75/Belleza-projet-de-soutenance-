@@ -15,8 +15,6 @@ include 'functions/pagination.php';
 
 <main>
 
-
-
     <?php for ($i = 0; $i < count($res); $i++) : ?>
 
         <div class="d-flex justify-content-center m-5">
