@@ -176,7 +176,7 @@ header {
     background-position: center;
 }
 
-.banniere h1,p{
+.banniere .banniere-title,.banniere-text{
     color: #00c2cb;
 }
 
