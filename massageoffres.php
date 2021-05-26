@@ -66,7 +66,7 @@ include 'functions/tronque.php';
 
       <div class="col-lg-12 col-md-12 col-sm-12">
         <!-- Carte Offre Desktop-->
-        <div class="card card_desktop_service mb-3" style="max-width: 125vh;">
+        <div class="card card_desktop_service mb-3">
           <div class="row g-0">
             <div class="col-4 overflow-hidden taille_img_service_offres">
 

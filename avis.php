@@ -16,9 +16,9 @@ $res = request_sql($dbh, $sql);
 <div class="bg-white w-75 m-auto p-4 my-5">
 
     <?php if (isset($_POST["name"]) && $done) : ?>
-        <p>votre commentaire <?php echo $_POST["name"] ; ?> a bien été ajouter</p>
+        <p>Le commentaire de <?php echo $_POST["name"] ; ?> a bien été ajouter</p>
     <?php elseif (isset($_POST["name"]) && !$done) : ?>
-        <p>votre commentaire <?php echo var_dump($_POST["name"]) ?> n'a pas été ajouter </p>
+        <p>Le commentaire de <?php echo var_dump($_POST["name"]) ?> n'a pas été ajouter </p>
     <?php endif ?>
 
     <form action="./avis.php" method="POST">
@@ -36,5 +36,5 @@ $res = request_sql($dbh, $sql);
 </main>
 
 <?php
-include 'parts/footer-light.php';
+include 'parts/footer.php';
 ?>

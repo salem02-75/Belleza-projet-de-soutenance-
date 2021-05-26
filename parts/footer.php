@@ -120,7 +120,7 @@
                         <span class="d-sm-none d-md-none border-left my-3 pr-3"></span>
                         <div class="d-flex flex-column">
                             <!-- rajouter les liens # -->
-                            <a href="deposer_annonce.php" class="d-md-none d-lg-none py-2">Déposer un annonce</a>
+                            <a href="" class="d-md-none d-lg-none py-2">Déposer un annonce</a>
                             <a href="qui_somme_nous.php" class="d-lg-none d-md-none py-2">A propos</a>
                             <a href="" class="d-md-none d-lg-none py-2">Nous-contacter</a>
                         </div>
@@ -128,21 +128,27 @@
                     </div>
                 </div><!-- col-4 Annonce/Newsletter/contact-->
 
+      
+
             </div><!-- row -->
+            <div class="row  ">
+                           <!-- &copy -->
+                <div class="copy col-md-12 text-center ">
+                     &copy;soutenance 2021 Collombus,By Guillaume, Salima, Aida
+                
+               </div>
+                <!-- <div class="">
+                    
+                </div> -->
+            </div>
 
         </div><!-- container 2 -->
 
 
+       
 
     </div><!-- footer -->
 
-    <!-- &copy -->
-    <div class="container">
-        <div class="copy col-lg-12 col-md-12  col-sm-12 d-flex  justify-content-center ">
-            &copy;soutenance 2021 Collombus,By Guillaume, Salima, Aida
-            
-        </div>
-    </div>
 
    
     <!-- ========================================= -->
