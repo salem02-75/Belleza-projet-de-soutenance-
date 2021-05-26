@@ -5,17 +5,18 @@ include 'parts/header.php';
 // Permet d'afficher les avis 
 include 'functions/connect.php';
 // lance la fonction de connection a la db
+$sql = 'SELECT * FROM avis ORDER BY id DESC';
 $dbh = db_connect();
 // $sql est la direction de la tab dans la base de donné qui agis sur functions/connect.php
-$sql = "SELECT * FROM `avis` ";
 $res = request_sql($dbh, $sql);
 ?>
 
 
 
+
 <main>
-     <!-- la bnniere -->
-     <div class="banniere">
+    <!-- la bnniere -->
+    <div class="banniere">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ">
@@ -23,14 +24,7 @@ $res = request_sql($dbh, $sql);
                         <h1 class="banniere-title  d-flex  display-sm-4  display-md-3">Ne Bougez pas, on vient à Vous</h1>
                         <p class="banniere-text display-sm-4 display-sm-5 pt-3">seule, en couple ou
                             en famille pour voud rendre <span>BELLEZA</span></p>
-
-                        
-                        <a href="#" class="btn btn-outline-secondary text-white bg-transparent mr-3 py-2 px-4 mt-4" role="button"
-                            aria-pressed="true">Inscrivez vous</a>
-                      
-
-                            
-
+                        <a href="#" class="btn btn-outline-secondary text-white bg-transparent mr-3 py-2 px-4 mt-4" role="button" aria-pressed="true">Inscrivez vous</a>
                     </div>
                 </div>
             </div>
@@ -47,11 +41,11 @@ $res = request_sql($dbh, $sql);
     <div id="service" class="container">
         <div class="row d-flex justify-content-center ">
             <!-- col-1 -->
-            <div class=" col-9 col-md-6 col-lg-4  mb-sm-4" >
+            <div class=" col-9 col-md-6 col-lg-4  mb-sm-4">
 
                 <div class="card mb-4">
                     <div>
-                        <a  href="coiffure.php">
+                        <a href="coiffure.php">
                             <a href="coiffure.php">
                                 <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux" class="card-img-top imgService " width=150px>
                             </a>
@@ -63,9 +57,9 @@ $res = request_sql($dbh, $sql);
                                     Mèches et Coloration, Soin de cheveux,,,
                                 </p>
                             </div>
-                            
-                        </a> 
-                    </div> 
+
+                        </a>
+                    </div>
                 </div> <!-- fin de card-1 -->
 
             </div> <!-- fin de col-1  -->
@@ -133,39 +127,36 @@ $res = request_sql($dbh, $sql);
 
                             <div class="carousel-item active ">
                                 <div class="row">
-
                                     <!-- item-1 !-->
                                     <div class="col-md-4">
                                         <div class="box text-center py-4 px-3">
                                             <div class="icon">
-                                                <i class="fas fa-star text-danger"></i>
+                                                <?php echo $res[0]["note"] ?>
                                             </div>
-                                            <h3 class="name">Sélo</h3>
-                                            <p class=" mb-3 text-secondary">Lorem ipsum dolor sit amet, consectetur
-                                                adipisicing elit.
-                                                Facilis
-                                                soluta modi,
-                                                dolores
-                                                magni aut ipsum!</p>
+                                            <h3 class="name"><?php echo $res[0]["name"] ?></h3>
+                                            <p class=" mb-3 text-secondary"><?php echo $res[0]["contenue"] ?></p>
+                                            <?php
+                                            $date = $res[0]["date_creation"];
+                                            $timestamp = strtotime($date);
+                                            ?>
+                                            <p class=" mb-3 mt-2 text-secondary"><?php echo date('d-m-Y', $timestamp); ?></p>
+
                                         </div><!--  fin box-1 -->
                                     </div><!--  fin col-1 -->
 
                                     <!-- item-2 -->
                                     <div class="col-md-4">
                                         <div class="box text-center py-4 px-3">
-                                            <div class="icon ">
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
+                                            <div class="icon">
+                                                <?php echo $res[1]["note"] ?>
                                             </div>
-                                            <h3 class="name">Zaza</h3>
-                                            <p class="mb-3 text-secondary">Lorem ipsum dolor sit amet, consectetur
-                                                adipisicing elit.
-                                                Facilis
-                                                soluta modi,
-                                                dolores
-                                                magni aut ipsum!</p>
+                                            <h3 class="name"><?php echo $res[1]["name"] ?></h3>
+                                            <p class=" mb-3 text-secondary"><?php echo $res[1]["contenue"] ?></p>
+                                            <?php
+                                            $date = $res[1]["date_creation"];
+                                            $timestamp = strtotime($date);
+                                            ?>
+                                            <p class=" mb-3 mt-2 text-secondary"><?php echo date('d-m-Y', $timestamp); ?></p>
                                         </div><!--  fin box-2 -->
                                     </div><!--  fin col-2 -->
 
@@ -173,17 +164,15 @@ $res = request_sql($dbh, $sql);
                                     <div class="col-md-4">
                                         <div class="box text-center py-4 px-3">
                                             <div class="icon">
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
+                                                <?php echo $res[2]["note"] ?>
                                             </div>
-                                            <h3 class="name">Lazhari</h3>
-                                            <p class="mb-3 text-secondary">Lorem ipsum dolor sit amet, consectetur
-                                                adipisicing elit.
-                                                Facilis
-                                                soluta modi,
-                                                dolores
-                                                magni aut ipsum!</p>
+                                            <h3 class="name"><?php echo $res[2]["name"] ?></h3>
+                                            <p class=" mb-3 text-secondary"><?php echo $res[2]["contenue"] ?></p>
+                                            <?php
+                                            $date = $res[2]["date_creation"];
+                                            $timestamp = strtotime($date);
+                                            ?>
+                                            <p class=" mb-3 mt-2 text-secondary"><?php echo date('d-m-Y', $timestamp); ?></p>
                                         </div><!--  fin box-3 -->
                                     </div><!--  fin col-3 -->
 
@@ -198,15 +187,15 @@ $res = request_sql($dbh, $sql);
                                     <div class="col-md-4">
                                         <div class="box text-center py-4 px-3">
                                             <div class="icon">
-                                                <i class="fas fa-star text-danger"></i>
+                                                <?php echo $res[3]["note"] ?>
                                             </div>
-                                            <h3 class="name">Mérah</h3>
-                                            <p class="mb-3 text-secondary">Lorem ipsum dolor sit amet, consectetur
-                                                adipisicing elit.
-                                                Facilis
-                                                soluta modi,
-                                                dolores
-                                                magni aut ipsum!</p>
+                                            <h3 class="name"><?php echo $res[3]["name"] ?></h3>
+                                            <p class=" mb-3 text-secondary"><?php echo $res[3]["contenue"] ?></p>
+                                            <?php
+                                            $date = $res[3]["date_creation"];
+                                            $timestamp = strtotime($date);
+                                            ?>
+                                            <p class=" mb-3 mt-2 text-secondary"><?php echo date('d-m-Y', $timestamp); ?></p>
                                         </div> <!--  fin box-1 -->
                                     </div><!--  fin col-1 -->
 
@@ -214,18 +203,16 @@ $res = request_sql($dbh, $sql);
                                     <div class="col-md-4">
                                         <div class="box text-center py-4 px-3">
                                             <div class="icon ">
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
+
+                                                <?php echo $res[4]["note"] ?>
                                             </div>
-                                            <h3 class="name">Guillaume</h3>
-                                            <p class="mb-3 text-secondary">Lorem ipsum dolor sit amet, consectetur
-                                                adipisicing elit.
-                                                Facilis
-                                                soluta modi,
-                                                dolores
-                                                magni aut ipsum!</p>
+                                            <h3 class="name"><?php echo $res[4]["name"] ?></h3>
+                                            <p class=" mb-3 text-secondary"><?php echo $res[4]["contenue"] ?></p>
+                                            <?php
+                                            $date = $res[4]["date_creation"];
+                                            $timestamp = strtotime($date);
+                                            ?>
+                                            <p class=" mb-3 mt-2 text-secondary"><?php echo date('d-m-Y', $timestamp); ?></p>
                                         </div><!--  fin box-2 -->
                                     </div><!--  fin col-2 -->
 
@@ -233,17 +220,15 @@ $res = request_sql($dbh, $sql);
                                     <div class="col-md-4">
                                         <div class="box text-center py-4 px-3">
                                             <div class="icon">
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
+                                                <?php echo $res[5]["note"] ?>
                                             </div>
-                                            <h3 class="name">Eguale</h3>
-                                            <p class="mb-3 text-secondary">Lorem ipsum dolor sit amet, consectetur
-                                                adipisicing elit.
-                                                Facilis
-                                                soluta modi,
-                                                dolores
-                                                magni aut ipsum!</p>
+                                            <h3 class="name"><?php echo $res[5]["name"] ?></h3>
+                                            <p class=" mb-3 text-secondary"><?php echo $res[5]["contenue"] ?></p>
+                                            <?php
+                                            $date = $res[5]["date_creation"];
+                                            $timestamp = strtotime($date);
+                                            ?>
+                                            <p class=" mb-3 mt-2 text-secondary"><?php echo date('d-m-Y', $timestamp); ?></p>
                                         </div><!--  fin box-3 -->
                                     </div><!--  fin col-3 -->
 
@@ -260,15 +245,16 @@ $res = request_sql($dbh, $sql);
                                         <!-- item-1 -->
                                         <div class="box text-center py-4 px-3">
                                             <div class="icon">
-                                                <i class="fas fa-star text-danger"></i>
+
+                                                <?php echo $res[6]["note"] ?>
                                             </div>
-                                            <h3 class="name">Pikatcho</h3>
-                                            <p class="mb-3 text-secondary">Lorem ipsum dolor sit amet, consectetur
-                                                adipisicing elit.
-                                                Facilis
-                                                soluta modi,
-                                                dolores
-                                                magni aut ipsum!</p>
+                                            <h3 class="name"><?php echo $res[6]["name"] ?></h3>
+                                            <p class=" mb-3 text-secondary"><?php echo $res[6]["contenue"] ?></p>
+                                            <?php
+                                            $date = $res[6]["date_creation"];
+                                            $timestamp = strtotime($date);
+                                            ?>
+                                            <p class=" mb-3 mt-2 text-secondary"><?php echo date('d-m-Y', $timestamp); ?></p>
                                         </div><!--  fin item-1 -->
 
                                     </div><!--  fin col-1 -->
@@ -277,17 +263,16 @@ $res = request_sql($dbh, $sql);
                                         <!-- item-2 -->
                                         <div class="box text-center py-4 px-3">
                                             <div class="icon">
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
+
+                                                <?php echo $res[7]["note"] ?>
                                             </div>
-                                            <h3 class="name">Kadir</h3>
-                                            <p class="mb-3 text-secondary">Lorem ipsum dolor sit amet, consectetur
-                                                adipisicing elit. Facilis
-                                                soluta modi,
-                                                dolores
-                                                magni aut ipsum!</p>
+                                            <h3 class="name"><?php echo $res[7]["name"] ?></h3>
+                                            <p class=" mb-3 text-secondary"><?php echo $res[7]["contenue"] ?></p>
+                                            <?php
+                                            $date = $res[7]["date_creation"];
+                                            $timestamp = strtotime($date);
+                                            ?>
+                                            <p class=" mb-3 mt-2 text-secondary"><?php echo date('d-m-Y', $timestamp); ?></p>
                                         </div>
                                     </div><!--  fin item-2 -->
 
@@ -296,16 +281,16 @@ $res = request_sql($dbh, $sql);
                                         <!-- item-3 -->
                                         <div class="box text-center py-4 px-3">
                                             <div class="icon">
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
-                                                <i class="fas fa-star text-danger"></i>
+
+                                                <?php echo $res[8]["note"] ?>
                                             </div>
-                                            <h3 class="name">Shayn</h3>
-                                            <p class="mb-3 text-secondary">Lorem ipsum dolor sit amet, consectetur
-                                                adipisicing elit. Facilis
-                                                soluta modi,
-                                                dolores
-                                                magni aut ipsum!</p>
+                                            <h3 class="name"><?php echo $res[8]["name"] ?></h3>
+                                            <p class=" mb-3 text-secondary"><?php echo $res[8]["contenue"] ?></p>
+                                            <?php
+                                            $date = $res[8]["date_creation"];
+                                            $timestamp = strtotime($date);
+                                            ?>
+                                            <p class=" mb-3 mt-2 text-secondary"><?php echo date('d-m-Y', $timestamp); ?></p>
                                         </div><!--  fin item-3 -->
 
                                     </div><!--  fin col-3 -->
@@ -369,7 +354,7 @@ $res = request_sql($dbh, $sql);
         </div><!-- container engagement-->
 
     </div>
-    
+
     <!-- ========================================= -->
     <!-- ENGAGEMENT FIN -->
     <!-- ========================================= -->
@@ -390,7 +375,7 @@ $res = request_sql($dbh, $sql);
                 <button type="button" name="button" class="btn btn-outline btn-email  rounded-right text-white text-uppercase border-0 ">Envoyer</button>
             </div>
         </form><!-- from-Newsletter -->
-      
+
     </div><!-- container- newsletter fin-->
 
     <!-- ========================================= -->
