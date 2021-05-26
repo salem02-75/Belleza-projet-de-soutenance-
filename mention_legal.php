@@ -63,5 +63,5 @@ Les bases de données sont protégées par les dispositions de la loi du 1er jui
 
 
 <?php
-include 'parts/footer-light.php';
+include 'parts/footer.php';
 ?>

@@ -3,8 +3,8 @@ $page = 'Belleza FAQ';
 include 'parts/header.php';
 ?>
 
-<section id="faq" class="my-150">
-            <div class="container ">
+<section id="faq" class="my-5">
+            <div class="container py-5">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
 
@@ -12,11 +12,12 @@ include 'parts/header.php';
 
                         <div class="accordion mt-5" id="accordionExample">
                             <!-- card 1 de la FAQ -->
-                            <div class="card">
+                            <div class="card ">
 
-                                <div class="card-header" id="headingOne">
+                                <div class="card-header d-flex " id="headingOne">
+                                    <img src="images/target.png" alt="icon de profil client"  class="p-4  mr-2">
                                     <!-- titre 1 -->
-                                    <h2 class="claerfix my-2">
+                                    <h2 class="claerfix my-2 p-3 ">
                                         <a class="btn btn-link text-decoration-none font-weight-bold text-dark" data-toggle="collapse" data-target="#collapseOne"
                                             aria-expanded="true" aria-controls="collapseOne">
                                             Je suis un client<i class="fa fa-angle-down ml-3"></i>
@@ -40,9 +41,10 @@ include 'parts/header.php';
                              <!-- card 2 de la FAQ -->
                              <div class="card">
 
-                                <div class="card-header" id="headingTwo">
+                                <div class="card-header d-flex " id="headingTwo">
+                                    <img src="images/mallette.png" alt="icon d'une mallette de professionnel"  class="p-4  align-items-center mr-2">
                                     <!-- titre 2 -->
-                                    <h2 class="claerfix my-2">
+                                    <h2 class="claerfix p-3 my-2">
                                         <a class="btn btn-link text-decoration-none font-weight-bold text-dark" data-toggle="collapse" data-target="#collapseTwo"
                                             aria-expanded="true" aria-controls="collapseTwo">
                                             Je suis un professionel
@@ -67,11 +69,12 @@ include 'parts/header.php';
                              <!-- card 3 de la FAQ -->
                              <div class="card">
 
-                                <div class="card-header" id="headingThree">
-                                    <h2 class="claerfix my-2">
+                                <div class="card-header d-flex" id="headingThree">
+                                    <img src="images/partenaire.png" alt="icon de partonariat" class="p-4  align-items-center mr-2">
+                                    <h2 class="claerfix p-3 my-2">
                                         <a class="btn btn-link text-decoration-none font-weight-bold text-dark" data-toggle="collapse" data-target="#collapseThree"
                                             aria-expanded="true" aria-controls="collapseThree">
-                                            Partonarias<i class="fa fa-angle-down ml-3"></i>
+                                            Partonariats<i class="fa fa-angle-down ml-3"></i>
                                         </a>
                                     </h2>
                                 </div>
@@ -93,9 +96,10 @@ include 'parts/header.php';
                             <!-- card 4 de la FAQ -->
                             <div class="card">
 
-                                <div class="card-header" id="headingFour">
+                                <div class="card-header d-flex" id="headingFour">
+                                    <img src="images/masque.png" alt="icon de coronavirus" class="p-4 align-items-center mr-2">
                                     <!-- titre 4 -->
-                                    <h2 class="claerfix my-2">
+                                    <h2 class="claerfix p-3 my-2">
                                         <a class="btn btn-link text-decoration-none font-weight-bold text-dark" data-toggle="collapse" data-target="#collapseFour"
                                             aria-expanded="true" aria-controls="collapseOne">
                                            Coronavirus et Messures sanitaires<i class="fa fa-angle-down ml-2"></i>
@@ -119,9 +123,10 @@ include 'parts/header.php';
                             <!-- card 5 de la FAQ -->
                             <div class="card">
 
-                                <div class="card-header" id="headingFive">
+                                <div class="card-header d-flex" id="headingFive">
+                                    <img src="images/cookies.png" alt="icon d'un cookies de donnée" class="p-4 align-items-center mr-2">
                                     <!-- titre 5 -->
-                                    <h2 class="claerfix my-2">
+                                    <h2 class="claerfix p-3 my-2">
                                         <a class="btn btn-link text-decoration-none font-weight-bold text-dark" data-toggle="collapse" data-target="#collapseFive"
                                             aria-expanded="true" aria-controls="collapseOne">
                                            Les cookies<i class="fa fa-angle-down ml-3"></i>

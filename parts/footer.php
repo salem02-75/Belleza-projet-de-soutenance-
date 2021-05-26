@@ -128,21 +128,27 @@
                     </div>
                 </div><!-- col-4 Annonce/Newsletter/contact-->
 
+      
+
             </div><!-- row -->
+            <div class="row  ">
+                           <!-- &copy -->
+                <div class="copy col-md-12 text-center ">
+                     &copy;soutenance 2021 Collombus,By Guillaume, Salima, Aida
+                
+               </div>
+                <!-- <div class="">
+                    
+                </div> -->
+            </div>
 
         </div><!-- container 2 -->
 
 
+       
 
     </div><!-- footer -->
 
-    <!-- &copy -->
-    <div class="container">
-        <div class="copy col-lg-12 col-md-12  col-sm-12 d-flex  justify-content-center ">
-            &copy;soutenance 2021 Collombus,By Guillaume, Salima, Aida
-            
-        </div>
-    </div>
 
    
     <!-- ========================================= -->
