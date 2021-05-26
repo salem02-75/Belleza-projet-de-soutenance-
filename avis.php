@@ -27,7 +27,12 @@ include 'functions/pagination.php';
                     </div>
                     <h3 class="name"><?php echo $res[$i]["name"] ?></h3>
                     <p class=" mb-3 text-secondary"><?php echo $res[$i]["contenue"] ?></p>
-                    <p class=" mb-3 mt-2 text-secondary"><?php echo $res[$i]["date_creation"] ?></p>
+                    <?php 
+                    $date = $res[$i]["date_creation"];
+                    $timestamp = strtotime($date);
+                    ?>
+                    <p class=" mb-3 mt-2 text-secondary"><?php echo date('d-m-Y', $timestamp); ?></p>
+                    
                 </div><!--  fin box-1 -->
             </div><!--  fin col-1 -->
         </div>
