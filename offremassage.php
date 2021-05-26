@@ -53,7 +53,7 @@ include 'functions/mail_offres.php';
         <!-- Content -->
         <div class="mb-3 mt-3 content">
             <label for="exampleFormControlTextarea1" class="form-label">Contenu du message</label>
-            <textarea name="content" class="form-control" id="content" rows="3">Bonjour, je prend contact avec vous pour connaître vos disponibilité...</textarea>
+            <textarea name="content" class="form-control" id="content" rows="3">Bonjour, je prends contact avec vous pour connaître vos disponibilités...</textarea>
         </div>
 
         <!-- Boutton submit -->

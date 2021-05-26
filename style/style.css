@@ -164,6 +164,7 @@ header {
     -webkit-background-size: cover;
     background-size: cover;
     background-image: url(../images/banniere_large.jpg);
+    height: 620px;
 }
 
 .banniere .container {
