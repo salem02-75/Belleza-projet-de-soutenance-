@@ -14,7 +14,7 @@ include 'parts/header.php';
     <!-- ========================================= -->
 
 
-    <section class="  my-5" id="nous-contacter">
+    <section class="container  my-5" id="nous-contacter">
         <section class="  my-5" id="Nous-contacter" action="contacter_traitement.php" method="post">
 
 
@@ -78,22 +78,26 @@ include 'parts/header.php';
                         <!-- Création du formulaire de contact post -->
                         <div class="container bg-danger">
                             <div class="d-flex justify-content-center">
-                                <div class="col-md-6 m-4">
+                                <div class="col-md-6  m-4">
+                                    <div class="text-center">
+                                        <h1>Contactez-nous ! </h1>
+                                    </div>
                                     <form action="contacter_traitement.php" method="POST">
                                         <div class="form-group">
-                                            <div class="text-center">
-                                                <h1>Contactez-nous ! </h1>
+                                            <div class="py-3 ">
+                                                <input type="text" name="surname" placeholder="Nom" autocomplete="off" class="form-control rounded" />
                                             </div>
-                                            <div class="d-flex">
-                                                <input type="text" name="surname" placeholder="Nom" autocomplete="off" class="form-control" />
-                                                <input type="text" name="firstname" placeholder="Prénom" autocomplete="off" class="form-control" />
+                                            <div class="py-3">
+                                                <input type="text" name="firstname" placeholder="Prénom" autocomplete="off" class="form-control rounded" />
                                             </div>
-                                            <br />
-                                            <input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control" />
-                                            <br />
-                                            <textarea rows="10" name="message" placeholder="Envoyez votre message à bellezafrance.contact@gmail.com" class="form-control"></textarea>
-                                            <br />
-                                            <button type="submit" class="btn btn-lg btn-primary">Envoyer</button>
+                                            <div class="py-3">
+                                                <input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control rounded" />
+                                            </div>
+                                            <div class="py-3">
+                                                <textarea rows="10" name="message" placeholder="Envoyez votre message à bellezafrance.contact@gmail.com" class="form-control rounded"></textarea>
+                                            </div>
+                                           
+                                            <button type="submit" class="btn btn-lg btn-primary rounded ">Envoyer</button>
                                         </div>
                                     </form>
                                 </div>
@@ -114,7 +118,7 @@ include 'parts/header.php';
 
 
 
-        </div>
+    </div>
 
 <?php
 include 'parts/footer.php';
