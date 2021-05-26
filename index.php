@@ -18,8 +18,8 @@ $res = request_sql($dbh, $sql);
      <div class="banniere">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <div class="banniere-body">
+                <div class="col-md-8 ">
+                    <div class="banniere-body ml-4 pl-3">
                         <h1 class="banniere-title text-white d-flex">Ne <span class="ml-2">B</span>ougez pas, on vient à
                             <span class="ml-2">Vous</span></h1>
                         <p class="banniere-text pt-3">seule, en couple ou
