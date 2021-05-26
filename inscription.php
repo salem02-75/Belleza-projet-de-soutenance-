@@ -24,7 +24,7 @@ include 'parts/header.php'
 
         switch ($err) {
             case 'success':
-    ?>
+         ?>
                 <div class="alert alert-success">
                     <strong>Succès</strong> inscription réussie !
                 </div>

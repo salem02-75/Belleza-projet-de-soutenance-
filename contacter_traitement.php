@@ -26,13 +26,14 @@ $mj = new \Mailjet\Client('b1044fabb2c572cd1dcb11febf22a6ac','0ef154649689b2715b
                     ]
                   ],
                   'Subject' => "demande de rensaignement",
-                  'TextPart' => "$email, $message",
+                  'TextPart' => "$email,$surname, $firstname, $message",
                 ]
               ]
         ];
         $response = $mj->post(Resources::$Email, ['body' => $body]);
         $response->success();
         echo "Email envoyé avec succès ! ";
+        header('Location:nousContacter.php?reg_err=success');
         
         }
         else{

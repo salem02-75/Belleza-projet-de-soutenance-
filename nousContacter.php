@@ -14,6 +14,44 @@ include 'parts/header.php';
     <!-- ========================================= -->
 
 
+    <?php
+    if (isset($_GET['reg_err'])) {
+        $err = htmlspecialchars($_GET['reg_err']);
+        // switch equivalent de if, si la valeur contenu dans la case est bonne alors elle s'execute, break permet de dire qu'on dois sortire du switch 
+        // c'est d'un point de vue visuel plus simple que if else if 
+
+        switch ($err) {
+            case 'success':
+         ?>
+                <div class="alert alert-success">
+                    <strong>Succès</strong> envoie réussie !
+                </div>
+            <?php
+                break;
+
+            case 'password':
+            ?>
+                <div class="alert alert-danger">
+                    <strong>Erreur</strong> mot de passe différent
+                </div>
+            <?php
+                break;
+
+            case 'email':
+            ?>
+                <div class="alert alert-danger">
+                    <strong>Erreur</strong> email non valide
+                </div>
+            <?php
+                break;
+
+        
+        }
+    }
+
+    ?>
+
+
     <section class="  my-5" id="nous-contacter">
         <section class="  my-5" id="Nous-contacter" action="contacter_traitement.php" method="post">
 
