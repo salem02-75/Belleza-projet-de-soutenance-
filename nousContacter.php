@@ -41,15 +41,15 @@ include 'parts/header.php';
                                 <!-- <div  class=" "> -->
                                 <!-- <span class=" d-flex border-right "></span> -->
                                 <!-- <div class=" d-flex  "> -->
-                                <a href="#" class="text-decoration-none">
+                                <a href="https://www.facebook.com/belleza.france" class="text-decoration-none">
                                     <i class="fab fa-facebook-f pl-5 "></i>
                                 </a>
 
-                                <a href="#" class="text-decoration-none">
+                                <a href="https://www.instagram.com/belleza_france/" class="text-decoration-none">
                                     <i class="fab  fa-instagram px-3 "></i>
                                 </a>
 
-                                <a href="#" class="text-decoration-none">
+                                <a href="https://twitter.com/belleza42020217" class="text-decoration-none">
                                     <i class="fab fa-twitter "></i>
                                 </a>
                                 <!-- </div> -->

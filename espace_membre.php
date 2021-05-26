@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 // si la session existe pas soit si l'on est pas connecté on redirige
@@ -38,6 +39,14 @@ include 'parts/header.php'
         ?>
 
 
+<head>
+<link rel="stylesheet" href="style/membre.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+
+
         <div class="text-center">
             <h1 class="p-5">Bonjour ! </h1>
             <a href="index.php" class="btn btn-danger btn-lg">Déconnexion</a>
@@ -45,14 +54,17 @@ include 'parts/header.php'
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#change_password">
                 Changer mon mot de passe
             </button>
+            <!-- VERSION DEUX 
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#avatar">
                 Changer mon avatar
             </button>
+            -->
         </div>
 
         <a href="nousContacter.php">nous contacter</a>
     </div>
 </div>
+
 
 <div class="modal fade" id="avatar" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -78,7 +90,6 @@ include 'parts/header.php'
         </div>
     </div>
 </div>
-
 
 
 

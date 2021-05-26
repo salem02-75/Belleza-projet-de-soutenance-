@@ -30,7 +30,7 @@
                 {
                     // On créer la session et on redirige sur landing.php
                     $_SESSION['user'] = $data['email'];
-                    header('Location: landing.php');
+                    header('Location: espace_membre.php');
                     die();
                 }else{ header('Location: connection.php?login_err=password'); die(); }
             }else{ header('Location: connection.php?login_err=email'); die(); }

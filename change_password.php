@@ -38,12 +38,12 @@
                     "password" => $new_password,
                     "email" => $_SESSION['user']
                 ));
-                header('Location: ../landing.php?err=success_password');
+                header('Location: ../inscription.php?err=success_password');
                 die();
             }
         }
         else{
-            header('Location: ../landing.php?err=current_password');
+            header('Location: ../inscription.php?err=current_password');
             die();
         }
 

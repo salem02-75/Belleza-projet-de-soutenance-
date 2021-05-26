@@ -27,7 +27,7 @@ include 'parts/header.php';
              
               <div> <a href="qui_somme_nous_guillaume.php"><img src="images/face_co(5).png"  class="img-thumbnail" alt=""></a>
                 
-                <div class="social-info"><a href="https://www.facebook.com/belleza.france"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/belleza42020217"><i class="fa fa-twitter"></i></a><a href="https://www.instagram.com/belleza_france/">
+                <div class="social-info"><a href="https://www.facebook.com/belleza.france"><i class="fab fa-facebook"></i></a><a href="https://twitter.com/belleza42020217"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/belleza_france/">
                                 <i class="fab  fa-instagram "></i>
                             </a></div>
               </div>
@@ -47,7 +47,7 @@ include 'parts/header.php';
               
               <div ><a href="qui_somme_nous.php"> <img src="images/face_co(4).png"  class="img-thumbnail " alt=""></a>
                 
-                <div class="social-info"><a href="https://www.facebook.com/belleza.france"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/belleza42020217"><i class="fa fa-twitter"></i></a><a href="https://www.instagram.com/belleza_france/">
+                <div class="social-info"><a href="https://www.facebook.com/belleza.france"><i class="fab fa-facebook"></i></a><a href="https://twitter.com/belleza42020217"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/belleza_france/">
                                 <i class="fab  fa-instagram "></i>
                             </a></div>
               </div>
@@ -69,7 +69,7 @@ include 'parts/header.php';
               
               <div> <a href="qui_somme_nous_aida.php"><img src="images/face_co(3).png"  class="img-thumbnail" alt=""></a>
                 
-                <div class="social-info"><a href="https://www.facebook.com/belleza.france"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/belleza42020217"><i class="fa fa-twitter"></i></a><a href="https://www.instagram.com/belleza_france/">
+                <div class="social-info"><a href="https://www.facebook.com/belleza.france"><i class="fab fa-facebook"></i></a><a href="https://twitter.com/belleza42020217"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/belleza_france/">
                                 <i class="fab  fa-instagram "></i>
                             </a></div>
               </div>
