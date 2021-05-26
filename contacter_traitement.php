@@ -1,22 +1,42 @@
-<?php 
-    require_once 'config.php'; // On inclu la connexion à la bdd
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+use \Mailjet\Resources;
+define('API_PUBLIC_KEY', 'YOUR_KEY');
+define('API_PRIVATE_KEY', 'YOUR_KEY');
+$mj = new \Mailjet\Client('b1044fabb2c572cd1dcb11febf22a6ac','0ef154649689b2715b21303ccd0679ee',true,['version' => 'v3.1']);
 
-    // Si les variables existent et qu'elles ne sont pas vides
-    if(!empty($_POST['nom']) && !empty($_POST['email']) && !empty($_POST['prenom']) && !empty($_POST['message'])  && !empty($_POST['objet']))
-    
-    {
-        // Patch XSS
-        $nom = htmlspecialchars($_POST['nom']);
-        $prenom = htmlspecialchars($_POST['prenom']);
+ if(!empty($_POST['surname']) && !empty($_POST['firstname']) && !empty($_POST['email']) && !empty($_POST['message'])){
+        $surname = htmlspecialchars($_POST['surname']);
+        $firstname = htmlspecialchars($_POST['firstname']);
         $email = htmlspecialchars($_POST['email']);
-        $objet = htmlspecialchars($_POST['objet']);
         $message = htmlspecialchars($_POST['message']);
-       
 
-       
-
-
-
-       $email = strtolower($email); // on transforme toute les lettres majuscule en minuscule pour éviter que Foo@gmail.com et foo@gmail.com soient deux compte différents ..
+        if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+        $body = [
+            'Messages' => [
+                [
+                  'From' => [
+                    'Email' => "bellezafrance@outlook.fr",
+                    'Name' => "aida"
+                  ],
+                  'To' => [
+                    [
+                      'Email' => "bellezafrance.contact@gmail.com",
+                      'Name' => "aida"
+                    ]
+                  ],
+                  'Subject' => "demande de rensaignement",
+                  'TextPart' => "$email, $message",
+                ]
+              ]
+        ];
+        $response = $mj->post(Resources::$Email, ['body' => $body]);
+        $response->success();
+        echo "Email envoyé avec succès ! ";
         
+        }
+        else{
+            echo "Email non valide";
+        }
+
     }

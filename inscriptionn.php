@@ -35,60 +35,62 @@ include 'parts/header.php'
             $err = htmlspecialchars($_GET['reg_err']);
             // switch equivalent de if, si la valeur contenu dans la case est bonne alors elle s'execute, break permet de dire qu'on dois sortire du switch 
             // c'est d'un point de vue visuel plus simple que if else if 
-            switch ($err) {
-                case 'success':
-        ?>
-                    <div class="alert alert-success">
-                        <strong>Succès</strong> inscription réussie !
-                    </div>
-                <?php
+
+                switch($err)
+                {
+                    case 'success':
+                    ?>
+                        <div class="alert alert-success">
+                            <strong>Succès</strong> inscription réussie !
+                        </div>
+                    <?php
                     break;
 
-                case 'password':
-                ?>
-                    <div class="alert alert-danger">
-                        <strong>Erreur</strong> mot de passe différent
-                    </div>
-                <?php
+                    case 'password':
+                    ?>
+                        <div class="alert alert-danger">
+                            <strong>Erreur</strong> mot de passe différent
+                        </div>
+                    <?php
                     break;
 
-                case 'email':
-                ?>
-                    <div class="alert alert-danger">
-                        <strong>Erreur</strong> email non valide
-                    </div>
-                <?php
+                    case 'email':
+                    ?>
+                        <div class="alert alert-danger">
+                            <strong>Erreur</strong> email non valide
+                        </div>
+                    <?php
                     break;
 
-                case 'email_length':
-                ?>
-                    <div class="alert alert-danger">
-                        <strong>Erreur</strong> email trop long
-                    </div>
-                <?php
+                    case 'email_length':
+                    ?>
+                        <div class="alert alert-danger">
+                            <strong>Erreur</strong> email trop long
+                        </div>
+                    <?php 
                     break;
 
-                case 'pseudo_length':
-                ?>
-                    <div class="alert alert-danger">
-                        <strong>Erreur</strong> pseudo trop long
-                    </div>
-                <?php
-                case 'already':
-                ?>
-                    <div class="alert alert-danger">
-                        <strong>Erreur</strong> compte deja existant
-                    </div>
-        <?php
+                    case 'pseudo_length':
+                    ?>
+                        <div class="alert alert-danger">
+                            <strong>Erreur</strong> pseudo trop long
+                        </div>
+                    <?php 
+                    case 'already':
+                    ?>
+                        <div class="alert alert-danger">
+                            <strong>Erreur</strong> compte deja existant
+                        </div>
+                    <?php 
 
+                }
             }
-        }
+
         ?>
 
         <form action="inscription_traitement.php" method="post">
             <h2 class="text-center">Inscription</h2>
 
-            <!--    parties inscriptions qui ne sont pas misent dans la base de donnée -->
 
             <div class="form-group">
                 <input type="text" name="nom" class="form-control" placeholder="Nom" required="required" autocomplete="off">

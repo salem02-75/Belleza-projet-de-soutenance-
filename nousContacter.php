@@ -2,31 +2,50 @@
 $page = 'Belleza Contact';
 include 'parts/header.php';
 ?>
-         <!-- ========================================= -->
-        <!-- Nous-Contacter-->
-        <!-- ========================================= -->
 
 
-        <section class="  my-5" id="nous-contacter">
-        <section class="  my-5" id="Nous-contacter"  action="contacter_traitement.php" method="post">
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contactez-moi</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <!-- ========================================= -->
+    <!-- Nous-Contacter-->
+    <!-- ========================================= -->
+
+
+    <section class="  my-5" id="nous-contacter">
+        <section class="  my-5" id="Nous-contacter" action="contacter_traitement.php" method="post">
 
 
             <div class="container  py-5">
 
                 <h1 class="text-center titre-Contact py-4 font-weight-bold ">Contactez-nous</h1>
 
-               
+
                 <div class="row contact-body mt-5">
                     <div class="col-md-6 pl-3 my-5 ">
                         <div>
-                        <h3 class="font-weight-bold pb-2 ">Avant de nous consulter,</h3>
-                                <p>Pensez à voir notre liste de <span><a href="faq-aide.php" class="text-decoration-none">FAQ</a></span></p>
-                                <p>Vous pouvez trouvez des avis de nos Pro et leurs fidèles</p>
-                                <a class="btn btn-outline my-3" href="avis.php" role="button">les avis de nos
+                            <h3 class="font-weight-bold pb-2 ">Avant de nous consulter,</h3>
+                            <p>Pensez à voir notre liste de <span><a href="faq-aide.php" class="text-decoration-none">FAQ</a></span></p>
+                            <p>Vous pouvez trouvez des avis de nos Pro et leurs fidèles</p>
+                            <a class="btn btn-outline my-3" href="avis.php" role="button">les avis de nos
                                 clients</a>
                         </div>
-                            
-                    </div> 
+
+                    </div>
                     <div class="col-md-4 offset-md-2  ">
                         <div class="contact-medias   my-5 ">
                             <h3 class="font-weight-bold pb-2 ">Via nos réseaux sociaux</h3>
@@ -67,66 +86,32 @@ include 'parts/header.php';
                         </div><!-- fin col-email  -->
                     </div>
                     <div class="  col-md-6  mt-5 ">
+
+
                         <!-- Création du formulaire de contact post -->
-                        <form action="" method="POST" id="contact-Form" class="bg-danger  rounded mx-auto py-3 px-4">
-
-                            <div class="row ">
-                                <div class="col-md-10 col-md-8 pb-2 pt-3 ">
-                                    <div class="form-group">
-                                        <input type="text" name="prenom" id="prenom" class="form-control"
-                                            placeholder="Prenom" required>
-                                    </div>
-                                </div><!-- fin col Prenom-->
-
-                            </div> <!-- fin row nom prénom -->
-
-                            <div class="row ">
-                                <div class="col-md-10 col-md-8 pb-4">
-                                    <div class="form-group">
-                                        <input type="text" name="nom" id="nom" class="form-control" placeholder="Nom"
-                                            required>
-                                    </div>
-                                </div><!-- fin col nom  -->
-                            </div><!-- fin row nom  -->
-
-
-                            <div class="row">
-                                <div class="col-md-10 col-md-11 pb-4">
-                                    <div class="form-group">
-                                        <input type="email" name="email" id="email" class="form-control"
-                                            placeholder="Votre adresse mail"  size="30"
-                                            required>
-                                    </div>
+                        <div class="container">
+                            <div class="d-flex justify-content-center">
+                                <div class="col-8 m-4">
+                                    <form action="contacter_traitement.php" method="POST">
+                                        <div class="form-group">
+                                            <div class="text-center">
+                                                <h1>Contactez-nous ! </h1>
+                                            </div>
+                                            <div class="d-flex">
+                                                <input type="text" name="surname" placeholder="Nom" autocomplete="off" class="form-control" />
+                                                <input type="text" name="firstname" placeholder="Prénom" autocomplete="off" class="form-control" />
+                                            </div>
+                                            <br />
+                                            <input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control" />
+                                            <br />
+                                            <textarea rows="10" name="message" placeholder="Envoyez votre message à bellezafrance.contact@gmail.com" class="form-control"></textarea>
+                                            <br />
+                                            <button type="submit" class="btn btn-lg btn-primary">Envoyer</button>
+                                        </div>
+                                    </form>
                                 </div>
-                            </div> <!-- fin row email -->
-
-                            <div class="row">
-                                <div class="col-md-12 pb-2">
-                                    <div class="form-group">
-                                        <input type="text" name="objet" id="email" class="form-control"
-                                            placeholder="Objet de la demande" size="30"
-                                            required>
-                                    </div>
-                                </div>
-                            </div> <!-- fin row objet-message -->
-
-
-                            <div class="row">
-                                <div class="col-md-12 pb-5">
-
-                                    <div class="form-group">
-                                        <textarea name="message" id="message" cols="30" rows="4" class="form-control"
-                                            placeholder="Votre message"></textarea>
-                                    </div><!-- fin col message  -->
-                                    <div class="col-md-12">
-                                        <input type="submit" name="envoyez" value="Envoyez"
-                                            class="btn btn-md btn-success mb-4 mt-2">
-                                    </div>
-
-                                </div><!-- fin row message  -->
-
                             </div>
-                        </form>
+                        </div>
 
                     </div> <!-- fin col-2  -->
 
@@ -139,6 +124,18 @@ include 'parts/header.php';
         <!-- Nous-Contacter fin-->
         <!-- ========================================= -->
 
+
+
+
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
 
 <?php
 include 'parts/footer.php';

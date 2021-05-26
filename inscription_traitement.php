@@ -66,11 +66,11 @@
                             ));
                             die();
                             // On redirige avec le message de succès
-                           header('Location:inscriptionn.php?reg_err=success');
-                             die();
-                         }else{ header('Location: inscriptionn.php?reg_err=password'); die();}
-                     }else{ header('Location: inscriptionn.php?reg_err=email'); die();}
-                 }else{ header('Location: inscriptionn.php?reg_err=email_length'); die();}
-             }else{ header('Location: inscriptionn.php?reg_err=pseudo_length'); die();}
-         }else{ header('Location: inscriptionn.php?reg_err=already'); die();}
+                            header('Location:inscriptionn.php?reg_err=success');
+                            die();
+                        }else{ header('Location: inscriptionn.php?reg_err=password'); die();}
+                    }else{ header('Location: inscriptionn.php?reg_err=email'); die();}
+                }else{ header('Location: inscriptionn.php?reg_err=email_length'); die();}
+            }else{ header('Location: inscriptionn.php?reg_err=pseudo_length'); die();}
+        }else{ header('Location: inscriptionn.php?reg_err=already'); die();}
     }
