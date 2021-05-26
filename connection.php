@@ -6,7 +6,7 @@ include 'parts/header.php'
 
 
 
-<div class="login-form">
+<div  class="login-form">
     <?php
     // renvois d'eereures mdp ou mail
     if (isset($_GET['login_err'])) {
@@ -43,7 +43,8 @@ include 'parts/header.php'
     // $_SESSION['nom']=$_POST['nom']
     ?>
 
-    <form action="connection_traitement.php" method="post">
+  <div class="pt-5 pb-5">
+  <form action="connection_traitement.php " method="post">
         <h2 class="text-center">Connexion</h2>
         <div class="form-group">
             <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
@@ -52,17 +53,16 @@ include 'parts/header.php'
             <input type="password" name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block">Connexion</button>
+            <button type="submit"  class="btn degradé text-white btn-block">Connexion</button>
         </div>
     </form>
-    <p class="text-center"><a href="inscription.php">Inscription</a></p>
+    <div class="text-center">    <p class="text-center "><a  href="inscription.php">Inscription</a></p>
+</div>
     <!-- <p class="text-center"><a href="deconnexion.php">changer de mot de passe</a></p> -->
+  </div>
 </div>
 
-<div>
-    <a href="playlist.php"><button class="btn btn-primary btn-block">decouvrez notre playlist zen ! </button></a>
 
-</div>
 
 
 

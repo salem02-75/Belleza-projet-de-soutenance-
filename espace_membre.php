@@ -43,11 +43,11 @@ include 'parts/header.php'
 
 
 
-        <div class="text-center">
+        <div class="text-center pt-5 pb-5">
             <h1 class="p-5">Bonjour ! </h1>
             <a href="index.php" class="btn btn-danger btn-lg">Déconnexion</a>
             <!-- Bouton qui renvoie a la page changer de mdp -->
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#change_password">
+            <button type="button" class="btn  btn-info btn-lg" data-toggle="modal" data-target="#change_password">
                 Changer mon mot de passe
             </button>
             <!-- VERSION DEUX 
@@ -56,13 +56,20 @@ include 'parts/header.php'
             </button>
             -->
         </div>
+        
+  <div class="box-2 " >
+  <div class="btn btn-two">
+    <span><a  class="text-danger contact" href="nousContacter.php">nous contacter</a></span>
+  </div>
+</div>
 
-        <a href="nousContacter.php">nous contacter</a>
+
+        
     </div>
 </div>
 
 
-<div class="modal fade" id="avatar" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal fade " id="avatar" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -101,7 +108,7 @@ include 'parts/header.php'
                 </button>
             </div>
             <div class="modal-body">
-                <form action="layouts/change_password.php" method="POST">
+                <form action="change_password.php" method="POST">
                     <label for='current_password'>Mot de passe actuel</label>
                     <input type="password" id="current_password" name="current_password" class="form-control" required />
                     <br />
