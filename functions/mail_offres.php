@@ -13,7 +13,7 @@ if (
     $to = $res[0]["email"];
     // $subject = $_POST["objet"];
 
-    $subject = "contact de : " . $_POST["email"];
+    $subject = "prise de contact de : " . $_POST["name"] . $_POST["email"];
     $content = $_POST["content"];
 
     if(mail($to, $subject, $content)){
