@@ -64,31 +64,15 @@ $res = request_sql($dbh, $sql);
                                 </p>
                             </div>
                             
-                        </a> <!-- fin de card-->
-                    </div>
-                </div> <!-- fin de card-body -->
+                        </a> 
+                    </div> 
+                </div> <!-- fin de card-1 -->
 
+            </div> <!-- fin de col-1  -->
 
-                <div class="card mb-4" href="coiffure.php">
-                    <a href="coiffure.php">
-                        <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux" class="card-img-top imgService">
-                    </a>
-
-                    <div class="card-body ">
-                        <h3 class="card-title-service text-center "><a href="coiffure.php" class="text-decoration-none">Coiffure</a></h3>
-                        <p class="text-center text-secondary ">à Domicile</p>
-                        <p class="card-text-service text-secondary">Coupe de cheveux pour femme, homme, enfant.Broshing,
-                            Mèches et Coloration, Soin de cheveux,,,
-                        </p>
-                    </div><!-- fin de card-body -->
-
-                </div><!-- fin de card-->
-
-
-            </div> <!-- fin de col-1 card -->
-
-            <!-- col-12 -->
+            <!-- col-2 -->
             <div class=" col-9 col-md-6 col-lg-4  mb-sm-4 ">
+                <!--  card-2 -->
                 <div class="card mb-4">
                     <a href="esthetique.php">
                         <img src="images/esthétique.jpg" role="img" alt="image de Esthétique, Maquillage,soin" class="card-img-top imgService">
@@ -100,11 +84,11 @@ $res = request_sql($dbh, $sql);
                         <p class="card-text-service text-secondary">Epilation du corps, Epilation homme, femme,
                             Maquillage, Soin du corps, Beauté des pieds et de mains,,,
                         </p>
-                    </div><!-- fin de card-body -->
+                    </div>
 
-                </div><!-- fin de col-2 card -->
+                </div> <!-- fin de card 2-->
 
-            </div><!-- fin de card-->
+            </div> <!-- fin de col 2 -->
 
             <!-- col-3 -->
             <div class=" col-9 col-md-6 col-lg-4  mb-sm-4 ">
@@ -120,11 +104,10 @@ $res = request_sql($dbh, $sql);
                         <p class="card-text-service text-secondary">Massage solo ou en couple, Modelage du corps,
                             Ventouse, Pierre chaude,,,
                         </p>
-                    </div><!-- fin de card-body -->
+                    </div>
+                </div><!-- fin de  card-3 -->
 
-                </div><!-- fin de col-3 card -->
-
-            </div><!-- fin de card-->
+            </div><!-- fin de Col-3 -->
 
         </div><!-- fin de row -->
 
@@ -133,12 +116,13 @@ $res = request_sql($dbh, $sql);
     <!-- ========================================= -->
     <!-- avis -->
     <!-- ========================================= -->
+
     <div id="avis" class="pb-5 my-100">
         <h2 class="avis-title d-flex justify-content-center mt-5">Les avis de nos <span class="text-danger ml-2">
                 fidèles</span></h2>
         <div class="container my-5 ">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-12">
+                <div class="col-lg-12 col-md-12">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -208,7 +192,7 @@ $res = request_sql($dbh, $sql);
                             </div><!-- fin carousel-item-1-->
 
                             <div class="carousel-item  ">
-                                <div class="row">
+                                <div class="row ">
 
                                     <!-- item-1 !-->
                                     <div class="col-md-4">
@@ -270,7 +254,7 @@ $res = request_sql($dbh, $sql);
 
 
                             <div class="carousel-item ">
-                                <div class="row">
+                                <div class="row ">
                                     <div class="col-md-4">
 
                                         <!-- item-1 -->
@@ -339,52 +323,57 @@ $res = request_sql($dbh, $sql);
     <!--    AVIS FIN-->
     <!-- ========================================= -->
 
+
     <!-- ========================================= -->
     <!-- ENGZGEMENTS -->
     <!-- ========================================= -->
+
     <div id="engagement my-150">
         <h2 class="text-center my-5">Nos Engagements</h2>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="box-col col-9 col-md-5 col-lg-2 bg-light  border-0 rounded  mx-3 my-4">
-                    <img class="img-icon text-center my-3  " src="images/couplee.png" alt="image de couple">
+                <div class="box-col col-9 col-md-5 col-lg-2   border-0 rounded  mx-3 my-4">
+                    <img class="img-icon text-center my-3  " src="images/la-satisfaction.png" alt="image de satisfaction">
                     <div>
                         <h3 class=" text-center py-3 text-uppercase">Satisfaction</h3>
                         <p class="text-center  pb-3  font-weight-bold">Nos experts seront à la hauteur de vos exigances </p>
-                    </div><!-- col-->
-                </div><!-- col-->
+                    </div>
+                </div><!-- co-1 -->
 
-                <div class="box-col col-9 col-md-5 col-lg-2 bg-light  border-0rounded    mx-3 my-4">
-                    <img class="img-icon text-center my-3 " src="images/love.png" alt="love">
+                <div class="box-col col-9 col-md-5 col-lg-2   border-0rounded    mx-3 my-4">
+                    <img class="img-icon text-center my-3 " src="images/ecoutez.png" alt="icon d'ecoute">
                     <div>
                         <h3 class=" text-center py-3 text-uppercase">écoute</h3>
                         <p class=" text-center pb-3   font-weight-bold">Nos professionnels seront vos amis </p>
-                    </div><!-- col-->
-                </div><!-- col-->
+                    </div>
+                </div><!-- col-2 -->
 
-                <div class="box-col col-9 col-md-5 col-lg-2 bg-light  border-0rounded    mx-3 my-4">
-                    <img class="img-icon text-center my-3 " class="text-center" src="images/key.png" alt="cles">
+                <div class="box-col col-9 col-md-5 col-lg-2   border-0rounded    mx-3 my-4">
+                    <img class="img-icon text-center my-3 " class="text-center" src="images/radar.png" alt="icon de radar de proxiité">
                     <div>
                         <h3 class=" text-center py-3 text-uppercase">Proximité</h3>
-                        <p class=" text-center pb-3   font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div><!-- col-->
-                </div><!-- col-->
+                        <p class=" text-center pb-3   font-weight-bold">nos professionnels seront toujours disponible et proche de vous.</p>
+                    </div>
+                </div><!-- col-3 -->
 
-                <div class="box-col col-9 col-md-5 col-lg-2 bg-light  border-0rounded   mx-3 my-4">
-                    <img class="img-icon text-center my-3 " src="images/love-2.png" alt="groupe de coeurs">
+                <div class="box-col col-9 col-md-5 col-lg-2   border-0rounded   mx-3 my-4">
+                    <img class="img-icon text-center my-3 " src="images/carte.png" alt="icon de carte de fidélité ">
                     <div>
                         <h3 class=" text-center py-3 text-uppercase">Fidélité</h3>
                         <p class=" text-center pb-3   font-weight-bold">nous réalisons fréquemment des enquètes client</p>
-                    </div><!-- col-->
-                </div><!-- col-->
+                    </div>
+                </div><!-- col-3 -->
 
-            </div><!-- row-->
-        </div><!-- container-->
+            </div><!-- row engagement-->
+
+        </div><!-- container engagement-->
+
     </div>
     
     <!-- ========================================= -->
     <!-- ENGAGEMENT FIN -->
     <!-- ========================================= -->
+
 
     <!-- ========================================= -->
     <!-- Newsletter -->
@@ -399,11 +388,8 @@ $res = request_sql($dbh, $sql);
                 <i class="fas rounded-left fa-envelope"></i>
                 <input type="email" name="email" value="" placeholder="Entrez votre eamil" class="input-email border-0 ">
                 <button type="button" name="button" class="btn btn-outline btn-email  rounded-right text-white text-uppercase border-0 ">Envoyer</button>
-                <!-- <div class="from-group">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div> -->
             </div>
-        </form><!-- from-->
+        </form><!-- from-Newsletter -->
       
     </div><!-- container- newsletter fin-->
 

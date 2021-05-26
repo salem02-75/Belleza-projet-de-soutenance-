@@ -15,16 +15,6 @@
                 <!------ col-2  Réseaux sociaux------->
                 <div class="col-lg-4 col-md-4 col-sm-12 justify-content-center align-items-center ">
 
-                    <!-------------------------------------------------------------------------------------------------------------->
-                    <!-- un h2 + P sont  disply -none en formaat  lg et md -->
-
-                    <!-- <h3>Suivez-nous</h3> -->
-                    <!-- <div>
-                        <h2>Toujours au contact avec la beauté</h2>
-                        <p>En nous suivant sur Instagram, Facebook ou twitteI</p>
-                    </div> -->
-                    <!-------------------------------------------------------------------------------------------------------------->
-
                     <!-- include  les réseaux sociaux  -->
 
                     <div class="footer-medias ">
@@ -134,7 +124,7 @@
             <div class="row  ">
                            <!-- &copy -->
                 <div class="copy col-md-12 text-center ">
-                     &copy;soutenance 2021 Collombus,By Guillaume, Salima, Aida
+                    <p> &copy;soutenance 2021 Collombus,By Guillaume, Salima, Aida</p>
                 
                </div>
                 <!-- <div class="">
