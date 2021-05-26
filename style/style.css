@@ -108,7 +108,7 @@ h3 {
 
 
 /* les a dans la navbar */
-.navbar-light .navbar-nav .nav-link:hover{
+.navbar-light .navbar-nav .nav-link:hover {
     color: #dc3545 !important;
 }
 
@@ -173,12 +173,14 @@ header {
     background-position: center;
 }
 
-.banniere .banniere-title,.banniere-text{
+.banniere .banniere-title,
+.banniere-text {
     color: #00c2cb;
 }
 
-.banniere-title span,.banniere-text>span{
-    color:#dc3545 ;
+.banniere-title span,
+.banniere-text>span {
+    color: #dc3545;
 }
 
 .banniere .banniere-text {
@@ -186,7 +188,7 @@ header {
     font-size: 2.1 rem;
 }
 
-.banniere a{
+.banniere a {
     color: #00c2cb !important;
 }
 
@@ -195,8 +197,8 @@ header {
     width: 100%
 }
 
- 
-.banniere a:hover{
+
+.banniere a:hover {
     border-color: #dc3545 !important;
     /* color: #00c2cb; */
 }
@@ -306,16 +308,18 @@ header {
 /* ========================================= 
             <-- ENGAGEMENTS -->
  ========================================= */
-
-.img-icon {
-    width: 70px;
-    height: 80px;
-    display: flex;
-    margin: auto;
+.rounded {
+    border-radius: 2.2rem !important;
 }
 
-#engagement h3 {
-    color: #00c2cb;
+.width-40 {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+/* avis en SM */
+.avis-sm  h2,.text-avis-sm{
+    color:#6ce5e8  !important;
 }
 
 
@@ -410,11 +414,6 @@ a>i {
         <-- Faq-->
 =========================================*/
 
-
-/* #faq h2 a{
-    color:#6ce5e8 ;
-    } */
-
 #faq h2 a:hover {
     color: #dc3545 !important;
 }
@@ -461,28 +460,11 @@ a>i {
 }
 
 .footer {
-    /* background-image: url(../images/logo.svg); */
+
     background-image: url(../images/logoG.png);
     background-repeat: no-repeat;
     background-position: 77% 32%;
     background-size: 28%;
-}
-
-
-/* Tablette footer */
-
-@media (max-width: 990px) {
-    .footer {
-        background-position: 77% 32%;
-        background-size: 28%;
-    }
-}
-
-@media (max-width: 766px) {
-    .footer {
-        background-position: 60% 20%;
-        background-size: 100%;
-    }
 }
 
 .footer a {
@@ -600,22 +582,27 @@ hr {
     .footer hr {
         display: flex;
     }
+
     /* btn déposer une annonce */
     .footer .btn {
         display: flex;
     }
+
     .footer .btn:hover {
         color: gray;
     }
+
     /* les réseaux sociaux */
     .footer-medias .liste-medias a i {
         color: #f1f1f1f1;
     }
+
     /* Facebook : hover */
     .liste-medias a:nth-child(1) i:hover {
         color: #1DA0F0 !important;
         transition: transforme ease-in-out 0.2s;
     }
+
     /* instagram : hover*/
     .liste-medias a:nth-child(2) i:hover {
         color: transparent;
@@ -624,6 +611,7 @@ hr {
         transition: transforme ease-in-out 0.2s;
         font-weight: 600;
     }
+
     /* twitter : hover */
     .liste-medias a:nth-child(3) i:hover {
         color: #1DA0F0 !important;
@@ -635,65 +623,57 @@ hr {
 
 @media (max-width: 576px) {
 
-    /* .banniere-text,
-    .banniere-text>span
-     {
-        font-size: 20px;
-    }
-
-    .banniere-title h1,
-    .banniere-titel>span {
-        font-size: 27px;
-    } */
-   
     .liste-medias {
         margin: 20px 15px 0 15px;
     }
-    /* les span  */
-    /* .border-left .border-right{
-            display: none;
-    } */
+
     .aPropos {
         display: none;
     }
+
     .carousel-indicators li:nth-child(2) {
         display: none;
     }
+
     .carousel-indicators li:nth-child(3) {
         display: none;
     }
+
     /* newsletter */
-    #newsletter h1 {
+    #newsletter h2 {
         font-weight: 600;
         letter-spacing: 2px;
         font-size: 27px;
     }
-}
-
-
-
-/*  format Md*/
-
-@media (max-width: 768px) {
-    .navbar-light .navbar-nav .nav-link {
-        display: flex;
-        justify-content: center;
+    #avis{
+        display: none;
     }
-    /* .banniere-text,
-    .banniere-text>span {
-        font-size: 22px;
-    }
-    */
 }
-@media (max-width: 425px){
-    /* .banniere-text,
-    .banniere-text>span
-     {
-        font-size: 28px;
-    } */
 
-    /* .banniere-title,
-    .banniere-titel>span {
-        font-size: 18px;
-    } */
-}
+
+
+
+
+
+    /*  format Md*/
+
+    @media (max-width: 766px) {
+        .navbar-light .navbar-nav .nav-link {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer {
+            background-position: 60% 20%;
+            background-size: 100%;
+        }
+    }
+
+    /* Tablette footer */
+
+    @media (max-width: 990px) {
+        .footer {
+            background-position: 77% 32%;
+            background-size: 28%;
+        }
+    }

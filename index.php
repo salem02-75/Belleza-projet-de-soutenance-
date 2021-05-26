@@ -24,7 +24,14 @@ $res = request_sql($dbh, $sql);
                         <h1 class="banniere-title  d-flex  display-sm-4  display-md-3">Ne Bougez pas, on vient à Vous</h1>
                         <p class="banniere-text display-sm-4 display-sm-5 pt-3">seule, en couple ou
                             en famille pour voud rendre <span>BELLEZA</span></p>
-                        <a href="#" class="btn btn-outline-secondary text-white bg-transparent mr-3 py-2 px-4 mt-4" role="button" aria-pressed="true">Inscrivez vous</a>
+
+                        
+                        <a href="inscription.php" class="btn btn-outline-secondary text-white bg-transparent mr-3 py-2 px-4 mt-4" role="button"
+                            aria-pressed="true">Inscrivez vous</a>
+                      
+
+                            
+
                     </div>
                 </div>
             </div>
@@ -108,7 +115,18 @@ $res = request_sql($dbh, $sql);
     </div><!-- fin de container service-->
 
     <!-- ========================================= -->
-    <!-- avis -->
+    <!-- avis  en format Sm-->
+    <!-- ========================================= -->
+    <div class="avis-sm py-4">
+        <div class="bg-danger py-4 text-center ">
+            <h2 class=" font-weight-bolder py-3">Ils nous ont fait confiance</h2>
+            <p class="text-white">Nos profesionnels nous ont fait confiance, et leurs clients ont adoré</p>
+            <p class="text-white">Vous êtes curieux 🧐 de voir leurs avis, c'est par <a href="avis.php" class="text-avis-sm font-weight-bolder">içi</a></p>
+        </div>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- avis  en foemat  MD et LG -->
     <!-- ========================================= -->
 
     <div id="avis" class="pb-5 my-100">
@@ -316,35 +334,45 @@ $res = request_sql($dbh, $sql);
     <div id="engagement my-150">
         <h2 class="text-center my-5">Nos Engagements</h2>
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="box-col col-9 col-md-5 col-lg-2   border-0 rounded  mx-3 my-4">
-                    <img class="img-icon text-center my-3  " src="images/la-satisfaction.png" alt="image de satisfaction">
+            <div class="row d-flex justify-content-center">
+                <div class="box-col  col-9 col-md-5 col-lg-2 bg-light border-0 rounded  mx-3 my-4">
+                   <div class="d-flex justify-content-center">
+                        <img class="img-icon width-40 text-center my-3  " src="images/la-satisfaction.png" alt="image de satisfaction">
+                   </div>
+                   
                     <div>
-                        <h3 class=" text-center py-3 text-uppercase">Satisfaction</h3>
+                        <h3 class=" text-center py-3 text-uppercase text-danger">Satisfaction</h3>
                         <p class="text-center  pb-3  font-weight-bold">Nos experts seront à la hauteur de vos exigances </p>
                     </div>
                 </div><!-- co-1 -->
 
-                <div class="box-col col-9 col-md-5 col-lg-2   border-0rounded    mx-3 my-4">
-                    <img class="img-icon text-center my-3 " src="images/ecoutez.png" alt="icon d'ecoute">
+                <div class="box-col col-9 col-md-5 col-lg-2 bg-light border-0 rounded    mx-3 my-4">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-icon width-40 text-center my-3 " src="images/ecoutez.png" alt="icon d'ecoute">
+                    </div>
+                    
                     <div>
-                        <h3 class=" text-center py-3 text-uppercase">écoute</h3>
+                        <h3 class=" text-center py-3 text-uppercase text-danger">écoute</h3>
                         <p class=" text-center pb-3   font-weight-bold">Nos professionnels seront vos amis </p>
                     </div>
                 </div><!-- col-2 -->
 
-                <div class="box-col col-9 col-md-5 col-lg-2   border-0rounded    mx-3 my-4">
-                    <img class="img-icon text-center my-3 " class="text-center" src="images/radar.png" alt="icon de radar de proxiité">
+                <div class="box-col col-9 col-md-5 col-lg-2  bg-light border-0 rounded    mx-3 my-4">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-icon width-40 text-center my-3 " class="text-center" src="images/radar.png" alt="icon de radar de proxiité">
+                    </div>
                     <div>
-                        <h3 class=" text-center py-3 text-uppercase">Proximité</h3>
+                        <h3 class=" text-center py-3 text-uppercase text-danger">Proximité</h3>
                         <p class=" text-center pb-3   font-weight-bold">nos professionnels seront toujours disponible et proche de vous.</p>
                     </div>
                 </div><!-- col-3 -->
 
-                <div class="box-col col-9 col-md-5 col-lg-2   border-0rounded   mx-3 my-4">
-                    <img class="img-icon text-center my-3 " src="images/carte.png" alt="icon de carte de fidélité ">
+                <div class="box-col col-9 col-md-5 col-lg-2 bg-light  border-0 rounded   mx-3 my-4">
+                    <div class="d-flex justify-content-center">
+                         <img class="img-icon width-40 text-center my-3 " src="images/carte.png" alt="icon de carte de fidélité ">
+                    </div>
                     <div>
-                        <h3 class=" text-center py-3 text-uppercase">Fidélité</h3>
+                        <h3 class=" text-center py-3 text-uppercase text-danger">Fidélité</h3>
                         <p class=" text-center pb-3   font-weight-bold">nous réalisons fréquemment des enquètes client</p>
                     </div>
                 </div><!-- col-3 -->
@@ -367,7 +395,7 @@ $res = request_sql($dbh, $sql);
     <div id="newsletter" class="container text-white text-center my-150">
 
         <form action="Newsletter">
-            <h1>S'abonner à la newsletter</h1>
+            <h2 class="display-s-4">S'abonner à la newsletter</h2>
             <p class="text-secondary py-1">Restons toujours en contacte avec votre beauté </p>
             <div class="email-body d-flex justify-content-center mt-3">
                 <i class="fas rounded-left fa-envelope"></i>
