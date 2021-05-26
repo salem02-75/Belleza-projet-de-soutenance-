@@ -5,12 +5,6 @@ include 'parts/header.php';
 ?>
 
 
-<head>
-
-</head>
-
-
-
 <div class="container">
   <div>
     <h1>

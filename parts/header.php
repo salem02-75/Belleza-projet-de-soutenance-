@@ -28,6 +28,9 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
     <!-- CSS Bootstrap  version 4.6 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     
+    <!-- css version Bootstrap version 4.3-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 
     <!-- CSS font-Awesome version 5.15.3 -->
     <!-- Lien : https://fontawesome.com/ -->
@@ -37,6 +40,10 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
     <link rel="stylesheet" href="style/style.css">
     <!-- pour les pages services -->
     <link rel="stylesheet" href="style/service.css">
+    <link rel="stylesheet" href="style/membre.css">
+    <link rel="stylesheet" href="style/inscription.css">
+    <link rel="stylesheet" href="style/connection.css">
+
 
     <title><?php echo $page; ?></title>
 
