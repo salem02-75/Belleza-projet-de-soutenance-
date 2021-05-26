@@ -34,8 +34,7 @@ include 'parts/header.php';
                         </div>
 
                     </div>
-                    <div class="col-md-4 offset-md-2  ">
-                        <div class="contact-medias   my-5 ">
+                    <div class="col-md-4 offset-md-2   my-5 ">
                             <h3 class="font-weight-bold pb-2 ">Via nos réseaux sociaux</h3>
                             <div class="liste-medias    ">
                                 <!-- <div  class=" "> -->
@@ -77,9 +76,9 @@ include 'parts/header.php';
 
 
                         <!-- Création du formulaire de contact post -->
-                        <div class="container">
+                        <div class="container bg-danger">
                             <div class="d-flex justify-content-center">
-                                <div class="col-8 m-4">
+                                <div class="col-md-6 m-4">
                                     <form action="contacter_traitement.php" method="POST">
                                         <div class="form-group">
                                             <div class="text-center">
