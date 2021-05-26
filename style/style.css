@@ -445,7 +445,8 @@ a>i {
 }
 
 .footer {
-    background-image: url(../images/logo.svg);
+    /* background-image: url(../images/logo.svg); */
+    background-image: url(../images/logoG.png);
     background-repeat: no-repeat;
     background-position: 77% 32%;
     background-size: 28%;
