@@ -19,7 +19,3 @@ if ($request->execute()) {
 } else {
   $res = ["error" => "undon't know error"];
 }
-
-
-
-?>

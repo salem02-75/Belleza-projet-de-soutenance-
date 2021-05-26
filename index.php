@@ -25,12 +25,11 @@ $res = request_sql($dbh, $sql);
                         <p class="banniere-text display-sm-4 display-sm-5 pt-3">seule, en couple ou
                             en famille pour voud rendre <span>BELLEZA</span></p>
 
-                        
-                        <a href="inscription.php" class="btn btn-outline-secondary text-white bg-transparent mr-3 py-2 px-4 mt-4" role="button"
-                            aria-pressed="true">Inscrivez vous</a>
-                      
 
-                            
+                        <a href="inscription.php" class="btn btn-outline-secondary text-white bg-transparent mr-3 py-2 px-4 mt-4" role="button" aria-pressed="true">Inscrivez vous</a>
+
+
+
 
                     </div>
                 </div>
@@ -336,10 +335,10 @@ $res = request_sql($dbh, $sql);
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="box-col  col-9 col-md-5 col-lg-2 bg-light border-0 rounded  mx-3 my-4">
-                   <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center">
                         <img class="img-icon width-40 text-center my-3  " src="images/la-satisfaction.png" alt="image de satisfaction">
-                   </div>
-                   
+                    </div>
+
                     <div>
                         <h3 class=" text-center py-3 text-uppercase text-danger">Satisfaction</h3>
                         <p class="text-center  pb-3  font-weight-bold">Nos experts seront à la hauteur de vos exigances </p>
@@ -350,7 +349,7 @@ $res = request_sql($dbh, $sql);
                     <div class="d-flex justify-content-center">
                         <img class="img-icon width-40 text-center my-3 " src="images/ecoutez.png" alt="icon d'ecoute">
                     </div>
-                    
+
                     <div>
                         <h3 class=" text-center py-3 text-uppercase text-danger">écoute</h3>
                         <p class=" text-center pb-3   font-weight-bold">Nos professionnels seront vos amis </p>
@@ -369,7 +368,7 @@ $res = request_sql($dbh, $sql);
 
                 <div class="box-col col-9 col-md-5 col-lg-2 bg-light  border-0 rounded   mx-3 my-4">
                     <div class="d-flex justify-content-center">
-                         <img class="img-icon width-40 text-center my-3 " src="images/carte.png" alt="icon de carte de fidélité ">
+                        <img class="img-icon width-40 text-center my-3 " src="images/carte.png" alt="icon de carte de fidélité ">
                     </div>
                     <div>
                         <h3 class=" text-center py-3 text-uppercase text-danger">Fidélité</h3>
