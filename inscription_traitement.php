@@ -64,7 +64,7 @@
                                 ':ip' => $ip,
                                 // ':date_inscription' => $d->format('c')
                             ));
-                            die();
+                           //die();
                             // On redirige avec le message de succès
                             header('Location:inscriptionn.php?reg_err=success');
                             die();
