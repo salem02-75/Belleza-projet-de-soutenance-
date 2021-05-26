@@ -81,8 +81,12 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
             <!--  ml-auto => placer a droite -->
             <ul class="navbar-nav ml-auto">
                 <!-- #coiffure => active -->
+
+                <li class="nav-item ">
+                   
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="coiffure.php">Coiffure<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="coiffure.php">Coiffure</a>
+
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="esthetique.php">Esthétique</a>

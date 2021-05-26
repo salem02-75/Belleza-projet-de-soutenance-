@@ -103,18 +103,17 @@ h3 {
 /*bg Navbar */
 
 .bg-navbar {
-    /* background: #00c2cb; */
     background-color: #81d4e2;
-    /* background-color: #98dee7; */
-    /* background-color: #87d4e6; */
 }
 
 
 /* les a dans la navbar */
-
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #dc3545 !important;
+}
 .nav-link:hover {
     /* background-color: black; */
-    color: red;
+    /* color: red; */
 }
 
 
@@ -164,6 +163,7 @@ header {
     -webkit-background-size: cover;
     background-size: cover;
     background-image: url(../images/banniere_large.jpg);
+    height: 620px;
 }
 
 .banniere .container {
@@ -176,14 +176,32 @@ header {
     background-position: center;
 }
 
+.banniere h1,p{
+    color: #00c2cb;
+}
+
+.banniere-title span,.banniere-text>span{
+    color:#dc3545 ;
+}
+
 .banniere p {
     padding: 10px;
     font-size: 15px;
 }
 
+.banniere a{
+    color: #00c2cb !important;
+}
+
 .banniere img {
     /* width: 50%; */
     width: 100%
+}
+
+ 
+.banniere a:hover{
+    border-color: #dc3545 !important;
+    /* color: #00c2cb; */
 }
 
 
@@ -233,6 +251,7 @@ header {
 #engagement>h2 {
     font-size: 2.25rem;
 }
+
 
 #service .card-body h3 a {
     color: #dc3545;
@@ -445,11 +464,28 @@ a>i {
 }
 
 .footer {
-    background-image: url(../images/logo.svg);
+    /* background-image: url(../images/logo.svg); */
+    background-image: url(../images/logoG.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: right;
-    text-decoration: none;
+    background-position: 77% 32%;
+    background-size: 28%;
+}
+
+
+/* Tablette footer */
+
+@media (max-width: 990px) {
+    .footer {
+        background-position: 77% 32%;
+        background-size: 28%;
+    }
+}
+
+@media (max-width: 766px) {
+    .footer {
+        background-position: 60% 20%;
+        background-size: 100%;
+    }
 }
 
 .footer a {

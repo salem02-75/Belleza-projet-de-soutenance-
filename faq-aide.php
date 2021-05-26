@@ -47,7 +47,7 @@ include 'parts/header.php';
                                     <h2 class="claerfix p-3 my-2">
                                         <a class="btn btn-link text-decoration-none font-weight-bold text-dark" data-toggle="collapse" data-target="#collapseTwo"
                                             aria-expanded="true" aria-controls="collapseTwo">
-                                            Je suis un professionel
+                                            Je suis un professionnel
                                              <i class="fa fa-angle-down ml-3"></i>
                                         </a>
                                     </h2>
@@ -74,7 +74,7 @@ include 'parts/header.php';
                                     <h2 class="claerfix p-3 my-2">
                                         <a class="btn btn-link text-decoration-none font-weight-bold text-dark" data-toggle="collapse" data-target="#collapseThree"
                                             aria-expanded="true" aria-controls="collapseThree">
-                                            Partonariats<i class="fa fa-angle-down ml-3"></i>
+                                            Partenariats<i class="fa fa-angle-down ml-3"></i>
                                         </a>
                                     </h2>
                                 </div>
@@ -102,7 +102,7 @@ include 'parts/header.php';
                                     <h2 class="claerfix p-3 my-2">
                                         <a class="btn btn-link text-decoration-none font-weight-bold text-dark" data-toggle="collapse" data-target="#collapseFour"
                                             aria-expanded="true" aria-controls="collapseOne">
-                                           Coronavirus et Messures sanitaires<i class="fa fa-angle-down ml-2"></i>
+                                            Coronavirus et mesures sanitaires<i class="fa fa-angle-down ml-2"></i>
                                         </a>
                                     </h2>
                                 </div>

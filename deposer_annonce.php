@@ -33,9 +33,7 @@ $res = request_sql($dbh, $sql);
 ?>
 
 
-
 <div class="bg-white w-75 m-auto p-4 my-5">
-
 
   <form action="./deposer_annonce.php" method="POST">
 
@@ -83,12 +81,13 @@ $res = request_sql($dbh, $sql);
       <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
     </div>
 
+    <!-- validation envoie de mail -->
     <?php if (isset($_POST["nom_societe"]) && $done) : ?>
       <p class="m-3">Le post de l'entreprise <?php echo $_POST["nom_societe"]; ?> a bien été ajouter</p>
     <?php elseif (isset($_POST["nom_societe"]) && !$done) : ?>
       <p>Le post de l'entreprise <?php echo var_dump($_POST["nom_societe"]) ?> n'a pas été ajouter </p>
     <?php endif ?>
-    
+
     <!-- submit -->
     <div class="p-1 m-3">
       <a href="./index.php" class="btn btn-warning  my-4">annuler</a>

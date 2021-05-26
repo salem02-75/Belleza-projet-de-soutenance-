@@ -56,7 +56,7 @@ include 'functions/mail_offres.php';
         <!-- Content -->
         <div class="mb-3 mt-3 content">
             <label for="exampleFormControlTextarea1" class="form-label">Contenu du message</label>
-            <textarea name="content" class="form-control" id="content" rows="3">Bonjour, je prend contact avec vous pour connaître vos disponibilité...</textarea>
+            <textarea name="content" class="form-control" id="content" rows="3">Bonjour, je prends contact avec vous pour connaître vos disponibilités...</textarea>
         </div>
 
         <!-- Boutton submit -->
@@ -64,6 +64,7 @@ include 'functions/mail_offres.php';
         <div class="d-flex justify-content-end">
             <input type="submit" class="button_belleza justify-content-centre" valeur="envoyer">
         </div>
+        
     </form>
 <?php else : ?>
     <h3 class="d-flex justify-content-center mt-5 text-info">mail envoyer</h3>
