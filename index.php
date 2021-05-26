@@ -18,18 +18,19 @@ $res = request_sql($dbh, $sql);
      <div class="banniere">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <div class="banniere-body">
-                        <h1 class="banniere-title text-white d-flex">Ne <span class="ml-2">B</span>ougez pas, on vient à
+                <div class="col-md-8 ">
+                    <div class="banniere-body ml-4 pl-3">
+                        <h1 class="banniere-title  d-flex">Ne <span class="ml-2">B</span>ougez pas, on vient à
                             <span class="ml-2">Vous</span></h1>
-                        <p class="banniere-text pt-3">seule, en couple ou
+                        <p class="banniere-text  pt-3">seule, en couple ou
                             en famille pour voud rendre <span>BELLEZA</span></p>
 
-                        <!-- <button><a href="#">Inscrivez vous</a></button> -->
-                        <a href="#" class="btn btn-secondary  bg-transparent mr-3 py-2 px-4 mt-4" role="button"
+                        
+                        <a href="#" class="btn btn-outline-secondary text-white bg-transparent mr-3 py-2 px-4 mt-4" role="button"
                             aria-pressed="true">Inscrivez vous</a>
-                        <a href="#" class="btn btn-secondary  bg-transparent mr-3 py-2 px-4 mt-4" role="button"
-                            aria-pressed="true">Rejoignez-vous</a>
+                      
+
+                            
 
                     </div>
                 </div>
