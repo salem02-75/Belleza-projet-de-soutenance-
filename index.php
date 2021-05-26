@@ -48,6 +48,7 @@ $res = request_sql($dbh, $sql);
         <div class="row d-flex justify-content-center ">
             <!-- col-1 -->
             <div class=" col-9 col-md-6 col-lg-4  mb-sm-4" >
+
                 <div class="card mb-4">
                     <div>
                         <a  href="coiffure.php">
@@ -66,6 +67,22 @@ $res = request_sql($dbh, $sql);
                         </a> <!-- fin de card-->
                     </div>
                 </div> <!-- fin de card-body -->
+
+
+                <div class="card mb-4" href="coiffure.php">
+                    <a href="coiffure.php">
+                        <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux" class="card-img-top imgService">
+                    </a>
+
+                    <div class="card-body ">
+                        <h3 class="card-title-service text-center "><a href="coiffure.php" class="text-decoration-none">Coiffure</a></h3>
+                        <p class="text-center text-secondary ">à Domicile</p>
+                        <p class="card-text-service text-secondary">Coupe de cheveux pour femme, homme, enfant.Broshing,
+                            Mèches et Coloration, Soin de cheveux,,,
+                        </p>
+                    </div><!-- fin de card-body -->
+
+                </div><!-- fin de card-->
 
 
             </div> <!-- fin de col-1 card -->
