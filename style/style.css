@@ -111,10 +111,7 @@ h3 {
 .navbar-light .navbar-nav .nav-link:hover{
     color: #dc3545 !important;
 }
-.nav-link:hover {
-    /* background-color: black; */
-    /* color: red; */
-}
+
 
 
 /* ========================================= 
@@ -184,9 +181,9 @@ header {
     color:#dc3545 ;
 }
 
-.banniere p {
+.banniere .banniere-text {
     padding: 10px;
-    font-size: 15px;
+    font-size: 2.1 rem;
 }
 
 .banniere a{
@@ -637,22 +634,18 @@ hr {
 /* en dessou de 525px small sm Mobile */
 
 @media (max-width: 576px) {
+
+    /* .banniere-text,
+    .banniere-text>span
+     {
+        font-size: 20px;
+    }
+
     .banniere-title h1,
-    .banniere-text,
-    .banniere-text>span,
     .banniere-titel>span {
-        font-size: 18px;
-    }
-    .banniere-title span,
-    .banniere-text span {
-        color: #E56969;
-        /* font-size: x-large; */
-        font-size: 30px;
-        font-weight: bold;
-        /* display: inline-block;
-        display: block; */
-        display: inline;
-    }
+        font-size: 27px;
+    } */
+   
     .liste-medias {
         margin: 20px 15px 0 15px;
     }
@@ -677,29 +670,30 @@ hr {
     }
 }
 
-@media (max-width: 767px) {
-    .newsletter {
-        display: none;
-    }
-    .footer-light hr {
-        display: flex;
-    }
-}
 
 
-/*  ***************** banniere fin ************************* */
+/*  format Md*/
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
     .navbar-light .navbar-nav .nav-link {
         display: flex;
         justify-content: center;
     }
-    .banniere-title h1,
-    .banniere-title span {
-        font-size: 30px;
-    }
-    .banniere-text,
+    /* .banniere-text,
     .banniere-text>span {
-        font-size: 28px;
+        font-size: 22px;
     }
+    */
+}
+@media (max-width: 425px){
+    /* .banniere-text,
+    .banniere-text>span
+     {
+        font-size: 28px;
+    } */
+
+    /* .banniere-title,
+    .banniere-titel>span {
+        font-size: 18px;
+    } */
 }

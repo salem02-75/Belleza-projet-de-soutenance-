@@ -20,9 +20,8 @@ $res = request_sql($dbh, $sql);
             <div class="row">
                 <div class="col-md-8 ">
                     <div class="banniere-body ml-4 pl-3">
-                        <h1 class="banniere-title  d-flex">Ne <span class="ml-2">B</span>ougez pas, on vient à
-                            <span class="ml-2">Vous</span></h1>
-                        <p class="banniere-text  pt-3">seule, en couple ou
+                        <h1 class="banniere-title  d-flex  display-sm-4  display-md-3">Ne Bougez pas, on vient à Vous</h1>
+                        <p class="banniere-text display-sm-4 display-sm-5 pt-3">seule, en couple ou
                             en famille pour voud rendre <span>BELLEZA</span></p>
 
                         
