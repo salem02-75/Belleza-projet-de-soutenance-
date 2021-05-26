@@ -28,8 +28,7 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
     <!-- CSS Bootstrap  version 4.6 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     
-    <!-- css version Bootstrap version 4.3-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 
 
     <!-- CSS font-Awesome version 5.15.3 -->
@@ -40,8 +39,11 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
     <link rel="stylesheet" href="style/style.css">
     <!-- pour les pages services -->
     <link rel="stylesheet" href="style/service.css">
+     <!-- pour la page membre -->
     <link rel="stylesheet" href="style/membre.css">
+     <!-- pour la page inscription -->
     <link rel="stylesheet" href="style/inscription.css">
+     <!-- pour la page connection -->
     <link rel="stylesheet" href="style/connection.css">
 
 
@@ -81,7 +83,7 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
             <ul class="navbar-nav ml-auto">
                 <!-- #coiffure => active -->
                 <li class="nav-item active">
-                    <a class="nav-link " href="coiffure.php">Coiffure<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="coiffure.php">Coiffure<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="esthetique.php">Esthétique</a>
