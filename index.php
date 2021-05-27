@@ -48,28 +48,19 @@ $res = request_sql($dbh, $sql);
         <div class="row d-flex justify-content-center ">
             <!-- col-1 -->
             <div class=" col-9 col-md-6 col-lg-4  mb-sm-4">
-
                 <div class="card mb-4">
-                    <div>
-                        <a href="coiffure.php">
-                            <a href="coiffure.php">
-                                <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux" class="card-img-top imgService " width=150px>
-                            </a>
-
-                            <div class="card-body ">
-                                <h3 class="card-title-service text-center "><a href="coiffure.php" class="text-decoration-none">Coiffure</a></h3>
-                                <p class="text-center text-secondary ">à Domicile</p>
-                                <p class="card-text-service text-secondary">Coupe de cheveux pour femme, homme, enfant.Broshing,
-                                    Mèches et Coloration, Soin du cheveux,,,
-                                </p>
-                            </div>
-
-                        </a>
+                    <a href="coiffure.php">
+                        <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux" class="card-img-top imgService " width=150px>
+                    </a>
+                    <div class="card-body ">
+                        <h3 class="card-title-service text-center "><a href="coiffure.php" class="text-decoration-none">Coiffure</a></h3>
+                        <p class="text-center text-secondary ">à Domicile</p>
+                        <p class="card-text-service text-secondary">Coupe de cheveux pour femme, homme, enfant.Broshing,
+                            Mèches et Coloration, Soin du cheveux,,,
+                        </p>
                     </div>
                 </div> <!-- fin de card-1 -->
-
             </div> <!-- fin de col-1  -->
-
             <!-- col-2 -->
             <div class=" col-9 col-md-6 col-lg-4  mb-sm-4 ">
                 <!--  card-2 -->
@@ -79,7 +70,7 @@ $res = request_sql($dbh, $sql);
                     </a>
 
                     <div class="card-body">
-                        <h3 class="card-title text-center"><a href="#Esthétique.php" class="text-decoration-none">Esthétique</a></h3>
+                        <h3 class="card-title text-center"><a href="esthetique.php" class="text-decoration-none">Esthétique</a></h3>
                         <p class="text-center text-secondary ">à Domicile</p>
                         <p class="card-text-service text-secondary">Epilation du corps, Epilation homme, femme,
                             Maquillage, Soin du corps, Beauté des pieds et des mains,,,
@@ -96,10 +87,8 @@ $res = request_sql($dbh, $sql);
                     <a href="massage.php">
                         <img src="images/massage.jpg" alt="image de massage" class="card-img-top imgService">
                     </a>
-
                     <div class="card-body">
-                        <h3 class="card-title text-center"><a href="#Massage" class="text-decoration-none">Massage</a>
-                        </h3>
+                        <h3 class="card-title text-center"><a href="massage.php" class="text-decoration-none">Massage</a></h3>
                         <p class="text-center text-secondary ">à Domicile</p>
                         <p class="card-text-service text-secondary">Massage solo ou en couple, Modelage du corps,
                             Ventouse, Pierre chaude,,,
