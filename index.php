@@ -50,7 +50,7 @@ $res = request_sql($dbh, $sql);
             <div class=" col-9 col-md-6 col-lg-4  mb-sm-4">
                 <div class="card mb-4">
                     <a href="coiffure.php">
-                        <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux" class="card-img-top imgService " width=150px>
+                        <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux" class="card-img-top imgService">
                     </a>
                     <div class="card-body ">
                         <h3 class="card-title-service text-center "><a href="coiffure.php" class="text-decoration-none">Coiffure</a></h3>
@@ -66,7 +66,7 @@ $res = request_sql($dbh, $sql);
                 <!--  card-2 -->
                 <div class="card mb-4">
                     <a href="esthetique.php">
-                        <img src="images/esthétique.jpg" role="img" alt="image de Esthétique, Maquillage,soin" class="card-img-top imgService">
+                        <img src="images/esthétique.jpg" alt="image de Esthétique, Maquillage,soin" class="card-img-top imgService">
                     </a>
 
                     <div class="card-body">
@@ -320,7 +320,7 @@ $res = request_sql($dbh, $sql);
     <!-- ENGZGEMENTS -->
     <!-- ========================================= -->
 
-    <div id="engagement my-150">
+    <div class="my-150px" id="engagement ">
         <h2 class="text-center my-5">Nos Engagements</h2>
         <div class="container">
             <div class="row d-flex justify-content-center">
@@ -381,7 +381,7 @@ $res = request_sql($dbh, $sql);
     <!-- Newsletter -->
     <!-- ========================================= -->
 
-    <div id="newsletter" class="container text-white text-center my-150">
+    <div id="newsletter" class="container text-white text-center my-150px">
 
         <form action="Newsletter">
             <h2 class="display-s-4">S'abonner à la newsletter</h2>
