@@ -21,9 +21,9 @@ $res = request_sql($dbh, $sql);
             <div class="row">
                 <div class="col-md-8 ">
                     <div class="banniere-body ml-4 pl-3">
-                        <h1 class="banniere-title  d-flex  display-sm-4  display-md-3">Ne Bougez pas, on vient à Vous</h1>
+                        <h1 class="banniere-title  d-flex  display-sm-4  display-md-3">Ne bougez pas, on vient à vous</h1>
                         <p class="banniere-text display-sm-4 display-sm-5 pt-3">seule, en couple ou
-                            en famille pour voud rendre <span>BELLEZA</span></p>
+                            en famille pour vous rendre <span>BELLEZA</span></p>
 
 
                         <a href="inscription.php" class="btn btn-outline-secondary text-white bg-transparent mr-3 py-2 px-4 mt-4" role="button" aria-pressed="true">Inscrivez vous</a>
@@ -60,7 +60,7 @@ $res = request_sql($dbh, $sql);
                                 <h3 class="card-title-service text-center "><a href="coiffure.php" class="text-decoration-none">Coiffure</a></h3>
                                 <p class="text-center text-secondary ">à Domicile</p>
                                 <p class="card-text-service text-secondary">Coupe de cheveux pour femme, homme, enfant.Broshing,
-                                    Mèches et Coloration, Soin de cheveux,,,
+                                    Mèches et Coloration, Soin du cheveux,,,
                                 </p>
                             </div>
 
@@ -82,7 +82,7 @@ $res = request_sql($dbh, $sql);
                         <h3 class="card-title text-center"><a href="#Esthétique.php" class="text-decoration-none">Esthétique</a></h3>
                         <p class="text-center text-secondary ">à Domicile</p>
                         <p class="card-text-service text-secondary">Epilation du corps, Epilation homme, femme,
-                            Maquillage, Soin du corps, Beauté des pieds et de mains,,,
+                            Maquillage, Soin du corps, Beauté des pieds et des mains,,,
                         </p>
                     </div>
 
@@ -396,7 +396,7 @@ $res = request_sql($dbh, $sql);
 
         <form action="Newsletter">
             <h2 class="display-s-4">S'abonner à la newsletter</h2>
-            <p class="text-secondary py-1">Restons toujours en contacte avec votre beauté </p>
+            <p class="text-secondary py-1">Restons toujours en contact avec votre beauté </p>
             <div class="email-body d-flex justify-content-center mt-3">
                 <i class="fas rounded-left fa-envelope"></i>
                 <input type="email" name="email" value="" placeholder="Entrez votre eamil" class="input-email border-0 ">
