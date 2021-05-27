@@ -31,6 +31,10 @@
         right: 25px;
         width: 203%;
         top: -10px;
+        margin: auto;
+    }
+    .taille_img_service_offres {
+        display: flex;
     }
     .taille_img_service_offres img {
         width: 115%;
