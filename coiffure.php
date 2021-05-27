@@ -23,7 +23,11 @@ include 'parts/header.php'
                 </div>
                 <!-- Présentation -->
                 <div class="mb-5">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga aperiam hic maxime error non accusantium, quas, ut maiores deserunt incidunt quod voluptates ipsum nisi corporis repellendus ipsam dicta praesentium quo eveniet ducimus commodi libero, itaque provident fugit? Dignissimos dicta facilis nemo ipsam, totam iusto labore perferendis quae, minima corporis rerum.</p>
+                    <p>Vous avez envie de changer de coiffure et vous ne savez pas quelle coupe de cheveux choisir ? Quelle longueur adopter ? Quelle mode suivre ?</p>
+                    <hr>
+                    <p>Découvrez ici des coiffures pour vous inspirer et varier les looks au gré de vos envies. Apprenez à réaliser des chignons, des queues-de-cheval ou des tresses en tous genres. Vous trouverez votre bonheur quel que soit votre style : rock, vintage, bohème, urbain-chic ou sophistiqué. Choisissez la frange et la raie qui boosteront votre chevelure wavy, lisse, bouclée ou frisée. Enfin, dégotez LA coupe tendance qui sublimera votre carré, vos cheveux courts, ainsi que vos longueurs XXL.</p>
+                    <hr>
+                    <p>Vous trouverez donc dans cette rubrique des idées de coiffure en images</p>
                 </div>
 
                 <!-- Bouton -->

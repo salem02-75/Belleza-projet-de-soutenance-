@@ -108,12 +108,9 @@ h3 {
 
 
 /* les a dans la navbar */
-.navbar-light .navbar-nav .nav-link:hover{
+
+.navbar-light .navbar-nav .nav-link:hover {
     color: #dc3545 !important;
-}
-.nav-link:hover {
-    /* background-color: black; */
-    /* color: red; */
 }
 
 
@@ -155,15 +152,31 @@ header {
 
 /* banniere version 2 */
 
-.banniere {
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    background-position: top;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-image: url(../images/banniere_large.jpg);
-    height: 620px;
+@media (min-width: 1030px) {
+    .banniere {
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        background-position: top;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-image: url(../images/banniere-large.jpg);
+        height: 620px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .banniere {
+        background-image: url(../images/banniere-550.jpg);
+        width: 100%;
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        position: relative;
+        padding: 150px 0 150px;
+        background-position: center;
+    }
 }
 
 .banniere .container {
@@ -176,20 +189,22 @@ header {
     background-position: center;
 }
 
-.banniere .banniere-title,.banniere-text{
+.banniere .banniere-title,
+.banniere-text {
     color: #00c2cb;
 }
 
-.banniere-title span,.banniere-text>span{
-    color:#dc3545 ;
+.banniere-title span,
+.banniere-text>span {
+    color: #dc3545;
 }
 
-.banniere p {
+.banniere .banniere-text {
     padding: 10px;
-    font-size: 15px;
+    font-size: 2.1 rem;
 }
 
-.banniere a{
+.banniere a {
     color: #00c2cb !important;
 }
 
@@ -198,8 +213,7 @@ header {
     width: 100%
 }
 
- 
-.banniere a:hover{
+.banniere a:hover {
     border-color: #dc3545 !important;
     /* color: #00c2cb; */
 }
@@ -251,7 +265,6 @@ header {
 #engagement>h2 {
     font-size: 2.25rem;
 }
-
 
 #service .card-body h3 a {
     color: #dc3545;
@@ -310,21 +323,35 @@ header {
             <-- ENGAGEMENTS -->
  ========================================= */
 
-.img-icon {
-    width: 70px;
-    height: 80px;
-    display: flex;
+.rounded {
+    border-radius: 2.2rem !important;
+}
+
+.width-40 {
+    width: 40px;
+    height: 40px;
     margin: auto;
 }
 
-#engagement h3 {
-    color: #00c2cb;
+
+/* avis en SM */
+
+.avis-sm h2,
+.text-avis-sm {
+    color: #6ce5e8 !important;
 }
 
 
 /* =======================================
         <-- Engagement FIN -->
 =========================================*/
+
+
+/* ILS NOUS ONT FAIT CONFIENCE */
+
+.color_red_belleza {
+    background-color: #E56969 !important;
+}
 
 
 /* =======================================
@@ -413,11 +440,6 @@ a>i {
         <-- Faq-->
 =========================================*/
 
-
-/* #faq h2 a{
-    color:#6ce5e8 ;
-    } */
-
 #faq h2 a:hover {
     color: #dc3545 !important;
 }
@@ -464,28 +486,10 @@ a>i {
 }
 
 .footer {
-    /* background-image: url(../images/logo.svg); */
     background-image: url(../images/logoG.png);
     background-repeat: no-repeat;
     background-position: 77% 32%;
     background-size: 28%;
-}
-
-
-/* Tablette footer */
-
-@media (max-width: 990px) {
-    .footer {
-        background-position: 77% 32%;
-        background-size: 28%;
-    }
-}
-
-@media (max-width: 766px) {
-    .footer {
-        background-position: 60% 20%;
-        background-size: 100%;
-    }
 }
 
 .footer a {
@@ -637,29 +641,9 @@ hr {
 /* en dessou de 525px small sm Mobile */
 
 @media (max-width: 576px) {
-    .banniere-title h1,
-    .banniere-text,
-    .banniere-text>span,
-    .banniere-titel>span {
-        font-size: 18px;
-    }
-    .banniere-title span,
-    .banniere-text span {
-        color: #E56969;
-        /* font-size: x-large; */
-        font-size: 30px;
-        font-weight: bold;
-        /* display: inline-block;
-        display: block; */
-        display: inline;
-    }
     .liste-medias {
         margin: 20px 15px 0 15px;
     }
-    /* les span  */
-    /* .border-left .border-right{
-            display: none;
-    } */
     .aPropos {
         display: none;
     }
@@ -670,36 +654,36 @@ hr {
         display: none;
     }
     /* newsletter */
-    #newsletter h1 {
+    #newsletter h2 {
         font-weight: 600;
         letter-spacing: 2px;
         font-size: 27px;
     }
-}
-
-@media (max-width: 767px) {
-    .newsletter {
+    #avis {
         display: none;
     }
-    .footer-light hr {
-        display: flex;
-    }
 }
 
 
-/*  ***************** banniere fin ************************* */
+/*  format Md*/
 
-@media (max-width: 750px) {
+@media (max-width: 766px) {
     .navbar-light .navbar-nav .nav-link {
         display: flex;
         justify-content: center;
     }
-    .banniere-title h1,
-    .banniere-title span {
-        font-size: 30px;
+    .footer {
+        background-position: 60% 20%;
+        background-size: 100%;
     }
-    .banniere-text,
-    .banniere-text>span {
-        font-size: 28px;
+}
+
+
+/* Tablette footer */
+
+@media (max-width: 990px) {
+    .footer {
+        background-position: 77% 32%;
+        background-size: 28%;
     }
 }

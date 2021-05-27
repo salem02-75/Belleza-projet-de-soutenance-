@@ -25,7 +25,9 @@ include 'parts/header.php';
 
                 <!-- Présentation -->
                 <div class="mb-5">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga aperiam hic maxime error non accusantium, quas, ut maiores deserunt incidunt quod voluptates ipsum nisi corporis repellendus ipsam dicta praesentium quo eveniet ducimus commodi libero, itaque provident fugit? Dignissimos dicta facilis nemo ipsam, totam iusto labore perferendis quae, minima corporis rerum.</p>
+                <p>Dans notre société de l’apparence, soigner son look est aujourd’hui essentiel ! L’esthéticienne y joue un rôle important : gommer les imperfections, embellir la peau, retarder les effets du vieillissement… Ses services sont recherchés, non seulement par la gent féminine mais aussi de plus en plus par la clientèle masculine.</p>
+                    <hr>
+                     <p>L’esthéticienne est la spécialiste des soins de beauté, et en tout premier lieu ceux du visage. Elle entretient et traite l’épiderme de ses clients pour retarder l’apparition des rides, effacer les effets du stress, ou traiter des problèmes particuliers (rougeurs, acné, cicatrices…). Elle identifie d’abord le type de peau de sa cliente (normale, grasse, déshydratée…) et choisit les soins les plus adaptés : nettoyage de peau, modelage, masque, peeling…Il lui arrive régulièrement de donner des conseils de maquillage.</p>
                 </div>
 
                 <!-- Bouton -->

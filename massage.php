@@ -21,7 +21,9 @@ include 'parts/header.php';
                 </div>
                 <!-- Présentation -->
                 <div class="mb-5">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga aperiam hic maxime error non accusantium, quas, ut maiores deserunt incidunt quod voluptates ipsum nisi corporis repellendus ipsam dicta praesentium quo eveniet ducimus commodi libero, itaque provident fugit? Dignissimos dicta facilis nemo ipsam, totam iusto labore perferendis quae, minima corporis rerum.</p>
+                <p>Moment de détente ultime pour lâcher-prise et faire le plein d'énergie, le massage bénéficie de techniques ancestrales tirées de la médecine chinoise traditionnelle, de l'ayurveda -médecineindienne- ou encore du Japon, de Bali ou encore de la Thaïlande. Véritable sas de décompression, le massage nous transporte dans un autre espace temps où l'art du geste est roi.</p>
+                    <hr>
+                         <p>Pour que le soin soit efficace, on choisira un soin en fonction de ses problématiques ou de ses envies. Plutôt modelage du corps massage drainant amincissant? Appuyé ou délicat? Soin du visage ou soin du corps? Sans aller jusqu'à la thérapie corporelle, un massage en institut ou dans un spa permet déjà de s'échapper du tempo quotidien. </p>
                 </div>
                 <!-- Bouton -->
                 <div class="d-flex justify-content-end">

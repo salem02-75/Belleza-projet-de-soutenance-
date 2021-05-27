@@ -61,7 +61,7 @@ include 'functions/mail_offres.php';
         <div class="d-flex justify-content-end">
             <input type="submit" class="button_belleza justify-content-centre" valeur="envoyer">
         </div>
-        
+
     </form>
 <?php else : ?>
     <h3 class="d-flex justify-content-center mt-5 text-info">mail envoyer</h3>

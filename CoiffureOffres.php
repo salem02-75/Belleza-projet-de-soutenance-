@@ -11,67 +11,16 @@ $sql = "SELECT * FROM $ma_tab ";
 $res = request_sql($dbh, $sql);
 include 'functions/pagination.php';
 include 'functions/tronque.php';
-include 'functions/tri.php';
-
-
 ?>
 
 <div class="container">
   <div class="row d-flex justify-content-center mt-5">
-
-    <!-- filtre/recherche -->
-    <form>
-      <div class="form-row align-items-center d-sm-felx justify-content-end mr-2">
-        <div class="col-auto my-3">
-          <label class="ml-sm-auto sr-only" for="inlineFormCustomSelect">Preference</label>
-          <!-- choix de la ville -->
-          <label for="validationServer04">ville</label>
-          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-            <!-- <option selected>Ville</option> -->
-            <option value="1">Paris</option>
-            <option value="2">Lyon</option>
-            <option value="3">Lile</option>
-            <option value="4">Marseille</option>
-          </select>
-        </div>
-
-        <!-- choix du sex du pro -->
-        <div class="col-auto my-3">
-          <label for="validationServer04">Genre</label>
-          <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-            <option value="1">Homme</option>
-            <option value="2">Femme</option>
-            <option value="3">Pas de préférence</option>
-          </select>
-        </div>
-
-        <!-- disponibilité  -->
-        <div class="col-auto my-3">
-          <label for="validationServer04">Disponibilité</label>
-          <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-            <option value="1">Semaine</option>
-            <option value="2">Week-end</option>
-            <option value="3">Tout</option>
-          </select>
-        </div>
-
-        <div class="col-auto mt-4">
-          <button class="btn btn-primary ">Filtrer</button>
-        </div>
-      </div>
     </form>
     <!-- fin de filtre -->
-
-
-    <th><a class="column_sort" id="id" href='?order=id&sort=$sort'>ID<span class="glyphicon glyphicon-sort-by-alphabet"></span></a></th>
 
     <?php
     for ($i = 0; $i < count($res); $i++) :
     ?>
-
-
 
       <div class="col-lg-12 col-md-12 col-sm-12">
         <!-- Carte Offre Desktop-->
@@ -121,17 +70,17 @@ include 'functions/tri.php';
           <div class="d-flex justify-content-center mb-5">
             <div class="card" style="width: 18rem;">
               <img src="<?php
-                        echo $res[$i]["photo"] 
+                        echo $res[$i]["photo"]
                         ?>" alt="ALEATOIR">
               <small class="text-muted">
                 <?php
-                echo $res[$i]["localisation"] 
+                echo $res[$i]["localisation"]
                 ?>
               </small>
               <div class="card-body mobileDesignText">
                 <h5 class="card-title">
                   <?php
-                  echo $res[$i]["nom_societe"] 
+                  echo $res[$i]["nom_societe"]
                   ?>
                 </h5>
                 <p class="card-text">
