@@ -23,7 +23,7 @@ $res = request_sql($dbh, $sql);
                     <div class="banniere-body ml-4 pl-3">
                         <h1 class="banniere-title  d-flex  display-sm-4  display-md-3">Ne bougez pas, on vient à vous</h1>
                         <p class="banniere-text display-sm-4 display-sm-5 pt-3">seule, en couple ou
-                            en famille pour vou rendre <span>BELLEZA</span></p>
+                            en famille pour vous rendre <span>BELLEZA</span></p>
 
 
                         <a href="inscription.php" class="btn btn-outline-secondary text-white bg-transparent mr-3 py-2 px-4 mt-4" role="button" aria-pressed="true">Inscrivez vous</a>
