@@ -118,7 +118,7 @@ $res = request_sql($dbh, $sql);
     <!-- ========================================= -->
     <div class=""></div>
     <div class="avis-sm py-4">
-        <div class="bg-danger py-4 text-center  d-lg-none d-md-none">
+        <div class="color_red_belleza py-4 text-center d-lg-none d-md-none">
             <h2 class=" font-weight-bolder py-3">Ils nous ont fait confiance</h2>
             <p class="text-white">Nos profesionnels nous ont fait confiance, et leurs clients ont adoré</p>
             <p class="text-white">Vous êtes curieux 🧐 de voir leurs avis, c'est par <a href="avis.php" class="text-avis-sm font-weight-bolder">içi</a></p>

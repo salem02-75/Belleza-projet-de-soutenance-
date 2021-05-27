@@ -11,7 +11,6 @@ $sql = "SELECT * FROM $ma_tab ";
 $res = request_sql($dbh, $sql);
 include 'functions/pagination.php';
 include 'functions/tronque.php';
-include 'functions/tri.php';
 ?>
 
 <div class="container">
