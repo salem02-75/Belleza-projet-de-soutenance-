@@ -96,7 +96,7 @@ include 'functions/pagination.php';
 
             <!-- <i class="fas fa-star text-danger"></i> -->
             <!-- Note -->
-            <div class="input-group p-1 m-3">
+            <div class="input-group  m-3">
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="note">Note</label>
                 </div>
@@ -110,9 +110,9 @@ include 'functions/pagination.php';
                 </select>
             </div>
 
-            <div>
+            <div class="ml-3">
                 <a href="./index.php" class="btn btn-warning  my-4">annuler</a>
-                <button type="submit" class="btn btn-primary float-end my-4">envoyer</button>
+                <button type="submit" class="btn btn-primary float-end ml-3 my-4">envoyer</button>
             </div>
 
         </form>
