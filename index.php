@@ -398,7 +398,15 @@ $res = request_sql($dbh, $sql);
     <!-- ========================================= -->
     <!-- Newsletter FIN -->
     <!-- ========================================= -->
-
+    <!-- ancre -->
+    <div class="container ">
+        <div class="row text-center">
+            <div class="col-md-2 mx-auto">
+                <a href="#haut"><i class="ancr-haut fa fa-chevron-up text-dark bg-danger p-3 rounded-circle" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+   
 </main>
 
 

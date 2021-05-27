@@ -63,10 +63,11 @@ if ($_SERVER["HTTP_HOST"] === "localhost") {
     <div class="container">
 
         <!-- logo -->
-        <div class="logo">
+        <div id="haut" class="logo">
             <a class="navbar-brand logo-image" href="//<?php echo __ENDPOINT__ ?>/index.php"><img src="images/Logomarque.svg"
                     alt="logo de la marque  Belleza"></a>
         </div>
+
 
 
         <!-- le burger => sm-->

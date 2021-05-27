@@ -61,6 +61,15 @@ Les bases de données sont protégées par les dispositions de la loi du 1er jui
 
 </div>
 
+ <!-- ancre -->
+ <div class="container ">
+        <div class="row text-center">
+            <div class="col-md-2 mx-auto">
+                <a href="#haut"><i class="ancr-haut fa fa-chevron-up text-dark bg-danger p-3 rounded-circle" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
 
 <?php
 include 'parts/footer.php';
