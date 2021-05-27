@@ -46,7 +46,7 @@
                 <!----- col-3 btn espace pro-------->
                 <div class="col-lg-4 col-md-4  col-sm-12 d-flex justify-content-center align-items-center ">
                     <!-- metre le #lien  de la page pro -->
-                    <button class="btn btn-outline d-none d-md-flex d-lg-flex"><a href="deposer_annonce.php">Déposer
+                    <button class="btn btn-outline d-none d-md-flex d-lg-flex"><a href="deposer-annonce.php">Déposer
                             une
                             annonce</a></button>
                 </div><!-- col-3 btn espace pro -->

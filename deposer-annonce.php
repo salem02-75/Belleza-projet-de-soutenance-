@@ -35,7 +35,7 @@ $res = request_sql($dbh, $sql);
 
 <div class="bg-white w-75 m-auto p-4 my-5">
 
-  <form action="./deposer_annonce.php" method="POST">
+  <form action="./deposer-annonce.php" method="POST">
 
     <!-- nom de la societe -->
     <div class="p-1 m-3">
