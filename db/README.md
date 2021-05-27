@@ -11,3 +11,11 @@
 # selection votre base de donné : admin
 # selection au centre en haut l'option  import
 # parcourir -> avis.sql
+
+# bellezafrance
+# admincolombbus
+
+# db name : id16906959_admin
+# db user : id16906959_sadmin
+# db host : localhost
+# mdp 	  : L0DS-S7!KSuG!Zik
