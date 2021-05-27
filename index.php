@@ -50,11 +50,7 @@ $res = request_sql($dbh, $sql);
             <div class=" col-9 col-md-6 col-lg-4  mb-sm-4">
                 <div class="card mb-4">
                     <a href="coiffure.php">
-<<<<<<< HEAD
-                        <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux" class="card-img-top imgService " >
-=======
                         <img src="images/coiffure.jpg" alt="image de coiffure, coupe de cheveux" class="card-img-top imgService">
->>>>>>> 99255f65278ef567757b308a47bc8b1afdf679f5
                     </a>
                     <div class="card-body ">
                         <h3 class="card-title-service text-center "><a href="coiffure.php" class="text-decoration-none">Coiffure</a></h3>
